@@ -1,0 +1,5 @@
+# Direct dependencies of treecodegen (everything else is installed by these).
+# Tested with these exact versions.
+torch==2.14.1
+transformers==5.19.0
+datasets==5.1.0
