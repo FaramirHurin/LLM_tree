@@ -1,0 +1,19 @@
+[2026-10-16 20:58:47] waiting for pass 1 (PID 3405046)
+[2026-10-17 03:48:48] pass 1 finished: == step 55000: held-out completion 63.8% of moves correct, 0% of files with no wrong move, validation loss 1.748 (floor-adjusted 0.258) (13 files)
+[2026-10-17 03:48:48] kept pass 1's checkpoint as pretrain_pass1.pt
+[2026-10-17 03:48:48] applied the pass-2 code and docs
+[2026-10-17 03:48:48] running the tests
+ok test_attention_cache
+ok test_completion_eval
+ok test_frontier_targets
+ok test_holes_mask
+ok test_ids_unique_and_redrawn
+ok test_json_trees
+ok test_roundtrip
+ok test_stdlib_roundtrip
+ok test_train_step_and_generate
+ok test_vocab_cap
+[2026-10-17 03:49:02] evaluating pass 1 with subset masks -> runs/pass1_eval_subset.txt
+[2026-10-17 03:50:36] evaluating pass 1 with holes masks -> runs/pass1_eval_holes.txt
+[2026-10-17 03:51:35] starting pass 2 -> pretrain_pass2.log
+[2026-10-17 03:51:35] pass 2 started (PID 3039015)

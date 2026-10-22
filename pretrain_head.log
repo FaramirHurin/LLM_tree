@@ -1,0 +1,702 @@
+[     0s] loading Datasets/pretrain_head.jsonl
+[    48s] loaded 100000 rows (95000 train, 5000 val)
+[    48s] building the code vocabulary (min-freq 1, max-vocab 40000)
+[    63s] code vocabulary: 40000 tokens, covering 89.9% of training tokens (the rest are <unk>)
+[    63s] building the prompt tokenizer
+[    63s] building the models
+[    66s] moving the models to cuda
+[    66s] converting trees to arrays
+[   101s] kept 88303 of 95000 training trees (dropped: a line longer than max-pos or more nodes than n-ids)
+train 88303  val 5000  code vocab 40000  prompt vocab 4  params enc 0.5M dec 140.2M
+[   101s] starting training: 11000 steps, batch 8
+[   101s] first batch: building sequences
+[   102s] first batch: forward done (849 entries, 16126 moves), running backward
+[   102s] step 1 done (0.9s)
+[   102s] step 2 done (0.5s)
+[   103s] step 3 done (0.6s)
+[   104s] step 4 done (0.5s)
+[   104s] step 5 done (0.7s)
+[   105s] step 6 done (0.6s)
+[   105s] step 7 done (0.5s)
+[   106s] step 8 done (0.5s)
+[   106s] step 9 done (0.6s)
+[   107s] step 10 done (0.6s)
+step   100  loss 7.952  (real point 7.460)  enc frozen  58s
+step   200  loss 6.358  (real point 5.610)  enc frozen  116s
+step   300  loss 5.248  (real point 2.566)  enc frozen  177s
+step   400  loss 5.791  (real point 5.613)  enc frozen  239s
+step   500  loss 6.876  (real point 6.904)  enc frozen  308s
+step   600  loss 5.458  (real point 2.955)  enc frozen  370s
+step   700  loss 5.024  (real point 2.842)  enc frozen  431s
+step   800  loss 5.031  (real point 3.496)  enc frozen  491s
+step   900  loss 4.777  (real point 2.324)  enc frozen  552s
+step  1000  loss 4.037  (real point 1.897)  enc frozen  612s
+step  1100  loss 4.413  (real point 3.014)  enc frozen  668s
+step  1200  loss 3.794  (real point 2.185)  enc frozen  723s
+step  1300  loss 3.720  (real point 1.932)  enc frozen  781s
+step  1400  loss 4.281  (real point 4.705)  enc frozen  849s
+step  1500  loss 3.345  (real point 2.251)  enc frozen  908s
+step  1600  loss 3.804  (real point 3.410)  enc frozen  968s
+step  1700  loss 3.380  (real point 2.216)  enc frozen  1027s
+step  1800  loss 3.655  (real point 2.648)  enc frozen  1085s
+step  1900  loss 4.178  (real point 3.676)  enc frozen  1146s
+step  2000  loss 3.871  (real point 3.635)  enc frozen  1206s
+[  1307s] evaluating on 10 held-out rows
+  prompt: 
+    | from django . contrib . models import models
+    | from . . utils . models import models
+    | from . . utils . models import models
+    | from . . import . models import models
+    | from . . import . models import models
+    | from . . import . import import
+    | from . . import .
+    | from . . import . import import
+    | from . . import . . import import
+    | from . . import . import import
+    |     def __init__ ( self , self ) :
+    |         pass
+    |     def __init__ ( self , self ) :
+    |         pass
+    | from . . import . import import
+    |     def __init__ ( self , self ) :
+    |         pass
+    | from . . import . import import
+    | from . . import . import import
+    | from . . contrib . models import models
+    | from . . contrib . models import models
+    | from . . import . models import models
+    | from . . contrib . models import
+    | from . . import . import import models
+    | from . . import . import import
+    | from . . import . import import
+    | from . . import . import import
+    |     def __init__ ( self , self , self , self . __init__ ( self ) :
+    |         pass
+    |     def __init__ ( self , self ) :
+    |         pass
+    | from . . contrib . models import models
+    | from . . import . import import
+    | from . . import . import import
+    |     def __init__ ( self , self ) :
+    |         pass
+    |     def __init__ ( self , self ) :
+    |         pass
+    |     def __init__ ( self , self ) :
+    |         pass
+    |     def __init__ ( self , self ) :
+    |         pass
+    |     def __init__ ( self , self ) :
+    |         pass
+    | from . . import . import import
+    | from . . import . import import
+    | from . . import . import import
+    |     def __init__ ( self , self ) :
+    |         pass
+    |     def __init__ ( self , self ) :
+    |         pass
+    | from . . import . import import
+    | from . . import . import import
+    |     def __init__ ( self , self ) :
+    |         pass
+    | from . . import . import import
+    | from . . import . import import
+    | from . . import import
+    | from . . import import models import models
+    | from . . import import models import models
+    |     def __init__ ( self , self , self , self . __init__ ( self ) :
+    |         pass
+    |     def __init__ ( self , self ) :
+    |         pass
+    | from . . import . models import models
+    | from . . contrib . models import models
+    |     def __init__ ( self , self ) :
+    |         pass
+    |     def __init__ ( self , self ) :
+    |         pass
+    |     def __init__ ( self , self ) :
+    |         pass
+    |     def __init__ ( self , self ) :
+    |         pass
+    | from . . import import models import models
+    | from . . import . import import
+    | from . . import . import import
+    | from . . import . models import models
+    | from . . import . import import
+    |     def __init__ ( self , self ) :
+    |         pass
+    | from . . import . import import
+    | from . . import . import import
+    | from . . utils . models import models
+  prompt: 
+    | from django . utils . utils import models
+    | from django . utils . utils import models
+    | from django . utils . utils import models
+    | from django . utils . utils import models
+    | from django . utils . models import models
+    |     def __init__ ( self ) :
+    |         pass
+    |     def __init__ ( self ) :
+    |         pass
+    | from django . utils . utils import models
+    | from django . utils . utils import )
+    | from django . utils . utils import models
+    | from django . utils . utils import )
+    | from django . utils . utils import )
+    |     def __init__ ( self ) :
+    |         pass
+    |     def __init__ ( self ) :
+    |         pass
+    |     def __init__ ( self ) :
+    |         pass
+    |     def __init__ ( self ) :
+    |         pass
+    |     def __init__ ( self ) :
+    |         pass
+    | from django . utils . utils import models
+    | from django . utils . utils import models
+    | from django . utils . utils import models
+    |     def __init__ ( self ) :
+    |         pass
+    |     def __init__ ( self ) :
+    |         pass
+    |     def __init__ ( self ) :
+    |         pass
+    |     def __init__ ( self ) :
+    |         pass
+    |     def __init__ ( self ) :
+    |         pass
+    | from django . utils . utils import models
+    | from django . utils . utils import models
+    |     def __init__ ( self ) :
+    |         pass
+    |     def __init__ ( self ) :
+    |         pass
+    |     def __init__ ( self ) :
+    |         pass
+    |     def __init__ ( self ) :
+    |         return self . __init__ ( )
+    |     def __init__ ( self ) :
+    |         return self . __init__ ( )
+    |             return ( )
+    |             return ( )
+    |                 return ( )
+    |                 return ( )
+    |                 return ( )
+    |                 return ( )
+    |                 return ( )
+    |                 return ( )
+    |                 return ( )
+    |                 return ( )
+    |                 return ( )
+    |                 return ( )
+    |                 return ( )
+    |                 return ( )
+    |                 return ( )
+    |             return ( )
+    |             return ( )
+    |             return ( )
+    |             return ( )
+    |             return ( )
+    |             return ( )
+    |             return ( )
+    |             return ( )
+    |             return ( )
+    |             return ( )
+    |             return ( )
+    |             return ( )
+    |             return ( )
+    |         return self . name
+    |     def __init__ ( self ) :
+    |         pass
+  prompt: 
+    | from django . utils . models import
+    | from django . utils . models import
+    |     def
+    | from django .
+    |     def
+    | from django . utils . utils import
+    | from django . utils . models . mark . mark . mark . mark . mark . mark . mark
+    | from django . utils .
+    | from django . utils . models import
+    | from .
+    | from django . utils . models . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark
+    | from django . utils . models . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark
+    | from django . utils . models . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark
+    |     def
+    |     def
+    |     def
+    |     def
+    |     def
+    |         return self .
+    |     def
+    | from django . utils . models import
+    | from django . utils . models . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark
+    | from django . utils . models . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark
+    | from . . utils . models import
+    | from django . utils . models . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark
+    |     def
+    |     def
+    | from django . utils . models . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark
+    | from django .
+    | from django .
+    | from django . utils .
+    |     def
+    |     def
+    |     def
+    |         return
+    |         return
+    | from django .
+    | from
+    | from django . utils . models . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark
+    | from django . utils . models . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark
+    |     def
+    |     def
+    | from django .
+    |     def
+    |     def
+    |     def
+    |     def
+    | from django . utils . models import
+    | from django . utils . utils import
+    | from django . utils . models import
+    |     def
+    | from django .
+    | from
+    | from
+    | from django . utils . models . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark
+    | from django . utils . models . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark
+    | from django . utils . models . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark .
+    | from django . utils . models import
+    | from django .
+    |     def
+    |     def
+    | from django .
+    | from django . utils . models . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark
+    | from django . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark . mark
+== step 2000: held-out tree exact match 0.0%, parses 0.0%
+[  1359s] checkpoint saved to pretrain_head.pt (step 2000)
+step  2100  loss 2.943  (real point 2.620)  enc frozen  1317s
+step  2200  loss 3.937  (real point 2.802)  enc frozen  1376s
+step  2300  loss 3.551  (real point 2.705)  enc frozen  1444s
+step  2400  loss 2.826  (real point 1.041)  enc frozen  1501s
+step  2500  loss 3.792  (real point 2.086)  enc frozen  1558s
+step  2600  loss 2.760  (real point 1.892)  enc frozen  1617s
+step  2700  loss 3.135  (real point 1.513)  enc frozen  1673s
+step  2800  loss 3.596  (real point 2.578)  enc frozen  1733s
+step  2900  loss 3.253  (real point 2.654)  enc frozen  1791s
+step  3000  loss 2.411  (real point 2.670)  enc frozen  1847s
+step  3100  loss 3.439  (real point 1.592)  enc frozen  1905s
+step  3200  loss 3.859  (real point 1.640)  enc frozen  1972s
+step  3300  loss 4.001  (real point 1.547)  enc frozen  2030s
+step  3400  loss 3.488  (real point 2.056)  enc frozen  2087s
+step  3500  loss 3.183  (real point 2.593)  enc frozen  2147s
+step  3600  loss 3.031  (real point 2.015)  enc frozen  2206s
+step  3700  loss 3.425  (real point 3.222)  enc frozen  2267s
+step  3800  loss 3.260  (real point 3.181)  enc frozen  2327s
+step  3900  loss 2.467  (real point 1.785)  enc frozen  2388s
+step  4000  loss 3.372  (real point 2.416)  enc frozen  2463s
+[  2564s] evaluating on 10 held-out rows
+  prompt: 
+    | from __future__ import absolute_import
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__
+    | from __future__ import division
+    | class Meta ( object ) :
+    |     pass
+  prompt: 
+    | from
+    |     def
+    |     def
+    |     def
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . id ) ) ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . id ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . id ) ) ) ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . id ) ) ) ) ) ) ) ) ) ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual (
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual (
+    |         self . assertEqual ( self
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . id ) ) ) ) ) ) ) ) ) ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual (
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual (
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual (
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual (
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual (
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual (
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual (
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual (
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . id ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual (
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual (
+    |     def
+    |     def
+    | from
+    | from
+    | from
+    | from
+    |     def
+    |     def
+    |     def
+    |     def
+    |     def
+    |     def
+    | class
+    | class
+    | class
+    | class
+    | class
+  prompt: 
+    | from __future__ import absolute_import
+    | from __future__ import division
+    | from __future__ import print_function
+    | class unittest . TestCase
+    | class ( self . assertEqual ( self . assertEqual ) )
+    | class unittest . utils . assertEqual ) :
+    |     def __init__ ( setUp , _ , _ , _ , _ ) :
+    |         pass
+    |     def __init__ ( self , name , name = None ) :
+    |         pass
+    |     def __init__ ( self , name = None ) :
+    |         pass
+    |     def __init__ ( self , name = None ) :
+    |         pass
+    |     def __init__ ( self , name = None ) :
+    |         pass
+    |     def __init__ ( self , name = None ) :
+    |         return self . assertEqual ( self . assertEqual )
+    |     def __init__ ( self , name = None ) :
+    |         return self . assertEqual ( self . assertEqual ( self . assertEqual )
+    |             return self . assertRaises ( self . id )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . id ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |         self . assertEqual ( self . assertEqual ( self . assertEqual ( self . assertEqual ) )
+    |     def __init__ ( self , name = None ) :
+    |         pass
+    |     def __init__ ( self , name = None ) :
+    |         pass
+    |     def __init__ ( self , name = None ) :
+    |         pass
+    |     def __init__ ( self , name = None ) :
+    |         pass
+    |     def __init__ ( self , name = None ) :
+    |         pass
+    |     def __init__ ( self , name = None ) :
+    |         pass
+    | class ( unittest . TestCase )
+== step 4000: held-out tree exact match 0.0%, parses 10.0%
+[  2681s] checkpoint saved to pretrain_head.pt (step 4000)
+step  4100  loss 3.146  (real point 2.936)  enc frozen  2642s
+step  4200  loss 3.166  (real point 2.590)  enc frozen  2702s
+step  4300  loss 2.734  (real point 1.429)  enc frozen  2764s
+step  4400  loss 3.328  (real point 2.173)  enc frozen  2823s
+step  4500  loss 2.494  (real point 1.588)  enc frozen  2882s
+step  4600  loss 3.322  (real point 2.011)  enc frozen  2942s
+step  4700  loss 2.939  (real point 1.818)  enc frozen  2999s
+step  4800  loss 2.811  (real point 2.637)  enc frozen  3061s
+step  4900  loss 3.278  (real point 4.323)  enc frozen  3139s
+step  5000  loss 3.060  (real point 2.698)  enc frozen  3199s
+step  5100  loss 3.151  (real point 2.170)  enc frozen  3261s
+step  5200  loss 3.751  (real point 1.880)  enc frozen  3323s
+step  5300  loss 3.662  (real point 1.775)  enc frozen  3382s
+step  5400  loss 3.074  (real point 1.749)  enc frozen  3439s
+step  5500  loss 3.403  (real point 1.271)  enc frozen  3500s
+step  5600  loss 3.218  (real point 1.419)  enc frozen  3558s
+step  5700  loss 3.052  (real point 1.214)  enc frozen  3630s
+step  5800  loss 3.397  (real point 2.329)  enc frozen  3688s
+step  5900  loss 2.737  (real point 2.025)  enc frozen  3745s
+step  6000  loss 2.921  (real point 3.189)  enc frozen  3803s
+[  3904s] evaluating on 10 held-out rows
+  prompt: 
+    | from
+    | from
+    | class
+    |     def
+    |     def
+    |     def
+    |     def
+    |     def
+    |         return self .
+    |         self .
+    |         self . assertEqual ( self . nodes . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id .
+    |         self .
+    |         self . assertEqual ( self . nodes . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id .
+    |         self .
+    |         self .
+    |         self . assertEqual ( self . nodes . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id .
+    |         self .
+    |         self .
+    |             self .
+    |             self . assertEqual ( self . nodes .
+    |             self . assertEqual ( self .
+    |             self .
+    |         self . assertEqual ( self . nodes . nodes . nodes . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id .
+    |         self .
+    |         self .
+    |         self . assertEqual ( self . nodes . nodes . nodes . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |     def
+    |     def
+    |     def
+    |         self . assertEqual ( self . nodes . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id .
+    |         self . assertEqual ( self . nodes . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id .
+    |         self . assertEqual ( self . nodes . nodes . nodes . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id .
+    |         self . assertEqual ( self . nodes . nodes . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id .
+    |     def
+    |     def
+    |     def
+    |     def
+    |     def
+    |     def
+    |     def
+    |     def
+    |         self . assertEqual ( self . nodes . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id .
+    |         self . assertEqual ( self . nodes . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id .
+    |         self . assertEqual ( self . nodes . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id .
+    |         self . assertEqual ( self . nodes . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id .
+    |         self . assertEqual ( self . nodes . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id .
+    |         self . assertEqual ( self . nodes . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id . id .
+    |     def
+    |     def
+    |     def
+    |     def
+    |     def
+    |     def
+    |     def
+    |     def
+    |     def
+    |     def
+    |     def
+  prompt: 
+    | from django . contrib . auth . models import settings
+    | from django . contrib . auth import models
+    | from django . contrib . models import models
+    | from django . contrib . auth import models
+    | from django . contrib . auth import models
+    | from django . contrib . models import User
+    | from django . contrib . models import settings
+    | from django . contrib . auth import models
+    | from django . contrib . models import settings
+    | from django . contrib . auth . models import settings
+    | from django . contrib . auth import models
+    | from django . contrib . models import User
+    | from django . contrib . urls import models
+    | from django . contrib . auth import models
+    | from django . contrib . auth import models
+    | from django . contrib . models import settings
+    | from django . contrib . models import User
+    | from django . contrib . models import settings
+    | from django . contrib . auth . models
+    | from django . contrib . models import settings
+    | from django . contrib . auth . models import User
+    | from django . contrib . models import models
+    | from django . contrib . auth import models
+    | from django . contrib . auth import models
+    | from django . contrib . models import settings
+    | from django . contrib . auth import models
+    | from django . contrib . models import settings
+    | from django . contrib . models import settings
+    | from django . contrib . models import settings
+    | from django . contrib . auth import models
+    | from django . contrib . models import settings
+    | from django . contrib . auth import models
+    | from django . contrib . auth import models
+    | from django . contrib . models import models
+    | from django . contrib . models import settings
+    | from django . contrib . models import settings
+    | from django . contrib . models import settings
+    | from django . contrib . auth import models
+    | from django . contrib . auth import models
+    | from django . contrib . models import settings
+    | from django . contrib . models import settings
+    | from django . contrib . models import models
+    | from django . contrib . models import settings
+    | from django . contrib . auth import models
+    | from django . contrib . auth . models import settings
+    | from django . contrib . models import models
+    | from django . contrib . models import settings
+    | from django . contrib . models import settings
+    | from django . contrib . models import User
+    | from django . contrib . auth import models
+    | from django . contrib . models import settings
+    | from django . contrib . models import settings
+    | from django . contrib . auth import models
+    | from django . contrib . auth import models
+    | from django . contrib . auth import models
+    | from django . contrib . models import settings
+    | from django . contrib . auth import models
+    | from django . contrib . auth import models
+    | from django . contrib . auth import models
+    | from django . contrib . auth import models
+    | from django . contrib . models import settings
+    | from django . contrib . models import settings
+    | from django . contrib . models import settings
+    | from django . contrib . models import models
+  prompt: 
+    | from django . contrib . auth import models
+    | from django . core . urlresolvers import settings
+    | from django . contrib . auth import models
+    | from django . contrib . auth import models
+    | from __future__ import division
+    | from django . contrib . auth import models
+    | from django . contrib . auth import reverse
+    | from django . contrib . auth import settings
+    | from django . contrib . auth import settings
+    | from django . contrib . auth import *
+    | from django . contrib . auth import models
+    | from django . contrib . auth import settings
+    | from django . contrib . auth import models
+    | from django . contrib . auth import models
+    | from django . contrib . auth import models
+    | from django . contrib . auth import settings
+    | from __future__ import print_function
+    | from django . contrib . auth import *
+    | from django . contrib . auth import *
+    | from django . contrib . auth import models
+    | from django . contrib . auth import models
+    | from django . contrib . auth import *
+    | from django . contrib . auth import settings
+    | from django . contrib . auth import reverse
+    | from django . contrib . auth import models
+    | from __future__ import print_function
+    | from django . contrib . auth import settings
+    | from django . contrib . auth import *
+    | from django . contrib . auth import *
+    | from __future__ import print_function
+    | from django . contrib . auth import settings
+    | from django . contrib . auth import models
+    | from django . contrib . auth import *
+    | from django . contrib . auth import *
+    | from django . contrib . auth import models
+    | from django . contrib . auth import models
+    | from django . contrib . auth import models
+    | from __future__ import print_function
+    | from django . contrib . auth import settings
+    | from django . contrib . auth import *
+    | from django . contrib . auth import urls
+    | from django . contrib . auth import *
+    | from django . contrib . auth import *
+    | from django . contrib . auth import settings
+    | from django . contrib . auth import models
+    | from django . contrib . auth import models
+    | from django . contrib . auth import reverse
+    | from django . contrib . auth import settings
+    | from django . contrib . auth import *
+    | from django . contrib . auth import *
+    | from django . contrib . auth import models
+    | from django . contrib . auth import settings
+    | from django . contrib . auth import *
+    | from django . contrib . auth import *
+    | from django . contrib . auth import models
+    | from django . contrib . auth import settings
+    | from django . contrib . auth import settings
+    | from django . contrib . auth import *
+    | from django . contrib . auth import settings
+    | from django . contrib . auth import models
+    | from django . contrib . auth import models
+    | from django . contrib . auth import *
+    | from django . core . urlresolvers import settings
+    | from django . contrib . auth import reverse
+== step 6000: held-out tree exact match 0.0%, parses 40.0%
+[  3963s] checkpoint saved to pretrain_head.pt (step 6000)
+step  6100  loss 3.228  (real point 1.407)  enc frozen  3926s

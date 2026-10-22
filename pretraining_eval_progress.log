@@ -1,0 +1,19 @@
+Evaluation of eval_ckpt_step10000.pt (2026-10-15 23:34)
+  step 10000
+  80,000 training sequences seen (batch 8) out of 883,932 training files: 0.09 epochs
+  training loss over the last 1000 steps before it: 2.976
+
+Completing 100 held-out files (skipping those over 1000 entries)
+  file 1: 66/119 moves correct (running total 55.5%)
+  file 2: 117/224 moves correct (running total 53.4%)
+  file 3: 223/359 moves correct (running total 57.8%)
+  file 4: 302/589 moves correct (running total 54.8%)
+  file 5: 194/402 moves correct (running total 53.3%)
+  file 6: 160/364 moves correct (running total 51.6%)
+  file 7: 238/409 moves correct (running total 52.7%)
+  file 8: 9/21 moves correct (running total 52.6%)
+  file 9: 259/499 moves correct (running total 52.5%)
+  file 10: 222/483 moves correct (running total 51.6%)
+  file 11: 462/790 moves correct (running total 52.9%)
+  file 12: 201/430 moves correct (running total 52.3%)
+  file 13: 62/122 moves correct (running total 52.3%)

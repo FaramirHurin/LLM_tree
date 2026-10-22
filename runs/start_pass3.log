@@ -1,0 +1,4 @@
+[2026-10-18 18:24:17] evaluating pass 2 with deep masks -> runs/eval_fixed_pass2_deep.txt
+[2026-10-18 18:25:00]     moves correct:            73.2%  (correct moves / moves required, STOP included)
+[2026-10-18 18:25:00] starting pass 3 -> pretrain_pass3.log
+[2026-10-18 18:25:00] pass 3 started (PID 3482484)

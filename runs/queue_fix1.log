@@ -1,0 +1,25 @@
+[2026-10-17 14:20:12] waiting for pass 2 (PID 3039015)
+[2026-10-18 04:36:15] pass 2 finished: == step 55000 (subset masks): held-out completion 66.2% of moves correct, 0% of files with no wrong move, validation loss 1.709 (floor-adjusted 0.154) (38 files) == step 55000 (holes masks): held-out completion 67.0% of moves correct, 0% of files with no wrong move, validation loss 1.561 (floor-adjusted 0.216) (38 files) 
+[2026-10-18 04:36:15] saved pass 2's code as runs/pass2_code.tar.gz
+[2026-10-18 04:36:15] applied fix 1
+[2026-10-18 04:36:15] running the tests
+ok test_attention_cache
+ok test_completion_eval
+ok test_eval_allows_unk
+ok test_frontier_targets
+ok test_holes_mask
+ok test_ids_unique_and_redrawn
+ok test_json_trees
+ok test_roundtrip
+ok test_stdlib_roundtrip
+ok test_train_step_and_generate
+ok test_vocab_cap
+[2026-10-18 04:36:48] evaluating pass1 with subset masks -> runs/eval_fixed_pass1_subset.txt
+[2026-10-18 04:38:50]     moves correct:            68.0%  (correct moves / moves required, STOP included)
+[2026-10-18 04:38:50] evaluating pass1 with holes masks -> runs/eval_fixed_pass1_holes.txt
+[2026-10-18 04:40:05]     moves correct:            69.4%  (correct moves / moves required, STOP included)
+[2026-10-18 04:40:05] evaluating pass2 with subset masks -> runs/eval_fixed_pass2_subset.txt
+[2026-10-18 04:41:55]     moves correct:            70.6%  (correct moves / moves required, STOP included)
+[2026-10-18 04:41:55] evaluating pass2 with holes masks -> runs/eval_fixed_pass2_holes.txt
+[2026-10-18 04:43:12]     moves correct:            72.6%  (correct moves / moves required, STOP included)
+[2026-10-18 04:43:12] done

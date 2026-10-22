@@ -1,0 +1,1298 @@
+nohup: ignoring input
+[     0s] loading Datasets/pretrain.jsonl
+[     4s] loaded 10000 rows (9500 train, 500 val)
+[     4s] building the code vocabulary (min-freq 10)
+[     5s] code vocabulary: 20061 tokens
+[     5s] building the prompt tokenizer
+[     5s] building the models
+[     7s] moving the models to cuda
+[     7s] converting trees to arrays
+[    10s] kept 8800 of 9500 training trees (dropped: a line longer than max-pos or more nodes than n-ids)
+train 8800  val 500  code vocab 20061  prompt vocab 4  params enc 0.5M dec 37.9M
+[    10s] starting training: 6000 steps, batch 16
+[    10s] first batch: building sequences
+[    10s] first batch: forward done (1664 entries, 35743 moves), running backward
+[    11s] step 1 done (1.0s)
+[    11s] step 2 done (0.2s)
+[    11s] step 3 done (0.2s)
+[    12s] step 4 done (0.4s)
+[    12s] step 5 done (0.5s)
+[    12s] step 6 done (0.3s)
+[    13s] step 7 done (0.3s)
+[    13s] step 8 done (0.3s)
+[    13s] step 9 done (0.4s)
+[    14s] step 10 done (0.4s)
+step   100  loss 6.576  (real point 4.170)  enc frozen  39s
+step   200  loss 5.352  (real point 2.781)  enc frozen  81s
+step   300  loss 4.608  (real point 2.659)  enc frozen  123s
+step   400  loss 4.520  (real point 2.450)  enc frozen  165s
+step   500  loss 4.743  (real point 3.601)  enc frozen  207s
+step   600  loss 4.547  (real point 2.271)  enc frozen  249s
+step   700  loss 4.320  (real point 2.014)  enc frozen  290s
+step   800  loss 3.703  (real point 1.692)  enc frozen  331s
+step   900  loss 4.277  (real point 3.424)  enc frozen  374s
+step  1000  loss 4.090  (real point 2.862)  enc frozen  415s
+[   425s] evaluating on 10 held-out rows
+  prompt: 
+    | from __future__ import print_function . python . python . python . python . python . python . python . python . python . python .
+    | from __future__ . python . python . python . python . python . python . python . python .
+    | from __future__ . python .
+    | from __future__ . python .
+    | from . . import import
+    | from . . python .
+    | from __future__ . import . python . python . python . python . python . python . python . python . python . python .
+    | from __future__ . python . python . python . python . python . python . python . python .
+    | from . . python . python . python . python . python . python . python . python . python . python . python .
+    | from __future__ import print_function .
+    | from . . python . python . python . python . python . python . python . python . python . python . python .
+    | from . . python . python . python .
+    | from . . python .
+    | from . . import import
+    | from . . python .
+    | from __future__ import import
+    | from . . import import
+    | from . . import import
+    | from . . python . python . python . python . python . python . python . python .
+    | from . . python . python . python . python . python . python . python . python .
+    | from . . python . python . python . python . python . python . python . python . python . python . python .
+    | from . . python . python . python . python . python . python . python . python .
+    | from . . import .
+    | from . . python . python . python . python . python . python . python . python . python . python . python . python . python .
+    | from . . import .
+    | from . . python . python . python . python . python . python . python . python . python . python . python . python . python .
+    | from __future__ . python .
+    | from . . python .
+    | from . import import ,
+    | from . . python . python . python . python . python . python . python . python . python . python . python .
+    | from . . python . python . python . python . python . python . python . python .
+    | from . . python . python . python . python . python . python . python . python .
+    | from . . python .
+    | from . . python .
+    | from . . python .
+    | from . . python . python . python . python . python . python . python . python .
+    | from . . python . python . python . python . python . python . python . python . python . python . python .
+    | from . . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python
+    | from . . python .
+    | from . . import import
+    | from . . python . python . python . python . python . python . python . python .
+    | from . . python . python . python . python . python . python . python . python .
+    | from . . python . python . python . python . python . python . python . python . python . python . python .
+    | from . . python .
+    | from . . python . python . python . python . python . python . python . python . python . python . python .
+    | from . . python . python . python .
+    | from . . python . python . python . python . python . python . python . python . python . python . python .
+    | from . . import .
+    | from . . python . python . python . python . python . python . python . python . python . python . python . python . python .
+    | from . . python . python . python . python . python . python . python . python . python . python . python .
+    | from . . python . python . python . python . python . python . python . python . python . python . python . python . python .
+    | from . . python . python . python .
+    | from . . python . python . python . python . python . python . python . python . python . python . python . python . python .
+    | from . . python . python . python . python . python . python . python . python . python . python . python .
+    | from . . python . python . python . python . python
+    | from __future__ . python . python . python . python . python . python . python . python . python . python . python .
+    | from . . python . python . python . python . python . python . python . python . python . python . python .
+    | from __future__ . python .
+    | from . . python .
+    | from . . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python . python .
+    | from . . python .
+    | from __future__ import import ,
+    | from __future__ . python . python . python . python . python . python . python . python . python . python . python .
+    | from . . python . python . python . python . python . python . python . python . python . python . python .
+  prompt: 
+    | import sys . core , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , , print_function ,
+    | import sys . core , print_function , { , { , { , { , { , { , { , { , { , : , None , None , { , { , { , { , { , { , { , , , None , None , None , { , { , { , { , , { ,
+    | import sys . core , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function ,
+    | import sys . core , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function ,
+    | import sys . core , print_function ,
+    | import sys . core ,
+    | import sys . core , print_function ,
+    | import sys . core ,
+    | import sys . core ,
+    | import sys . core ,
+    | import sys . . , { , { , { , { , { , { : { , { , { , { : : , None , { } , { } , { , { , { } , { , : , { 'preview' , { , None , { , { } , { : , 'preview' , {
+    | import sys . core ,
+    | import sys . core ,
+    | import sys . core .
+    | import sys . core ,
+    | import sys . core ,
+    | import sys . core , print_function ,
+    | import sys . core , print_function ,
+    | import sys . core .
+    | import sys . core .
+    | import sys . core ,
+    | import sys . core ,
+    | import sys . core , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , ** kwargs , print_function , print_function , print_function , print_function , print_function , print_function , 'supported_by' , 'supported_by' , print_function , , { 'preview' , 'supported_by' , { , 'supported_by' , { , { ,
+    | import sys . core , print_function ,
+    | import sys . core , print_function , print_function , { , { , { , { 'preview' : , { 'preview' , { 'preview' , None , None , None , { , { , { , { , { 'preview' , None , 'preview' , 'preview' , { : , None , { , { 'preview' , { , None , { ,
+    | import sys . core ,
+    | import sys . core , print_function , print_function , { , { , { , { : { , { , { , { : : , None : : , { ,
+    | import sys . core , print_function ,
+    | import sys . core ,
+    | import sys . core ,
+    | import sys . core , print_function , print_function ,
+    | import sys . core , print_function ,
+    | import sys . core , print_function ,
+    | import sys . core ,
+    | import sys . core , print_function , print_function , { , { , { 'preview' : { { 'preview' : { , { { { : { : { 'preview' , { { 'preview' , { , { , { 'preview' , { , { , { 'preview' , { , None , { } , { { , { , { , {
+    | import sys . core ,
+    | import sys . core . path , print_function , print_function ,
+    | import sys . core ,
+    | import sys . core . path . path .
+    | import sys . core , print_function ,
+    | import sys . core , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , , print_function ,
+    | import sys . core ,
+    | import sys . core ,
+    | import sys . core , print_function , print_function ,
+    | import sys . core , print_function ,
+    | import sys . core ,
+    | import sys . import , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , , print_function ,
+    | import sys . core , print_function ,
+    | import sys . core ,
+    | import sys . core , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function ,
+    | import sys . core ,
+    | import sys . core ,
+    | import sys . core ,
+    | import sys . core , print_function ,
+    | import sys . core ,
+    | import sys . core ,
+    | import sys . core .
+    | import sys . core , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function ,
+    | import sys . core ,
+    | import sys . core . path , print_function ,
+    | import sys . core , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function ,
+    | import sys . core , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , print_function , , print_function ,
+    | import sys . core ,
+    | import sys . core ,
+  prompt: 
+    | import sys . core . path . path . path . core . path . core . path . path . core . core . path . core . core . core . core . core . core . core . core . core . core . core . core . core . core . core . core . python . core . core
+    | import sys . __future__ ,
+    | import sys . core . path . path . core . core . core . core . core . path . core . core . core . core . core . core . core . core . core . core . core . core . core . core . core . core . core . core . core . core . core . core
+    | import sys . core . path .
+    | import sys . core . path . path .
+    | import sys . core . path . path .
+    | import sys . core . path .
+    | import sys . core .
+    | import sys . core . path .
+    | import sys . core . path .
+    | import sys . core . path . path .
+    | import sys .
+    | import sys . core . path . core . core . core . core . core . core . path . core . core . core . core . core . core . core . core . core . core . core . core . core . core . core . core . core .
+    | import sys .
+    | import sys . core .
+    | import sys . core . path . path . path . path . path . path . path . path . , print_function , print_function ,
+    | import sys .
+    | import sys . core .
+    | import sys . core .
+    | import sys . core . path . path .
+    | import sys . core . path . path .
+    | import sys . core . path . path . path . path . path . path . path . path . path . path . path . path . path . core . path . core . core . path . core . core . core . core . core . core . core . path . core . core . path . core
+    | import sys . core .
+    | import sys . core .
+    | import sys . core .
+    | import sys . core . path . path .
+    | import sys . core . path . path . path . path . path . path . path . path . path . path . path . ,
+    | import sys . core .
+    | import sys . core .
+    | import sys . core .
+    | import sys . core . path . path .
+    | import sys . core .
+    | import sys . core . path . path .
+    | import sys . core . path .
+    | import sys .
+    | import sys .
+    | import sys . core . path .
+    | import sys .
+    | import sys . core . path . path .
+    | import sys . core . path . path .
+    | import sys . core . path . path .
+    | import sys . core . path .
+    | import sys . core , print_function . core . core . core . path . core . core . path . core . core . core . core . path . core . core . core . core . core . core . core . core . core . core . core . core . core . core . python . core . core
+    | import sys . core .
+    | import sys . core . path . core . core . core . core . core . core . core . core . core . core . core . core . core . core . core . core . core . core . core . python . core . python . core . core . core . core . python . core . python
+    | import sys . core . path .
+    | import sys . core . path .
+    | import sys . core .
+    | import sys . core . path . core . core . core . core . core . core . core . core . python . python . core . core . python . core . python . python . core . core . core . python . core . python . python . python .
+    | import sys . core . path .
+    | import sys .
+    | import sys . core . path .
+    | import sys . core . path .
+    | import sys . core . path . path . core . python . python . python . python . core . python . python . python
+    | import sys . core . path . core . core . core . core . core . core . core . core . python . python . core . core . python . core . python . python . core . core . core . python . core . python . core . python . core . core . python . core . python
+    | import sys . core .
+    | import sys . core . path . path .
+    | import sys . core . path . path . path . path . path . path . path . path . path . path . path . path . path . path . path . path . path . path . path . path . path . path . path . path . path . path . path . core . path . path
+    | import sys . core . path . path . core . core . core . core . core . path . core . core . core . core . core . core . core . core . core . core . core . core . core . core . core . core . core . core . core . python . core . core
+    | import sys .
+    | import sys . core .
+    | import sys . core . path . path .
+    | import sys . core . path . path .
+    | import sys . core . path .
+== step 1000: held-out tree exact match 0.0%, parses 0.0%
+step  1100  loss 3.764  (real point 1.940)  enc frozen  522s
+step  1200  loss 3.935  (real point 2.236)  enc frozen  563s
+step  1300  loss 4.202  (real point 1.852)  enc frozen  604s
+step  1400  loss 4.167  (real point 3.077)  enc frozen  646s
+step  1500  loss 3.501  (real point 1.869)  enc frozen  687s
+step  1600  loss 3.723  (real point 2.321)  enc frozen  729s
+step  1700  loss 3.909  (real point 1.669)  enc frozen  772s
+step  1800  loss 3.910  (real point 2.631)  enc frozen  814s
+step  1900  loss 3.923  (real point 1.456)  enc frozen  854s
+step  2000  loss 3.699  (real point 2.610)  enc frozen  895s
+[   905s] evaluating on 10 held-out rows
+  prompt: 
+    | from __future__ import absolute_import , division , print_function ,
+    | from __future__ import unicode_literals . common . common . common . common . common . common . common . common . common .
+    | from __future__ import unicode_literals .
+    | from __future__ import unicode_literals .
+    | from __future__ import unicode_literals . common . common . common . common . common . common . utils . common .
+    | from __future__ import unicode_literals . common . common . common . common . common . common .
+    | from __future__ import unicode_literals .
+    | from __future__ import unicode_literals .
+    | from . . utils . common import
+    | from __future__ import unicode_literals . common . common .
+    | from __future__ import utils . common . utils . utils . utils . utils . utils . utils . utils . utils .
+    | from . . utils . common import
+    | from __future__ import unicode_literals .
+    | from . . utils . common import
+    | from __future__ import import
+    | from . . utils . common import
+    | from __future__ import unicode_literals .
+    | from __future__ import unicode_literals . common . common . common . common . common . common . utils . common . as_view ( ) . as_view ( ) . as_view ( ) . as_view ( ) . as_view ( ) ) . as_view ( ) . as_view ( ) . as_view ( ) . as_view ( ) ) . as_view ( ) . as_view
+    | from __future__ import unicode_literals .
+    | from __future__ import unicode_literals .
+    | from . . utils . common import
+    | from . . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils .
+    | from . . utils . common import
+    | from . . utils .
+    | from . . utils . common import
+    | from . . utils . common import
+    | from __future__ import import as np . common ,
+    | from . . utils . common import
+    | from . . utils . common import
+    | from . . utils . common import
+    | from . . utils . common . utils . utils . utils . utils . utils . utils . utils . utils . utils .
+    | from . import import
+    | from . import import np . path . join ( ) . path . join ( ) . path . path . path . path . join ( ) . path . path . join ( ) . path . join ( ) . path . join ( ) . path . path . path . join ( ) . join ( ) .
+    | from . . utils . common import
+    | from . . utils . common import
+    | from . . utils . common import
+    | from . . utils . common import
+    | from __future__ import import np . common . common . common . common . common . common . common . common . common . common . common . common . common . common . common . common . common . common . common . common . Optional ( ) . common . common . common . argv . utils . getLogger ( ) .
+    | from . import import np . common . common . common . common . Optional ( ) . common . common . common . common . common . common . common . common . common . common . argv . Optional ( ) . Optional ( ) . Optional ( ) . Optional ( ) . argv . as_view ( ) ) . utils
+    | from . . utils . common import
+    | from . . utils . common import
+    | from . . utils . common import
+    | from . . utils . common import
+    | from . . utils . common import
+    | from . import import
+    | from . . utils . common import
+    | from . . utils .
+    | from . . utils . common import
+    | from . . utils . common import
+    | from . import import as np . common . common . common . common . common . utils . common . utils . common . argv . utils . utils . common . utils . utils . utils . utils . utils . utils . common . utils . utils . utils . utils . utils . utils . utils . utils . utils
+    | from
+    | from . import import
+    | from . . utils . common import
+    | from . . utils . common import
+    | from . . utils . common import
+    | from . import import
+    | from . . utils . common . utils . utils . utils . utils . utils . utils . utils . utils . as_view ( ) . utils . as_view ( ) . as_view ( ) . utils . as_view ( ) . as_view ( ) ) . as_view ( ) . as_view ( ) ) . as_view ( ) . as_view ( )
+    | from
+    | from . . utils . common import
+    | from . import import as np . common . common . common . common . common . utils . common . utils . common . argv . utils . utils . common . utils . utils . utils . utils . utils . utils . common . utils . utils . utils . utils . utils . utils . utils . utils . utils
+    | from . import import
+    | from . . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils
+    | from __future__ import import np . path . join ( ) . path . join ( ) . path . join ( ) . path . join ( ) . path . path . join ( ) . path . join ( ) . join ( ) . join ( ) . join ( ) . join ( ) . join ( ) .
+    | from . . utils .
+  prompt: 
+    | from __future__ import absolute_import , division , print_function , print_function , division , print_function , print_function , print_function , division , print_function , re . path . path . path . path . path . path . path . path . path . path . path . path . abspath ( ) , print_function , division , print_function , print_function , print_function , print_function
+    | from __future__ import unicode_literals as np . path . getLogger . getLogger import
+    | from __future__ import absolute_import , division , print_function ,
+    | from __future__ import unicode_literals as np . getLogger . getLogger . getLogger import
+    | from __future__ import unicode_literals as np . path . path . path . path . path . path . path . path . path . join ( __file__ ,
+    | from __future__ import absolute_import , division , print_function ,
+    | from __future__ import absolute_import , division , print_function ,
+    | from __future__ import absolute_import ,
+    | from __future__ import import as np . common ,
+    | from __future__ import unicode_literals as np . getLogger import
+    | from __future__ import import as np . getLogger import
+    | from __future__ import absolute_import as np . getLogger . getLogger . getLogger import
+    | from __future__ import unicode_literals as np . getLogger as np . getLogger import
+    | from django . utils . utils . utils . getLogger import
+    | from __future__ import unicode_literals as np . getLogger as
+    | from __future__ import unicode_literals as np . getLogger import
+    | from __future__ import absolute_import as np . getLogger . getLogger . getLogger import
+    | from __future__ import absolute_import as np . getLogger . getLogger . getLogger . getLogger ( ) . getLogger . getLogger . getLogger ( ) . getLogger ( ) . string . getLogger ( ) . getLogger ( ) . getLogger ( ) . utils . getLogger ( ) . getLogger ( ) . utils . string . utils . getLogger ( ) . utils
+    | from . . utils . utils . utils . getLogger import
+    | from __future__ import absolute_import as np . getLogger . getLogger ( ) as class
+    | from . . utils . common import
+    | from __future__ import absolute_import , division , print_function ,
+    | from . . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils
+    | from . . utils . common import
+    | from . . utils . common import
+    | from . . utils . common import
+    | from . import import as np . getLogger . getLogger . getLogger import
+    | from . . utils . common import
+    | from __future__ import absolute_import as np . getLogger . getLogger . getLogger import
+    | from . . utils . common . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . getLogger ( ) . utils . utils . getLogger ( ) . utils . utils . utils . getLogger ( ) . utils . getLogger ( ) . getLogger ( ) . utils
+    | from __future__ import absolute_import , division , print_function ,
+    | from __future__ import absolute_import as np . getLogger . getLogger . getLogger import
+    | from . . utils . common . getLogger import
+    | from . . utils . common import
+    | from . . utils . common . getLogger import
+    | from . . utils . common import
+    | from . . utils . utils . utils . utils . utils import
+    | from . . utils . common . getLogger import
+    | from . . utils . utils . utils . utils . utils import
+    | from . import import logging . random . random . common . common . getLogger import logging . path . path . path . path . Optional . getLogger ( ) . getLogger . Optional . getLogger . getLogger ( ) . Optional ( ) . Optional ( ) . path . Optional . Optional ( ) . getLogger . getLogger ( ) .
+    | from __future__ import absolute_import , division , print_function ,
+    | from . . utils . common import
+    | from . . utils . common import
+    | from . import import as np . path . compile ,
+    | from __future__ import absolute_import as np . getLogger . getLogger . getLogger import
+    | from . . utils . common import
+    | from __future__ import unicode_literals as np . getLogger import
+    | from . . utils . common import
+    | from __future__ import absolute_import , division , print_function ,
+    | from . . utils . utils . utils import
+    | from . . utils . common import
+    | from . import import os . path . path . path . path . path . join ( ) ,
+    | from . . utils . utils . utils . utils . utils import
+    | from __future__ import import as np . common . common . getLogger import os . path . path . path . path . path . path . path . path . path . path . path . path . path . path . path . path . path . path . path . path . path . path . path
+    | from . . utils . common import
+    | from __future__ import absolute_import as np . getLogger import
+    | from __future__ import absolute_import as np . getLogger . getLogger . getLogger import
+    | from . . utils . common import
+    | from __future__ import absolute_import as np . getLogger import
+    | from . . python . common import
+    | from __future__ import unicode_literals as np . path . path . path . path . path . path . path . path . abspath . join ( ) , help = True ) . path . path . path . path . path . abspath . abspath ( ) . path . abspath ( ) . path . path . abspath ( ) .
+    | from __future__ import absolute_import , division , print_function ,
+    | from __future__ import absolute_import as np . getLogger . getLogger . getLogger import
+    | from . import import as np . common . getLogger ,
+  prompt: 
+    | from __future__ import absolute_import as np .
+    | from __future__ import unicode_literals as
+    | from __future__ import import as np . path . path . path . join ( ) , models . path . path . join ( __file__ ,
+    | from __future__ import unicode_literals as
+    | from __future__ import import
+    | from __future__ import unicode_literals as
+    | from __future__ import
+    | from django . utils . utils . utils .
+    | from . . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . string .
+    | from . . python . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . python . python . utils . python . utils . utils . utils . utils . python . utils . utils . utils . python . utils . utils
+    | from django . utils . utils .
+    | from django . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils .
+    | from __future__ import import as , import path . join ,
+    | from django . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils .
+    | from django . utils . utils . utils .
+    | from . . python . python . utils . utils . utils . python . python . utils . utils . utils . utils . utils . utils . utils . utils . utils . python . python . utils . python . utils . utils . utils . python . python . utils . utils . utils . python . utils . utils
+    | from . . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils
+    | from . . utils . utils .
+    | from . . utils . utils . utils .
+    | from . . python .
+    | from . . utils . python . utils . utils . utils . utils . utils . utils . utils . utils . utils .
+    | from django . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils .
+    | from django . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils .
+    | from . . utils .
+    | from . . utils .
+    | from __future__ import import as
+    | from . . utils .
+    | from . . utils . utils . utils .
+    | from . . utils .
+    | from . . utils . utils . utils .
+    | from . . python . python . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . python . python . utils . python . utils . utils . utils . python . python . utils . utils . utils . python . utils . utils
+    | from . . utils .
+    | from . import import as
+    | from
+    | from . . utils . utils . utils .
+    | from . . utils .
+    | from django . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . python . utils . utils . utils . utils . utils . utils . python . utils . utils . utils . python . utils . utils
+    | from . . utils .
+    | from . . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . python . python . utils . python . utils . utils . utils . python . python . utils . utils . utils . utils . utils . utils
+    | from
+    | from . import import as
+    | from . . python .
+    | from __future__ import import as np . utils . getLogger . getLogger import
+    | from __future__ import
+    | from . . python . python . utils . utils . utils . python . utils . utils . utils . utils . python . python . utils . utils . utils . utils . utils . python . utils . python . utils . utils . utils . python . python . utils . utils . utils . python . utils . utils
+    | from __future__ import utils .
+    | from . . utils . python . utils . utils . utils . python . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . python . python . utils . python . utils .
+    | from . . utils .
+    | from . . utils .
+    | from . . utils import
+    | from . . utils .
+    | from . . utils .
+    | from . . utils . utils . utils .
+    | from __future__ import import as
+    | from __future__ import utils .
+    | from
+    | from . . utils .
+    | from django . utils .
+    | from . . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils . utils .
+    | from
+    | from . . utils . python . utils . utils . utils . python . python . utils . utils . utils . python . python . utils . utils . utils . utils . python . python . utils . python . utils . python . utils . python . python . utils . utils . utils . python . utils . python
+    | from __future__ import utils .
+    | from . . utils . utils . utils import
+    | from . . utils . common import
+== step 2000: held-out tree exact match 0.0%, parses 0.0%
+step  2100  loss 3.785  (real point 1.515)  enc frozen  1041s
+step  2200  loss 3.453  (real point 2.548)  enc frozen  1087s
+step  2300  loss 3.645  (real point 1.786)  enc frozen  1133s
+step  2400  loss 3.889  (real point 1.566)  enc frozen  1180s
+step  2500  loss 3.661  (real point 1.700)  enc frozen  1225s
+step  2600  loss 3.709  (real point 1.563)  enc frozen  1271s
+step  2700  loss 3.730  (real point 1.955)  enc frozen  1317s
+step  2800  loss 3.529  (real point 2.115)  enc frozen  1362s
+step  2900  loss 3.216  (real point 2.273)  enc frozen  1408s
+step  3000  loss 3.995  (real point 2.673)  enc frozen  1451s
+[  1461s] evaluating on 10 held-out rows
+  prompt: 
+    | from __future__ import absolute_import , division , print_function , division , division , division , division , division , division , division , logging , logging , ** kwargs ) ,
+    | from __future__ import division , division , print_function ,
+    | from __future__ import division , division , print_function ,
+    | from __future__ import absolute_import , division , print_function ,
+    | from django . utils .
+    | from __future__ import absolute_import , division , print_function , division , ** kwargs ) , url , ** kwargs ) , url , url , url , ** kwargs ) , url , packages . path . join ( ) , packages , url , url , url , packages . dirname ( ) , ** kwargs ) , packages . dirname ( )
+    | from __future__ import division , division , print_function ,
+    | from django . python . framework import
+    | from django . utils .
+    | from __future__ import absolute_import , division , print_function , division , ** kwargs ) , views . path . join ( __file__ , url , url , ** kwargs ) , url , packages . dirname ( __file__ , url , packages , url , ** kwargs ) : cv . dirname ( ) , url , packages . dirname ( __file__ , packages
+    | from django . python . framework import models ,
+    | from django . python . framework import
+    | from __future__ import absolute_import , division , print_function ,
+    | from django . python . framework import
+    | from __future__ import absolute_import , division , print_function , division , django , django . path . join ( __file__ , views . path . dirname , views . path . join ( __file__ , views . path . dirname , views . path . dirname ( __file__ , views . dirname ( __file__ ) , vol . path . join ( __file__ ,
+    | from django . utils . framework import
+    | from django . utils . framework import
+    | from django . python . framework import
+    | from __future__ import absolute_import , division , print_function ,
+    | from __future__ import absolute_import , division , print_function ,
+    | from django . python . framework import
+    | from django . utils .
+    | from django . utils . framework import
+    | from django . utils . utils import models ,
+    | from django . utils . framework import
+    | from django . utils . utils import models ,
+    | from __future__ import absolute_import , division , print_function , division , django , django . path . join ( __file__ , views . path . join ( __file__ , ** kwargs ) , views . path . join ( __file__ , views . path . join ( __file__ , views . dirname ( __file__ ) , views . path . join ( __file__ ,
+    | from django . utils .
+    | from django . python . framework import
+    | from __future__ import absolute_import , division , print_function ,
+    | from django . python . framework import
+    | from django . utils . framework import models ,
+    | from django . python . framework import
+    | from . . python . framework import
+    | from django . utils . framework import
+    | from django . python . framework import
+    | from __future__ import absolute_import , division , print_function ,
+    | from django . python . framework import
+    | from django . python . framework import
+    | from . . python import
+    | from django . utils .
+    | from django . python . framework import
+    | from django . python . framework import
+    | from django . python . framework import
+    | from django . utils . utils import models ,
+    | from django . utils .
+    | from django . utils .
+    | from django . utils . framework import
+    | from django . utils . framework import
+    | from django . python . framework import
+    | from django . python . framework import
+    | from . import
+    | from __future__ import absolute_import , division , print_function ,
+    | from django . python . framework import
+    | from django . python . framework import
+    | from django . utils .
+    | from . import
+    | from django . utils .
+    | from __future__ import absolute_import , division , print_function ,
+    | from . import utils .
+    | from django . utils .
+    | from __future__ import absolute_import , division , print_function ,
+    | from __future__ import absolute_import , division , print_function , division , django , django , django . path , django , django . path . dirname , django . path . join ( __file__ , django . path . dirname , django . path . dirname ( __file__ , django . dirname ( __file__ , django . path . dirname ( __file__ , views
+    | from __future__ import absolute_import , division , print_function ,
+  prompt: 
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import sys . version_info as np , 'status' : , , 'status' : , 'status' : , }
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import sys . version_info ,
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import sys . version_info ,
+    | import
+    | import
+    | import sys . version_info ,
+    | import
+    | import
+    | import sys . version_info as
+    | import sys . version_info ,
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+  prompt: 
+    | from __future__ import absolute_import , division , print_function , division , division , division , division , division , division , division , print_function , logging , logging , path , path , division , print_function , 'status' , path , 'status' , path , path , path , path , path , path , path , path , path , path , path
+    | from __future__ import absolute_import , division , print_function , print_function , logging , division , division , logging , division , print_function ,
+    | from __future__ import absolute_import , division , print_function ,
+    | from __future__ import absolute_import , division , print_function , print_function , division , division , division ,
+    | from __future__ import absolute_import , division , print_function ,
+    | from __future__ import absolute_import , division , print_function , print_function ,
+    | from django . python . framework import
+    | from django . python . framework import
+    | from . . python . framework import
+    | from . . python . framework import
+    | from . . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from . . python . framework import
+    | from . . python import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from . . python . framework import
+    | from . . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from . . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from . . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from . . python import * , print_function ,
+    | from . . python import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from __future__ import absolute_import , division , print_function ,
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python import * , print_function , division , division , division , division , vol . path . join ( __file__ , views . path . join ( __file__ ) , vol . path . join ( __file__ , vol . join ( __file__ ) , views . join ( __file__ )
+    | from tensorflow . python . framework import
+    | from tensorflow . python . framework import
+    | from tensorflow . python import
+== step 3000: held-out tree exact match 0.0%, parses 0.0%
+step  3100  loss 3.477  (real point 2.051)  enc frozen  1565s
+step  3200  loss 3.758  (real point 2.401)  enc frozen  1611s
+step  3300  loss 3.054  (real point 1.650)  enc frozen  1657s
+step  3400  loss 3.305  (real point 1.765)  enc frozen  1704s
+step  3500  loss 3.629  (real point 2.181)  enc frozen  1749s
+step  3600  loss 3.483  (real point 2.335)  enc frozen  1794s
+step  3700  loss 3.437  (real point 2.136)  enc frozen  1841s
+step  3800  loss 3.401  (real point 2.624)  enc frozen  1887s
+step  3900  loss 3.487  (real point 1.977)  enc frozen  1933s
+step  4000  loss 3.215  (real point 1.943)  enc frozen  1979s
+[  1989s] evaluating on 10 held-out rows
+  prompt: 
+    | import os . path as os , os . path as os . dirname :
+    |     pass
+    | import
+    | import os . path as os as os as : os . join ( ) , sys . platform as os . path . path . dirname ( os . path . dirname ( os . path . dirname ( os . path . path . path . dirname ( os . path . path . join ( os . path . join (
+    | import os . path as os . path as :
+    |     pass
+    | import os . path as os as os . path as os :
+    |     pass
+    | import os . path . insert as os . join ,
+    | import
+    | import
+    | import sys . platform as
+    | import os . path . join as
+    | import
+    | import sys . platform as os as os . join ( ) as f :
+    |     pass
+    | import sys . platform as os as os as :
+    |     pass
+    | import sys . platform as
+    | import sys . platform as
+    | import sys . platform as
+    | import sys . platform as
+    | import
+    | import sys . platform as os . path . join ( ) ,
+    | import sys . platform as os . path . join ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) ,
+    | import sys . platform as
+    | import
+    | import sys . platform as
+    | import sys . platform as
+    | import sys . platform as
+    | import sys . platform as
+    | import
+    | import
+    | import
+    | import sys . platform as os as os . path . join ( ) as f :
+    |     pass
+    | import
+    | import os . path . join ( ) as f , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( )
+    | import
+    | import sys . platform as
+    | import sys . platform as
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import sys . platform as os as os . path . join ( ) as f :
+    |     pass
+    | import sys . platform as
+    | import sys . platform as
+    | import
+    | import
+    | import sys . platform as
+    | import
+    | import sys . platform as os as os . join ( ) as f :
+    |     pass
+    | import sys . platform as
+    | import sys . platform as os as os as : os . path . dirname ( __file__ ) as f :
+    |     pass
+    | import
+    | import sys . platform as
+    | import sys . platform as
+    | import
+    | import sys . platform as os as os . path . join ( os . path . join ( ) , ( ) ,
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import sys . platform as os as os . join ( ) as
+  prompt: 
+    | import os as os , os , os , os , path , os , path , os , path , os , path , os , path , path , path , os , path , os , path , path , path , , path , , dirname , os , path , os , path , path , path , ,
+    | import os . path as np as 2 : 1 , 1 : 1 , 1 : 1 , 1 : 1 , 1 : 1 , 1 : 1 , 1 : 1 , 1 : 1 , 1 : 1 , 1 : 1 , 1 : 1 , 1 , 1 , 1 , 1 , 1 : 1 , 1
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import os . path as np as : plt . join ( 1 ) as 2 : 1 : 1 , 1 : 1 , 1 : 1 , 1 : 1 , 1 : 1 , 1 , 1 : 1 : 1 : 1 , 1 : 1 , 1 , 1 , 1 , 1 , 1 : 1 , 1
+    | import os . path as plt as : plt . join ( 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ,
+    | import
+    | import
+    | import
+    | import
+    | import os . path as plt as :
+    |     pass
+    | import
+    | import os . path as plt as :
+    |     pass
+    | import
+    | import
+    | import os . path as os as : os . path . join ( __file__ ) as f : True , ( __file__ ) as f : True , 1 : 1 , 1 : 1 : 1 , 1 : 1 : 1 : 1 : 1 : 1 , 1 : 1 , 1 : 1 , 1 : 1 , 1
+    | import
+    | import sys . platform as plt as :
+    |     pass
+    | import
+    | import
+    | import os . path as plt as : plt . join ( 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ,
+    | import sys . platform as os as os as : os . path . join ( os . path . join ( os . path . join ( os . path . path . join ( os . path . path . path . path . path . join ( __file__ ) , ( __file__ ) : ( __file__ ) , os . path
+    | import os . path as plt as : plt . join ( 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ,
+    | import
+    | import sys . version_info as plt as : plt .
+    | import
+    | import sys . version_info as plt as : plt .
+    | import os . path as plt as : plt .
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import sys . version_info as plt as : plt . compile ( 1 ) as f : 1 : 1 : 1 , 1 : 1 , 1 : 1 , 1 : 1 , 1 : 1 , 1 : 1 , 1 : [ 1 , 1 , 1 : 1 , 1 : 1 , 1 , 1 , 1 ,
+    | import os . path as plt as : plt . join ( 1 , 1 , 1 , 1 , 1 , 1
+    | import os . path as plt as : plt . join ( 1 ) , 1 : 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1
+    | import
+    | import
+    | import os . path as plt as : os . join ( 1 ) as 2 : 1 , 1 : 1 , 1 , 1 : 1 , 1 : 1 , 1 , 1 : 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1
+    | import
+    | import sys . platform as plt as : plt . join ( 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ,
+    | import
+    | import
+    | import sys . platform as os as : os . join ( 1 ) as 2 : 1 , 1 : 1 , 1 : 1 , 1 : 1 , 1 : 1 , 1 : 1 , 1 : 1 , 1 : 1 , 1 : 1 , 1 , 1 , 1 , 1 , 1 : 1 , 1
+    | import
+    | import
+    | import os . path . join ( 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import
+    | import sys . version_info as os as :
+    |     pass
+  prompt: 
+    | import os . path as os as os as os . path as os . path as os . path as os . path . dirname : os . path . path . dirname ( os . path . path . path . path . path . path . dirname ( os . path . path . path . path . path . path
+    | import os . path as os as os as os : os . path . join ( ) as f :
+    |     pass
+    | import os . path as os as os as os : os , os : os . path . join ( __file__ ) : np . path . join ( __file__ ) ,
+    | import
+    | import os . path as os . path as : os . join ( os . path . join ( __file__ ) ,
+    | import os . path as np . join as os . path as os . path . join ( ) as f :
+    |     pass
+    | import
+    | import os . path as os . path as : os . path . join ( os . path . join ( ) ,
+    | import sys . platform as os as os as : os . path . join ( os . path . dirname ( os . path . join ( ) , vol . path . join ( os . path . path . path . path . path . path . join ( __file__ ) , vol . join ( __file__ ) , vol .
+    | import sys . platform as os as os as :
+    |     pass
+    | import os . path as plt as plt . Required :
+    |     pass
+    | import
+    | import
+    | import os . path as os . path as os . path . join ( ) ,
+    | import os . path as np . join ( ) as f :
+    |     pass
+    | import sys . platform as os as os as :
+    |     pass
+    | import os . path as os . path as
+    | import os . path as plt . join ( ) as f : plt . Required ( ) , ( ) ,
+    | import
+    | import os . path as plt as
+    | import
+    | import
+    | import os . path as np . join ( ) as f :
+    |     pass
+    | import os . path as os as os . path as os :
+    |     pass
+    | import
+    | import sys . platform as os as os :
+    |     pass
+    | import os . path as plt . join ( ) as f : plt .
+    | import os . path as np . join ( ) as f :
+    |     pass
+    | import os . path as np . join ( ) as f :
+    |     pass
+    | import
+    | import
+    | import sys . platform as os . path as f :
+    |     pass
+    | import
+    | import os . path as np . path as f as f :
+    |     pass
+    | import
+    | import
+    | import
+    | import sys . platform as os as os as : os . path . join ( os . path . join ( os . path . path . join ( os . path . join ( os . path . path . path . path . path . path . path . path . path . path . path . join ( os .
+    | import
+    | import os . path as os . path as f :
+    |     pass
+    | import
+    | import
+    | import
+    | import
+    | import os . path as np . join ( ) as f : np . path . join ( ) , ( ) ) , ( __file__ ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , vol . string ) , ( ) , ( __file__ ) : cv . path . plt
+    | import sys . platform as os as os as : os . path . join ( __file__ ) as f : cv . Required ( ) as f : cv . Required ( ) , ( ) , ( ) ,
+    | import sys . platform as
+    | import sys . platform as np .
+    | import
+    | import
+    | import sys . platform as plt .
+    | import sys . platform as np .
+    | import sys . platform as os . path . join ( ) as f : cv . Required ( ) , ( ) ) , ( ) , ( ) ,
+    | import os . path as os . path as : os . path . join ( __file__ ) as f :
+    |     pass
+    | import sys . platform as
+    | import os . path as np . join ( ) as f : plt . Required ( ) , ( ) ) , ( ) ) , ( ) , ( ) ) , ( ) , ( ) ) ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , (
+    | import sys . platform as os as os as :
+    |     pass
+    | import
+    | import
+    | import os . path . path . join ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( )
+    | import sys . platform as plt . Required ( ) as f :
+    |     pass
+    | import
+    | import
+    | import
+== step 4000: held-out tree exact match 0.0%, parses 0.0%
+step  4100  loss 2.948  (real point 3.447)  enc frozen  2090s
+step  4200  loss 3.663  (real point 1.671)  enc frozen  2138s
+step  4300  loss 3.645  (real point 2.240)  enc frozen  2186s
+step  4400  loss 3.587  (real point 4.780)  enc frozen  2231s
+step  4500  loss 3.298  (real point 1.688)  enc frozen  2277s
+step  4600  loss 2.540  (real point 1.832)  enc frozen  2323s
+step  4700  loss 3.008  (real point 1.254)  enc frozen  2367s
+step  4800  loss 2.474  (real point 1.971)  enc frozen  2414s
+step  4900  loss 3.084  (real point 1.292)  enc frozen  2460s
+step  5000  loss 3.590  (real point 2.648)  enc frozen  2507s
+[  2517s] evaluating on 10 held-out rows
+  prompt: 
+    | from __future__ import absolute_import , division , print_function ,
+    | from django . contrib . models import models , models , django . models import models , models , models , models , django . models , django . models import models . models . models import models import models , django . models . models . models import models , models . models . path . path , models . path . models
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils . models import models import models . models import models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from . . python . ops import
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils . models import models import models import models import models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models
+    | from . . python . ops import
+    | from . . python . ops import
+    | from django . utils .
+    | from django . utils . models import models . models . models import models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models
+    | from . . python . ops import
+    | from . . python . ops import
+    | from django . utils . utils import models , models , django . models import models . models . models . utils . utils . models . utils . models import models . models . utils . utils . utils . utils . models . models . utils . models . models . models . models . models . models . models . models
+    | from django . utils .
+    | from django . utils .
+    | from django . utils . models import models . models . models import models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models
+    | from django . utils .
+    | from django . utils . models import models import models . models import models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models
+    | from . . python . ops import models . models . models import models . models . models . models . models . models . models .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from . . python . framework import
+    | from django . utils .
+    | from . . python . framework import
+    | from
+    | from django . utils .
+    | from django . utils . models import models import models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models
+    | from . . python . ops import
+    | from . . python . ops import
+    | from django . utils . models import models , models . models import models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models
+    | from django . utils .
+    | from django . utils .
+    | from . . python . ops import
+    | from django . utils .
+    | from . . python . ops import
+    | from django . utils . utils import models . models . models import models . models . models . models . models . models . Model , models . models . models . models . models . models . Model , models . models . models . models . models . models . models . models . models . models . models . models
+    | from . . python . ops import
+    | from . . python . ops import
+    | from . . python . ops import models import models . models import models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models
+    | from django . utils .
+    | from . . python . ops import
+    | from django . utils .
+    | from django . utils .
+    | from . . python . ops import
+    | from . . python . ops import
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+  prompt: 
+    | from __future__ import absolute_import , division , print_function ,
+    | from django .
+    | from django . utils import
+    | from django . utils .
+    | from django . utils import
+    | from django . utils import
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils import
+    | from . . python . ops import
+    | from . . python . ops import
+    | from django . utils . models import models , models , models , models , django . models .
+    | from django . utils .
+    | from django . utils . models import models , models , django . models import models , models , models as models import models import models import models as models , models import models . models import models import models as np . models . path . path as plt . path . path . path . path . insert as np . path
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from . . python . ops import
+    | from . . import
+    | from . . import
+    | from . . import import
+    | from django . utils .
+    | from . . import
+    | from . . import import
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from . . python . ops import
+    | from django . utils .
+    | from
+    | from . . import
+    | from django . utils .
+    | from
+    | from django . utils .
+    | from django . utils .
+    | from . . import
+    | from . . import
+    | from django . utils . models import models , models , django . models import models . models . path . path . join ( __file__ , logging . path . join ( ) , logging . models . path . path . models . path . path . join ( __file__ , 'Miscellaneous' ) , vol . path . join ( __file__ )
+    | from . . import import
+    | from . . import import
+    | from . . import import
+    | from django . utils .
+    | from
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from . . import import
+    | from django . utils .
+    | from . . python . ops import
+    | from django . utils .
+    | from
+    | from
+    | from . . import import
+    | from django . utils .
+    | from . . python . ops import
+    | from . . python . ops import
+    | from . . python . ops import
+    | from . . import import
+    | from django . utils .
+  prompt: 
+    | from __future__ import absolute_import , division , print_function ,
+    | from django . utils import
+    | from django . utils . models import models , models , django . models import models , models , models , models , django . models , views as np . models import models , models , models , views as plt . models . path , models . path as plt . path . path . path as plt . path . path
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from . . python . ops import
+    | from django . utils . utils import models as models import models as models import models . models as plt . models . models import models as plt . models import models . models . models import models import models . models import models . models . models . models . models . models . models . models . models . models . models
+    | from django . utils . models import models , models ,
+    | from . . utils . ops import models as models . models import models . models . models . models . models . models . models . Model as models . models . models . models . models . Model as models . models . models . models . models . models . models . models . models . models . models . models
+    | from . . python .
+    | from django . utils .
+    | from django . utils . models import models as models . models import models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models
+    | from . . python . ops import
+    | from . . python . ops import
+    | from django . utils . models import models , models , models , models , models .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils . models import models as models . models import models . models . models . models . models . models . models . Model as models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models
+    | from django . utils .
+    | from . . python .
+    | from django . utils .
+    | from . . python . ops import
+    | from django . utils . utils import models as models import models as plt . models . models . models . models . models . models . Model as models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models
+    | from django . utils .
+    | from . . python . ops import
+    | from django . utils .
+    | from . . python . ops import
+    | from . . python . ops import
+    | from django . utils .
+    | from django . utils . models import models ,
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils . models import models , models , models , models . models . models . models import models . models import models , views . models import models . models . models . models import models . models . models . models . models . models . models . models . models . models . models . models . models
+    | from django . utils . models import models as models . models import models . models . models . models . models . models . Model as models . models . models . models . models . models . Model as models . models . models . models . Model as models . models . models . models . Model . Model as models
+    | from django . utils .
+    | from django . utils . utils import models as models . models import models . models .
+    | from django . utils .
+    | from django . utils .
+    | from . . python . ops import models as models . models import models . models . models . models . models . models . models . models import models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models
+    | from django . utils .
+    | from django . utils . utils import models import models import models import models , models . models . models . models . models import models . models import models . models . models . models import models import models . models import models . models . models . models . models . models . models . models . models . models . models
+    | from django . utils .
+    | from django . utils .
+    | from django . utils . utils import models as models import models as models . models . models . models . models . models import models . models import models . models import models . models . models import models . models . models . models . models . models . models . models . models . models . models . models . models
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from . . python . ops import
+    | from django . utils .
+    | from django . utils .
+    | from . . import import
+== step 5000: held-out tree exact match 0.0%, parses 0.0%
+step  5100  loss 3.528  (real point 1.523)  enc frozen  2641s
+step  5200  loss 3.531  (real point 2.565)  enc frozen  2680s
+step  5300  loss 2.817  (real point 2.716)  enc frozen  2725s
+step  5400  loss 2.748  (real point 1.634)  enc frozen  2767s
+step  5500  loss 3.411  (real point 2.032)  enc frozen  2811s
+step  5600  loss 3.142  (real point 2.527)  enc frozen  2855s
+step  5700  loss 3.199  (real point 2.273)  enc frozen  2895s
+step  5800  loss 3.251  (real point 1.652)  enc frozen  2940s
+step  5900  loss 3.430  (real point 2.663)  enc frozen  2990s
+step  6000  loss 3.050  (real point 1.402)  enc frozen  3038s
+[  3048s] evaluating on 10 held-out rows
+  prompt: 
+    | from __future__ import absolute_import , division , print_function ,
+    | from django . utils . models import models , models , models import models , models . models . models import models . models import models import models import models , models import models . models import models import models , models import models , models . models . models , models . models , models . models , models . models . models
+    | from django . utils .
+    | from django . utils .
+    | from django . utils . models import models , models import models import models . models . models . models . models . models . models . Model , models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils . models import models , models import models import models import models . models . models . models . models import models . models import models . models import models . models . models . models . models import models . models . models . models . models . models . models . models . models . models . models
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils . models import models , models import models import models import models . models . models . models . models import models import models import models . models import models . models import models import models . models import models . models . models . models . models . models . models . models . models . models . models
+    | from django . utils . models import models import models import models import models import models . models . models import models . models import models import models import models . models import models . models import models import models . models import models . models . models . models . models . models . models . models . models . models . models
+    | from . . python . framework import
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils . models import models , models , models , models .
+    | from . . python . framework import
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from . . python . framework import
+    | from django . utils .
+    | from . . python . framework import
+    | from django . utils .
+    | from django . utils . models import models , models , models . models . models . models . models . models . models . Model , models . models . Model , models . models . models . Model , models . models . models . models . models . models . models . models . models . models . models . models
+    | from django . utils .
+    | from django . utils . models import models , models , models , models .
+    | from . . python . framework import
+    | from django . utils .
+    | from . . python . ops import
+    | from . . python . framework import
+    | from django . utils .
+    | from django . utils .
+    | from . . python . framework import
+    | from django . utils . models import models , models , models , models . models . models . models . models . models . models . models import models , models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models
+    | from . . python . framework import
+    | from django . utils . models import models , models , models , models . models . models . models . models . models . models . Model import models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models
+    | from django . utils .
+    | from django . utils . models import models , models import models
+    | from . . python . framework import
+    | from django . utils . models import models , models , models , models . models . models . models . models . models . Model , models . models . models . models . models . models . Model , models . models . models . models . models . models . models . models . models . models . models . models
+    | from django . utils . models import models , models , models , models .
+    | from . . python . ops import
+    | from django . utils .
+    | from . . python . framework import
+    | from django . utils . models import models , models , models , models .
+    | from django . utils .
+    | from django . utils . models import models , models , models import models . models . models . models . models . models . Model , models . models . models . models . models . models . Model , models . models . models . models . models . models . models . models . models . models . models . models
+    | from . . python . ops import
+    | from django . utils .
+    | from django . utils . models import models , models , django . models import models , models , models , models .
+    | from django . utils .
+    | from . . python . ops import
+    | from django . utils .
+    | from django . utils . models import models , models , models , models .
+    | from . . python . framework import
+    | from . . python . framework import
+    | from django . utils .
+    | from django . utils .
+    | from . . python . ops import
+  prompt: 
+    | from __future__ import absolute_import , division , print_function ,
+    | from django . contrib . models import models , models import models import models , models . models , models , models . models import models import models import models , models import models . models import models import models , models import models . path . path . path , os . path , os . path , os . path . path
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from . . python . ops import
+    | from . . python . framework import
+    | from django . utils . models import models as models import models import models import models . models as models as np . models import models import models import models import models import models . models import models import models as np . models . models . models import models . models . models . models . models import models . models . models
+    | from django . utils . models import models , models , models import models import models . models . models . models . models import models import models import models . models import models . models . models . models . models import models . models . models . models . models . models . models . models . models . models . models
+    | from django . utils . models import models as models import models import models import models . models . models . models . models import models import models as np . models import models . models import models import models as np . models . models . models import models . models . models . models . random . models . models . models
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from . . python . ops import
+    | from django . utils . models import models as models import models import models import models . models . models import models . models import models import models import models . models import models . models import models import models . models import models . models . models . environ , models . models . models . random . models . models . models
+    | from . . python . framework import
+    | from . . python . framework import
+    | from . . import import
+    | from django . utils . models import models as models import models import models , models . models . models . models . Model as
+    | from . . python . framework import
+    | from . . python . framework import
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils . models import models , models , models , models , models . path . join ( __file__ , models . path . path . path . join ( ) , models . models . path . path . path . path . path . join ( __file__ , models . path . path . join ( __file__ , views
+    | from . . python . framework import
+    | from django . utils .
+    | from . . python . ops import
+    | from . . python . framework import
+    | from django . utils .
+    | from . . python . ops import
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from . . python . framework import
+    | from django . utils . models import models as plt . models import models import models . models . models . models . models import models . Model as models . models import models . models . models . Model as plt . models . models . models . Model as plt . models . models . models . models . models . models
+    | from django . utils .
+    | from . . python . framework import
+    | from . . python . framework import
+    | from django . utils .
+    | from . . python . ops import
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from . . import import
+    | from django . utils .
+    | from . . python . framework import
+    | from django . utils . models import models import models import models import models import models . models . models . models . models import models . models import models . models import models . models . models . Model as models import models . models . models . models . models . models . models . models . models . models . models
+    | from
+    | from
+    | from django . utils . models import models , models ,
+    | from django . utils . utils import models import models import models import models import models . models . models . models . models import models import models import models . models import models . models . models . models . models import models . models . models . models . models . models . models . models . models . models . models
+    | from django . utils . models import models , models , models , models , models . path . join ( __file__ , views . path . path . join ( __file__ ) , views . models . path . path . Model , models . path . join ( __file__ ) , views . path . join ( __file__ , views . path
+    | from
+    | from . . python . framework import
+    | from . . python . framework import
+    | from django . utils . gis . models import models import models import models , models . path . join , models . environ , models . path . join ( __file__ ) , views . models . models . models . models . models . path . Model , models . models . models . models . models . models . models .
+  prompt: 
+    | from __future__ import absolute_import , division , print_function ,
+    | from django . utils import
+    | from django . contrib . models import models , models , models , models , models , models , models , models . models . models . Model , models . models . models . models . models import models . models . models . models . models . models . models . models . models . models . models . models . models
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils . models import models , models , models , models . models . models . models import models . models import models , models . models import models . models . models import models import models . models import models . models . models . models . models . models . models . models . models . models . models
+    | from django . utils . models import models , models , models , models . models . models . models . models . models import models import models as plt . models import models . models import models import models . models import models . models . models . models . models . models . models . models . models . models . models
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils . models import models , models , models , models .
+    | from django . utils .
+    | from django . utils .
+    | from . . python . framework import
+    | from django . utils .
+    | from django . utils . models import models , models , models , models . models . models . models . models . Model , models . Model , models . Model , models . Model , models . Model , models . models . models . models . Model , models . Model , models . models . Model , models . models
+    | from . . python . framework import
+    | from django . utils . models import models , models , models , models . models . models . models . models . models import models , models . models import models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models . models
+    | from django . utils .
+    | from django . utils . models import models , models import models import models . models . models . models . models . models . Model , models . models . models . models . models . models . Model , models . models . models . models . models . models . models . models . models . models . models . models
+    | from . . python . framework import
+    | from . . python . framework import
+    | from django . utils . models import models , models , models , models . models . models . models import models , models . models . models import models , models . models . models . models import models . models . models . models . models . models . models . models . models . models . models . models . models
+    | from django . utils .
+    | from django . utils . models import models , models , models , models .
+    | from django . utils . models import models as models import models import models . models . models . models . models . models . Model , models . models . Model , models . models . models . Model as models . models . models . models . Model , models . models . models . models . Model as models . models
+    | from django . utils .
+    | from . . python . framework import
+    | from django . utils .
+    | from . . python . framework import
+    | from django . utils .
+    | from django . utils .
+    | from . . python . ops import
+    | from django . utils .
+    | from django . utils . models import models , models , models , models . models . models . models . models . models import models import models import models , models . models . models . models import models . models . models . models . models . models . models . models . models . models . models . models . models
+    | from . . python . ops import
+    | from django . utils .
+    | from django . utils . models import models , models import models import models . models . models . models . models . models . models . models import models . models . models . models . models import models . models . models . models . models . models . models . models . models . models . models . models . models
+    | from django . utils . models import models , models , models , models .
+    | from
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils . models import models , models , models , models .
+    | from django . utils . models
+    | from django . utils . models import models , models , models , models .
+    | from django . utils . models import models , models , models , models .
+    | from . . python . framework import
+    | from django . utils . models import models , models , models , models .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils . models import models , models , models , models .
+    | from django . utils .
+    | from django . utils .
+    | from django . utils .
+    | from . . python . framework import
+    | from django . utils .
+    | from django . utils . models import models , models , models , models .
+    | from . . python . framework import
+== step 6000: held-out tree exact match 0.0%, parses 0.0%
+[  3151s] saving pretrain.pt
+saved pretrain.pt

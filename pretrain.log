@@ -1,0 +1,4831 @@
+[     0s] loading Datasets/pretrain.jsonl
+[   488s] loaded 1000000 rows (950000 train, 50000 val)
+[   488s] taking the vocabulary from pretrain_v2_step20000.pt
+[   489s] code vocabulary: 40000 tokens
+[   489s] building the prompt tokenizer
+[   489s] building the models
+[   491s] moving the models to cuda
+[   492s] converting trees to arrays
+[   759s] kept 883932 of 950000 training trees (dropped: a line longer than max-pos or more nodes than n-ids)
+train 883932  val 50000  code vocab 40000  prompt vocab 4  params enc 0.5M dec 140.2M
+[   759s] starting training: 55000 steps, batch 8 x 2 accumulated = 16 sequences per step
+[   759s] first batch: building sequences
+[   760s] first batch: forward done (1161 entries, 14548 moves), running backward
+[   761s] step 1 done (1.8s)
+[   762s] step 2 done (1.5s)
+[   764s] step 3 done (1.6s)
+[   765s] step 4 done (1.4s)
+[   766s] step 5 done (1.1s)
+[   767s] step 6 done (0.8s)
+[   769s] step 7 done (1.6s)
+[   771s] step 8 done (1.7s)
+[   772s] step 9 done (1.5s)
+[   774s] step 10 done (1.5s)
+step   100  loss 7.313  (floor-adjusted 5.585, real point 6.742)  enc frozen  147s
+step   200  loss 5.998  (floor-adjusted 3.921, real point 4.774)  enc frozen  311s
+step   300  loss 5.791  (floor-adjusted 3.581, real point 4.310)  enc frozen  476s
+step   400  loss 4.736  (floor-adjusted 3.109, real point 4.334)  enc frozen  742s
+step   500  loss 4.942  (floor-adjusted 3.029, real point 2.861)  enc frozen  907s
+step   600  loss 4.553  (floor-adjusted 2.702, real point 2.346)  enc frozen  1100s
+step   700  loss 4.450  (floor-adjusted 2.353, real point 3.335)  enc frozen  1285s
+step   800  loss 3.891  (floor-adjusted 1.961, real point 2.459)  enc frozen  1466s
+step   900  loss 4.211  (floor-adjusted 2.045, real point 3.156)  enc frozen  1658s
+step  1000  loss 4.131  (floor-adjusted 2.143, real point 2.637)  enc frozen  1846s
+step  1100  loss 3.666  (floor-adjusted 1.747, real point 2.943)  enc frozen  2033s
+step  1200  loss 3.527  (floor-adjusted 1.675, real point 3.290)  enc frozen  2215s
+step  1300  loss 3.426  (floor-adjusted 1.456, real point 2.346)  enc frozen  2397s
+step  1400  loss 3.986  (floor-adjusted 1.745, real point 2.599)  enc frozen  2581s
+step  1500  loss 3.627  (floor-adjusted 1.581, real point 3.112)  enc frozen  2743s
+step  1600  loss 2.910  (floor-adjusted 1.294, real point 2.239)  enc frozen  2897s
+step  1700  loss 3.131  (floor-adjusted 1.271, real point 2.490)  enc frozen  3074s
+step  1800  loss 3.158  (floor-adjusted 1.448, real point 2.197)  enc frozen  3251s
+step  1900  loss 3.138  (floor-adjusted 1.380, real point 1.492)  enc frozen  3424s
+step  2000  loss 3.292  (floor-adjusted 1.414, real point 1.621)  enc frozen  3604s
+step  2100  loss 3.493  (floor-adjusted 1.455, real point 2.406)  enc frozen  3781s
+step  2200  loss 3.370  (floor-adjusted 1.143, real point 1.931)  enc frozen  3952s
+step  2300  loss 3.088  (floor-adjusted 1.223, real point 1.682)  enc frozen  4128s
+step  2400  loss 3.147  (floor-adjusted 1.261, real point 2.552)  enc frozen  4292s
+step  2500  loss 3.280  (floor-adjusted 1.316, real point 2.842)  enc frozen  4445s
+step  2600  loss 3.014  (floor-adjusted 1.441, real point 2.196)  enc frozen  4602s
+step  2700  loss 3.213  (floor-adjusted 1.264, real point 1.621)  enc frozen  4762s
+step  2800  loss 3.160  (floor-adjusted 1.171, real point 2.326)  enc frozen  4941s
+step  2900  loss 2.855  (floor-adjusted 1.031, real point 1.653)  enc frozen  5099s
+step  3000  loss 2.753  (floor-adjusted 1.132, real point 2.419)  enc frozen  5254s
+step  3100  loss 2.919  (floor-adjusted 1.076, real point 1.885)  enc frozen  5412s
+step  3200  loss 3.037  (floor-adjusted 1.187, real point 2.375)  enc frozen  5567s
+step  3300  loss 2.977  (floor-adjusted 1.290, real point 2.921)  enc frozen  5725s
+step  3400  loss 2.679  (floor-adjusted 1.002, real point 1.809)  enc frozen  5876s
+step  3500  loss 2.904  (floor-adjusted 0.780, real point 2.254)  enc frozen  6068s
+step  3600  loss 3.159  (floor-adjusted 1.093, real point 2.174)  enc frozen  6253s
+step  3700  loss 2.677  (floor-adjusted 0.736, real point 1.312)  enc frozen  6433s
+step  3800  loss 3.196  (floor-adjusted 1.089, real point 2.948)  enc frozen  6615s
+step  3900  loss 3.058  (floor-adjusted 1.049, real point 2.460)  enc frozen  6796s
+step  4000  loss 3.215  (floor-adjusted 1.064, real point 1.479)  enc frozen  6984s
+step  4100  loss 2.528  (floor-adjusted 0.844, real point 1.938)  enc frozen  7168s
+step  4200  loss 2.953  (floor-adjusted 0.945, real point 1.594)  enc frozen  7350s
+step  4300  loss 2.740  (floor-adjusted 0.745, real point 1.434)  enc frozen  7530s
+step  4400  loss 2.716  (floor-adjusted 1.115, real point 2.427)  enc frozen  7689s
+step  4500  loss 2.762  (floor-adjusted 0.914, real point 2.509)  enc frozen  7843s
+step  4600  loss 3.070  (floor-adjusted 1.096, real point 1.291)  enc frozen  8041s
+step  4700  loss 3.437  (floor-adjusted 1.145, real point 2.662)  enc frozen  8372s
+step  4800  loss 3.117  (floor-adjusted 1.105, real point 2.425)  enc frozen  8535s
+step  4900  loss 2.871  (floor-adjusted 1.050, real point 2.098)  enc frozen  8705s
+step  5000  loss 3.203  (floor-adjusted 0.966, real point 2.828)  enc frozen  8874s
+[  9633s] evaluating on 20 held-out rows
+== step 5000: held-out completion 51.6% of moves correct, 0% of files with no wrong move, validation loss 2.290 (floor-adjusted 0.799) (13 files)
+  example: partial tree given (open lines end in …):
+    | from __future__ import …
+  the model's completion (temperature 0.2, doesn't parse):
+    | from __future__ import print_function
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import )
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from __future__ import print_function
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from __future__ import print_function
+    | from __future__ import print_function
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from __future__ import print_function
+    | from __future__ import print_function
+    | from . . import .
+    | from . . import .
+    | from __future__ import print_function
+    | from .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import )
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[  9666s] checkpoint saved to pretrain.pt (step 5000)
+step  5100  loss 2.991  (floor-adjusted 1.047, real point 1.923)  enc frozen  9070s
+step  5200  loss 3.147  (floor-adjusted 1.132, real point 2.059)  enc frozen  9226s
+step  5300  loss 3.030  (floor-adjusted 0.822, real point 1.457)  enc frozen  9379s
+step  5400  loss 2.926  (floor-adjusted 0.940, real point 3.880)  enc frozen  9530s
+step  5500  loss 3.228  (floor-adjusted 1.103, real point 1.614)  enc frozen  9683s
+step  5600  loss 3.056  (floor-adjusted 0.811, real point 2.412)  enc frozen  9837s
+step  5700  loss 2.582  (floor-adjusted 0.769, real point 2.046)  enc frozen  9990s
+step  5800  loss 2.551  (floor-adjusted 0.978, real point 2.784)  enc frozen  10149s
+step  5900  loss 2.768  (floor-adjusted 0.991, real point 2.359)  enc frozen  10304s
+step  6000  loss 2.444  (floor-adjusted 0.872, real point 2.276)  enc frozen  10466s
+step  6100  loss 2.343  (floor-adjusted 0.749, real point 1.673)  enc frozen  10619s
+step  6200  loss 3.241  (floor-adjusted 1.142, real point 1.610)  enc frozen  10801s
+step  6300  loss 2.601  (floor-adjusted 0.873, real point 1.463)  enc frozen  10987s
+step  6400  loss 2.771  (floor-adjusted 0.782, real point 2.129)  enc frozen  11173s
+step  6500  loss 2.553  (floor-adjusted 0.779, real point 2.788)  enc frozen  11362s
+step  6600  loss 2.623  (floor-adjusted 0.617, real point 1.656)  enc frozen  11543s
+step  6700  loss 2.596  (floor-adjusted 0.894, real point 1.380)  enc frozen  11717s
+step  6800  loss 2.383  (floor-adjusted 0.738, real point 2.165)  enc frozen  11902s
+step  6900  loss 2.546  (floor-adjusted 0.633, real point 2.207)  enc frozen  12090s
+step  7000  loss 2.803  (floor-adjusted 0.795, real point 1.370)  enc frozen  12271s
+step  7100  loss 2.576  (floor-adjusted 0.699, real point 1.275)  enc frozen  12429s
+step  7200  loss 2.393  (floor-adjusted 0.714, real point 1.534)  enc frozen  12584s
+step  7300  loss 2.174  (floor-adjusted 0.583, real point 2.056)  enc frozen  12784s
+step  7400  loss 2.904  (floor-adjusted 0.779, real point 2.334)  enc frozen  12974s
+step  7500  loss 2.631  (floor-adjusted 0.782, real point 1.796)  enc frozen  13147s
+step  7600  loss 3.039  (floor-adjusted 0.694, real point 1.651)  enc frozen  13314s
+step  7700  loss 2.877  (floor-adjusted 0.669, real point 2.284)  enc frozen  13479s
+step  7800  loss 2.804  (floor-adjusted 0.868, real point 2.155)  enc frozen  13643s
+step  7900  loss 2.540  (floor-adjusted 0.799, real point 2.234)  enc frozen  13806s
+step  8000  loss 2.768  (floor-adjusted 0.750, real point 2.159)  enc frozen  13964s
+step  8100  loss 2.527  (floor-adjusted 0.803, real point 1.230)  enc frozen  14119s
+step  8200  loss 2.408  (floor-adjusted 0.633, real point 1.813)  enc frozen  14275s
+step  8300  loss 2.439  (floor-adjusted 0.596, real point 1.691)  enc frozen  14426s
+step  8400  loss 2.713  (floor-adjusted 0.938, real point 2.211)  enc frozen  14576s
+step  8500  loss 2.538  (floor-adjusted 0.743, real point 2.131)  enc frozen  14731s
+step  8600  loss 2.584  (floor-adjusted 0.819, real point 1.707)  enc frozen  14880s
+step  8700  loss 2.469  (floor-adjusted 0.834, real point 2.244)  enc frozen  15031s
+step  8800  loss 2.593  (floor-adjusted 0.538, real point 2.349)  enc frozen  15188s
+step  8900  loss 2.986  (floor-adjusted 0.819, real point 1.837)  enc frozen  15343s
+step  9000  loss 2.176  (floor-adjusted 0.640, real point 1.254)  enc frozen  15672s
+step  9100  loss 2.598  (floor-adjusted 0.755, real point 1.518)  enc frozen  15857s
+step  9200  loss 2.869  (floor-adjusted 0.884, real point 1.424)  enc frozen  16036s
+step  9300  loss 2.489  (floor-adjusted 0.559, real point 1.862)  enc frozen  16225s
+step  9400  loss 2.555  (floor-adjusted 0.522, real point 2.452)  enc frozen  16406s
+step  9500  loss 2.884  (floor-adjusted 0.866, real point 1.927)  enc frozen  16589s
+step  9600  loss 2.605  (floor-adjusted 0.604, real point 2.013)  enc frozen  16773s
+step  9700  loss 2.162  (floor-adjusted 0.713, real point 1.660)  enc frozen  16954s
+step  9800  loss 2.305  (floor-adjusted 0.594, real point 1.421)  enc frozen  17121s
+step  9900  loss 2.940  (floor-adjusted 1.001, real point 1.592)  enc frozen  17275s
+step 10000  loss 2.578  (floor-adjusted 0.767, real point 2.122)  enc frozen  17457s
+[ 18216s] evaluating on 20 held-out rows
+== step 10000: held-out completion 56.7% of moves correct, 0% of files with no wrong move, validation loss 2.070 (floor-adjusted 0.579) (13 files)
+  example: partial tree given (open lines end in …):
+    | from __future__ import …
+  the model's completion (temperature 0.2, parses):
+    | from __future__ import absolute_import
+    | from __future__ import division
+    | from __future__ import absolute_import
+    | from tensorflow . python . ops import ops
+    | from __future__ import print_function
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . framework import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . framework import ops
+    | from tensorflow . python . framework import ops
+    | from __future__ import absolute_import
+    | from tensorflow . python . ops import ops
+    | from __future__ import division
+    | from __future__ import print_function
+    | from tensorflow . python . framework import ops
+    | from tensorflow . python . ops import ops
+    | from tensorflow . python . ops import ops
+    | from __future__ import print_function
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 18257s] checkpoint saved to pretrain.pt (step 10000)
+step 10100  loss 2.384  (floor-adjusted 0.692, real point 1.609)  enc frozen  17686s
+step 10200  loss 2.823  (floor-adjusted 0.844, real point 2.396)  enc frozen  17856s
+step 10300  loss 2.736  (floor-adjusted 0.678, real point 2.057)  enc frozen  18026s
+step 10400  loss 2.541  (floor-adjusted 0.498, real point 1.856)  enc frozen  18188s
+step 10500  loss 2.505  (floor-adjusted 0.774, real point 2.222)  enc frozen  18359s
+step 10600  loss 2.071  (floor-adjusted 0.509, real point 1.847)  enc frozen  18521s
+step 10700  loss 2.284  (floor-adjusted 0.601, real point 2.372)  enc frozen  18672s
+step 10800  loss 2.108  (floor-adjusted 0.545, real point 1.106)  enc frozen  18827s
+step 10900  loss 2.241  (floor-adjusted 0.662, real point 2.483)  enc frozen  18974s
+step 11000  loss 2.828  (floor-adjusted 0.666, real point 2.889)  enc frozen  19123s
+step 11100  loss 2.796  (floor-adjusted 0.699, real point 1.881)  enc frozen  19281s
+step 11200  loss 2.523  (floor-adjusted 0.719, real point 2.103)  enc frozen  19431s
+step 11300  loss 2.692  (floor-adjusted 0.788, real point 1.224)  enc frozen  19579s
+step 11400  loss 2.668  (floor-adjusted 0.932, real point 1.521)  enc frozen  19733s
+step 11500  loss 3.028  (floor-adjusted 0.834, real point 2.271)  enc frozen  19891s
+step 11600  loss 2.400  (floor-adjusted 0.584, real point 1.318)  enc frozen  20041s
+step 11700  loss 2.432  (floor-adjusted 0.356, real point 2.145)  enc frozen  20232s
+step 11800  loss 2.168  (floor-adjusted 0.679, real point 1.864)  enc frozen  20414s
+step 11900  loss 2.585  (floor-adjusted 0.625, real point 1.461)  enc frozen  20601s
+step 12000  loss 2.919  (floor-adjusted 0.637, real point 1.513)  enc frozen  20792s
+step 12100  loss 2.768  (floor-adjusted 0.848, real point 1.762)  enc frozen  20969s
+step 12200  loss 2.470  (floor-adjusted 0.625, real point 2.225)  enc frozen  21145s
+step 12300  loss 3.080  (floor-adjusted 0.851, real point 1.070)  enc frozen  21320s
+step 12400  loss 2.527  (floor-adjusted 0.621, real point 2.048)  enc frozen  21503s
+step 12500  loss 3.257  (floor-adjusted 0.930, real point 2.648)  enc frozen  21684s
+step 12600  loss 2.541  (floor-adjusted 0.778, real point 1.974)  enc frozen  21845s
+step 12700  loss 2.698  (floor-adjusted 0.757, real point 2.220)  enc frozen  22006s
+step 12800  loss 2.260  (floor-adjusted 0.557, real point 1.659)  enc frozen  22209s
+step 12900  loss 2.676  (floor-adjusted 0.542, real point 1.634)  enc frozen  22395s
+step 13000  loss 2.461  (floor-adjusted 0.732, real point 1.710)  enc frozen  22564s
+step 13100  loss 2.236  (floor-adjusted 0.686, real point 1.872)  enc frozen  22740s
+step 13200  loss 2.795  (floor-adjusted 0.789, real point 2.346)  enc frozen  22914s
+step 13300  loss 2.746  (floor-adjusted 0.504, real point 1.930)  enc frozen  23205s
+step 13400  loss 2.481  (floor-adjusted 0.415, real point 2.153)  enc frozen  23373s
+step 13500  loss 2.720  (floor-adjusted 0.727, real point 1.904)  enc frozen  23559s
+step 13600  loss 2.928  (floor-adjusted 0.543, real point 3.035)  enc frozen  23747s
+step 13700  loss 2.228  (floor-adjusted 0.453, real point 1.869)  enc frozen  23931s
+step 13800  loss 2.605  (floor-adjusted 0.535, real point 1.602)  enc frozen  24136s
+step 13900  loss 2.655  (floor-adjusted 0.615, real point 2.576)  enc frozen  24316s
+step 14000  loss 2.610  (floor-adjusted 0.582, real point 2.077)  enc frozen  24492s
+step 14100  loss 2.853  (floor-adjusted 0.778, real point 1.291)  enc frozen  24647s
+step 14200  loss 2.524  (floor-adjusted 0.724, real point 1.312)  enc frozen  24818s
+step 14300  loss 2.376  (floor-adjusted 0.309, real point 1.413)  enc frozen  24982s
+step 14400  loss 2.601  (floor-adjusted 0.602, real point 1.921)  enc frozen  25164s
+step 14500  loss 2.497  (floor-adjusted 0.542, real point 1.455)  enc frozen  25350s
+step 14600  loss 2.618  (floor-adjusted 0.467, real point 2.416)  enc frozen  25531s
+step 14700  loss 2.706  (floor-adjusted 0.666, real point 1.899)  enc frozen  25717s
+step 14800  loss 2.463  (floor-adjusted 0.656, real point 0.934)  enc frozen  25903s
+step 14900  loss 2.672  (floor-adjusted 0.546, real point 2.194)  enc frozen  26086s
+step 15000  loss 2.602  (floor-adjusted 0.626, real point 1.057)  enc frozen  26268s
+[ 27027s] evaluating on 20 held-out rows
+== step 15000: held-out completion 59.2% of moves correct, 0% of files with no wrong move, validation loss 1.968 (floor-adjusted 0.478) (13 files)
+  example: partial tree given (open lines end in …):
+    | from __future__ import …
+  the model's completion (temperature 0.2, doesn't parse):
+    | from __future__ import unicode_literals
+    | from __future__ import absolute_import
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import unicode_literals
+    | from __future__ import absolute_import
+    | from __future__ import unicode_literals
+    | from __future__ import print_function
+    | from __future__ import absolute_import
+    | from __future__ import print_function
+    | from __future__ import unicode_literals
+    | from __future__ import absolute_import
+    | from __future__ import unicode_literals
+    | from __future__ import absolute_import
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import print_function
+    | from __future__ import division
+    | from __future__ import
+    | from __future__ import print_function
+    | from __future__ import division
+    | from __future__ import absolute_import
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import absolute_import
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import unicode_literals
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import absolute_import
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import print_function
+    | from __future__ import print_function
+    | from __future__ import division
+    | from __future__ import unicode_literals
+    | from __future__ import print_function
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import absolute_import
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import print_function
+    | from __future__ import unicode_literals
+    | from __future__ import unicode_literals
+    | from __future__ import absolute_import
+    | from __future__ import unicode_literals
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import absolute_import
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import print_function
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import print_function
+    | from __future__ import absolute_import
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import print_function
+    | from __future__ import absolute_import
+    | from __future__ import unicode_literals
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import print_function
+    | from __future__ import division
+    | from __future__ import absolute_import
+    | from __future__ import print_function
+    | from __future__ import print_function
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import print_function
+    | from __future__ import print_function
+    | from __future__ import print_function
+    | from __future__ import unicode_literals
+    | from __future__ import print_function
+    | from __future__ import absolute_import
+    | from __future__ import print_function
+    | from __future__ import print_function
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import absolute_import
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import unicode_literals
+    | from __future__ import unicode_literals
+    | from __future__ import print_function
+    | from __future__ import unicode_literals
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import absolute_import
+    | from __future__ import print_function
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import print_function
+    | from __future__ import unicode_literals
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import print_function
+    | from __future__ import division
+    | from __future__ import unicode_literals
+    | from __future__ import unicode_literals
+    | from __future__ import unicode_literals
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import unicode_literals
+    | from __future__ import print_function
+    | from __future__ import absolute_import
+    | from __future__ import print_function
+    | from __future__ import absolute_import
+    | from __future__ import division
+    | from __future__ import absolute_import
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import division
+    | from __future__ import unicode_literals
+    | from __future__ import unicode_literals
+    | from __future__ import absolute_import
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import unicode_literals
+    | from __future__ import unicode_literals
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import absolute_import
+    | from __future__ import absolute_import
+    | from __future__ import absolute_import
+    | from __future__ import print_function
+    | from __future__ import absolute_import
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import unicode_literals
+    | from __future__ import print_function
+    | from __future__ import division
+    | from __future__ import unicode_literals
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import unicode_literals
+    | from __future__ import division
+    | from __future__ import absolute_import
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import division
+    | from __future__ import absolute_import
+    | from __future__ import division
+    | from __future__ import absolute_import
+    | from __future__ import absolute_import
+    | from __future__ import print_function
+    | from __future__ import print_function
+    | from __future__ import print_function
+    | from __future__ import print_function
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import division
+    | from __future__ import print_function
+    | from __future__ import unicode_literals
+    | from __future__ import division
+    | from __future__ import unicode_literals
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 27066s] checkpoint saved to pretrain.pt (step 15000)
+step 15100  loss 2.625  (floor-adjusted 0.633, real point 2.100)  enc frozen  26486s
+step 15200  loss 2.718  (floor-adjusted 0.750, real point 1.507)  enc frozen  26664s
+step 15300  loss 2.582  (floor-adjusted 0.711, real point 2.795)  enc frozen  26846s
+step 15400  loss 2.832  (floor-adjusted 0.759, real point 2.498)  enc frozen  27011s
+step 15500  loss 2.131  (floor-adjusted 0.278, real point 1.900)  enc frozen  27187s
+step 15600  loss 2.355  (floor-adjusted 0.644, real point 2.080)  enc frozen  27376s
+step 15700  loss 2.431  (floor-adjusted 0.627, real point 1.959)  enc frozen  27553s
+step 15800  loss 2.014  (floor-adjusted 0.450, real point 1.591)  enc frozen  27724s
+step 15900  loss 2.003  (floor-adjusted 0.317, real point 2.024)  enc frozen  27903s
+step 16000  loss 2.250  (floor-adjusted 0.600, real point 1.081)  enc frozen  28067s
+step 16100  loss 2.161  (floor-adjusted 0.698, real point 1.281)  enc frozen  28232s
+step 16200  loss 2.544  (floor-adjusted 0.710, real point 2.651)  enc frozen  28388s
+step 16300  loss 2.379  (floor-adjusted 0.460, real point 1.442)  enc frozen  28544s
+step 16400  loss 2.827  (floor-adjusted 0.552, real point 2.654)  enc frozen  28700s
+step 16500  loss 2.629  (floor-adjusted 0.616, real point 1.889)  enc frozen  28852s
+step 16600  loss 2.279  (floor-adjusted 0.518, real point 1.976)  enc frozen  29013s
+step 16700  loss 2.162  (floor-adjusted 0.542, real point 2.411)  enc frozen  29181s
+step 16800  loss 2.311  (floor-adjusted 0.451, real point 1.480)  enc frozen  29338s
+step 16900  loss 2.289  (floor-adjusted 0.413, real point 2.688)  enc frozen  29496s
+step 17000  loss 2.740  (floor-adjusted 0.642, real point 1.891)  enc frozen  29653s
+step 17100  loss 2.361  (floor-adjusted 0.583, real point 1.970)  enc frozen  29802s
+step 17200  loss 2.518  (floor-adjusted 0.720, real point 1.483)  enc frozen  29956s
+step 17300  loss 2.466  (floor-adjusted 0.667, real point 2.031)  enc frozen  30135s
+step 17400  loss 2.096  (floor-adjusted 0.330, real point 1.734)  enc frozen  30317s
+step 17500  loss 2.991  (floor-adjusted 0.721, real point 1.472)  enc frozen  30497s
+step 17600  loss 1.981  (floor-adjusted 0.437, real point 1.177)  enc frozen  30834s
+step 17700  loss 2.172  (floor-adjusted 0.742, real point 2.122)  enc frozen  31036s
+step 17800  loss 2.841  (floor-adjusted 0.767, real point 1.473)  enc frozen  31231s
+step 17900  loss 2.304  (floor-adjusted 0.519, real point 1.694)  enc frozen  31448s
+step 18000  loss 2.139  (floor-adjusted 0.529, real point 1.753)  enc frozen  31659s
+step 18100  loss 2.599  (floor-adjusted 0.365, real point 2.315)  enc frozen  31867s
+step 18200  loss 2.561  (floor-adjusted 0.521, real point 1.755)  enc frozen  32066s
+step 18300  loss 2.446  (floor-adjusted 0.555, real point 1.665)  enc frozen  32255s
+step 18400  loss 2.572  (floor-adjusted 0.632, real point 1.622)  enc frozen  32442s
+step 18500  loss 2.405  (floor-adjusted 0.520, real point 1.486)  enc frozen  32653s
+step 18600  loss 2.370  (floor-adjusted 0.597, real point 1.883)  enc frozen  32896s
+step 18700  loss 2.594  (floor-adjusted 0.505, real point 1.028)  enc frozen  33116s
+step 18800  loss 2.474  (floor-adjusted 0.710, real point 1.884)  enc frozen  33332s
+step 18900  loss 2.212  (floor-adjusted 0.465, real point 2.288)  enc frozen  33551s
+step 19000  loss 2.344  (floor-adjusted 0.669, real point 1.235)  enc frozen  33774s
+step 19100  loss 2.268  (floor-adjusted 0.401, real point 2.252)  enc frozen  33999s
+step 19200  loss 2.563  (floor-adjusted 0.629, real point 1.586)  enc frozen  34210s
+step 19300  loss 2.048  (floor-adjusted 0.472, real point 1.551)  enc frozen  34408s
+step 19400  loss 2.365  (floor-adjusted 0.493, real point 1.645)  enc frozen  34573s
+step 19500  loss 1.863  (floor-adjusted 0.519, real point 0.980)  enc frozen  34723s
+step 19600  loss 2.300  (floor-adjusted 0.462, real point 2.417)  enc frozen  34873s
+step 19700  loss 2.486  (floor-adjusted 0.413, real point 2.474)  enc frozen  35028s
+step 19800  loss 2.325  (floor-adjusted 0.272, real point 2.084)  enc frozen  35178s
+step 19900  loss 2.335  (floor-adjusted 0.396, real point 1.890)  enc frozen  35333s
+step 20000  loss 2.217  (floor-adjusted 0.632, real point 2.311)  enc frozen  35482s
+[ 36241s] evaluating on 20 held-out rows
+== step 20000: held-out completion 60.5% of moves correct, 0% of files with no wrong move, validation loss 1.917 (floor-adjusted 0.426) (13 files)
+  example: partial tree given (open lines end in …):
+    | from __future__ import …
+  the model's completion (temperature 0.2, doesn't parse):
+    | from __future__ import print_function
+    | from . . utils import _
+    | from __future__ import print_function
+    | from __future__ import division
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import _
+    | from . . utils import
+    | from . . utils import
+    | from . . utils import
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 36268s] checkpoint saved to pretrain.pt (step 20000)
+step 20100  loss 2.219  (floor-adjusted 0.286, real point 2.205)  enc frozen  35658s
+step 20200  loss 2.515  (floor-adjusted 0.548, real point 2.468)  enc frozen  35812s
+step 20300  loss 2.506  (floor-adjusted 0.561, real point 1.581)  enc frozen  35965s
+step 20400  loss 2.301  (floor-adjusted 0.640, real point 2.047)  enc frozen  36118s
+step 20500  loss 2.531  (floor-adjusted 0.411, real point 1.787)  enc frozen  36274s
+step 20600  loss 2.355  (floor-adjusted 0.536, real point 1.919)  enc frozen  36455s
+step 20700  loss 2.415  (floor-adjusted 0.487, real point 1.581)  enc frozen  36628s
+step 20800  loss 2.312  (floor-adjusted 0.484, real point 1.435)  enc frozen  36806s
+step 20900  loss 2.706  (floor-adjusted 0.493, real point 2.087)  enc frozen  36992s
+step 21000  loss 2.017  (floor-adjusted 0.307, real point 1.167)  enc frozen  37163s
+step 21100  loss 2.491  (floor-adjusted 0.489, real point 1.655)  enc frozen  37336s
+step 21200  loss 2.611  (floor-adjusted 0.490, real point 1.761)  enc frozen  37511s
+step 21300  loss 2.636  (floor-adjusted 0.547, real point 2.045)  enc frozen  37691s
+step 21400  loss 2.339  (floor-adjusted 0.545, real point 1.893)  enc frozen  37869s
+step 21500  loss 2.662  (floor-adjusted 0.485, real point 1.996)  enc frozen  38035s
+step 21600  loss 2.538  (floor-adjusted 0.505, real point 1.852)  enc frozen  38188s
+step 21700  loss 2.096  (floor-adjusted 0.379, real point 1.393)  enc frozen  38364s
+step 21800  loss 2.543  (floor-adjusted 0.583, real point 1.915)  enc frozen  38543s
+step 21900  loss 2.028  (floor-adjusted 0.426, real point 2.198)  enc frozen  38834s
+step 22000  loss 2.548  (floor-adjusted 0.525, real point 3.336)  enc frozen  38997s
+step 22100  loss 1.891  (floor-adjusted 0.388, real point 0.877)  enc frozen  39167s
+step 22200  loss 2.784  (floor-adjusted 0.666, real point 1.039)  enc frozen  39331s
+step 22300  loss 2.442  (floor-adjusted 0.571, real point 2.127)  enc frozen  39487s
+step 22400  loss 2.449  (floor-adjusted 0.368, real point 2.036)  enc frozen  39641s
+step 22500  loss 2.626  (floor-adjusted 0.454, real point 1.712)  enc frozen  39789s
+step 22600  loss 2.408  (floor-adjusted 0.363, real point 2.104)  enc frozen  39946s
+step 22700  loss 2.404  (floor-adjusted 0.567, real point 1.513)  enc frozen  40102s
+step 22800  loss 2.289  (floor-adjusted 0.510, real point 3.306)  enc frozen  40256s
+step 22900  loss 2.228  (floor-adjusted 0.553, real point 1.207)  enc frozen  40402s
+step 23000  loss 2.422  (floor-adjusted 0.559, real point 1.591)  enc frozen  40555s
+step 23100  loss 2.851  (floor-adjusted 0.646, real point 1.538)  enc frozen  40706s
+step 23200  loss 2.294  (floor-adjusted 0.376, real point 1.952)  enc frozen  40861s
+step 23300  loss 2.656  (floor-adjusted 0.486, real point 2.006)  enc frozen  41021s
+step 23400  loss 2.520  (floor-adjusted 0.738, real point 1.498)  enc frozen  41198s
+step 23500  loss 2.299  (floor-adjusted 0.442, real point 1.865)  enc frozen  41378s
+step 23600  loss 2.066  (floor-adjusted 0.430, real point 1.643)  enc frozen  41562s
+step 23700  loss 2.189  (floor-adjusted 0.604, real point 2.369)  enc frozen  41737s
+step 23800  loss 2.549  (floor-adjusted 0.489, real point 2.043)  enc frozen  41914s
+step 23900  loss 2.578  (floor-adjusted 0.505, real point 2.515)  enc frozen  42098s
+step 24000  loss 2.696  (floor-adjusted 0.456, real point 2.517)  enc frozen  42276s
+step 24100  loss 2.673  (floor-adjusted 0.688, real point 1.994)  enc frozen  42452s
+step 24200  loss 2.121  (floor-adjusted 0.303, real point 2.129)  enc frozen  42632s
+step 24300  loss 2.212  (floor-adjusted 0.563, real point 1.900)  enc frozen  42786s
+step 24400  loss 2.230  (floor-adjusted 0.390, real point 1.159)  enc frozen  42943s
+step 24500  loss 2.597  (floor-adjusted 0.573, real point 1.778)  enc frozen  43113s
+step 24600  loss 2.453  (floor-adjusted 0.534, real point 1.450)  enc frozen  43304s
+step 24700  loss 2.235  (floor-adjusted 0.330, real point 1.906)  enc frozen  43468s
+step 24800  loss 1.983  (floor-adjusted 0.566, real point 1.283)  enc frozen  43638s
+step 24900  loss 2.139  (floor-adjusted 0.500, real point 0.842)  enc frozen  43800s
+step 25000  loss 2.664  (floor-adjusted 0.360, real point 2.401)  enc frozen  43965s
+[ 44724s] evaluating on 20 held-out rows
+== step 25000: held-out completion 61.9% of moves correct, 0% of files with no wrong move, validation loss 1.865 (floor-adjusted 0.375) (13 files)
+  example: partial tree given (open lines end in …):
+    | from __future__ import …
+  the model's completion (temperature 0.2, parses):
+    | from __future__ import absolute_import
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import array_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 44757s] checkpoint saved to pretrain.pt (step 25000)
+step 25100  loss 2.079  (floor-adjusted 0.421, real point 1.830)  enc frozen  44166s
+step 25200  loss 2.105  (floor-adjusted 0.500, real point 1.029)  enc frozen  44316s
+step 25300  loss 2.572  (floor-adjusted 0.479, real point 1.371)  enc frozen  44465s
+step 25400  loss 2.444  (floor-adjusted 0.596, real point 1.523)  enc frozen  44618s
+step 25500  loss 2.197  (floor-adjusted 0.182, real point 1.970)  enc frozen  44772s
+step 25600  loss 1.997  (floor-adjusted 0.171, real point 0.895)  enc frozen  44925s
+step 25700  loss 2.134  (floor-adjusted 0.328, real point 2.296)  enc frozen  45072s
+step 25800  loss 2.382  (floor-adjusted 0.516, real point 3.036)  enc frozen  45225s
+step 25900  loss 2.396  (floor-adjusted 0.545, real point 1.283)  enc frozen  45379s
+step 26000  loss 2.203  (floor-adjusted 0.279, real point 2.114)  enc frozen  45532s
+step 26100  loss 2.031  (floor-adjusted 0.134, real point 1.926)  enc frozen  45686s
+step 26200  loss 2.587  (floor-adjusted 0.684, real point 2.243)  enc frozen  46007s
+step 26300  loss 2.565  (floor-adjusted 0.467, real point 1.455)  enc frozen  46186s
+step 26400  loss 2.586  (floor-adjusted 0.594, real point 1.437)  enc frozen  46361s
+step 26500  loss 2.038  (floor-adjusted 0.435, real point 1.249)  enc frozen  46538s
+step 26600  loss 1.686  (floor-adjusted 0.366, real point 1.585)  enc frozen  46716s
+step 26700  loss 2.081  (floor-adjusted 0.210, real point 3.334)  enc frozen  46900s
+step 26800  loss 2.319  (floor-adjusted 0.325, real point 1.995)  enc frozen  47089s
+step 26900  loss 2.390  (floor-adjusted 0.538, real point 1.825)  enc frozen  47267s
+step 27000  loss 2.111  (floor-adjusted 0.048, real point 1.649)  enc frozen  47437s
+step 27100  loss 2.301  (floor-adjusted 0.477, real point 1.449)  enc frozen  47595s
+step 27200  loss 2.467  (floor-adjusted 0.492, real point 2.359)  enc frozen  47759s
+step 27300  loss 2.442  (floor-adjusted 0.438, real point 3.055)  enc frozen  47942s
+step 27400  loss 2.345  (floor-adjusted 0.435, real point 2.314)  enc frozen  48119s
+step 27500  loss 2.400  (floor-adjusted 0.297, real point 1.883)  enc frozen  48290s
+step 27600  loss 2.367  (floor-adjusted 0.244, real point 1.555)  enc frozen  48461s
+step 27700  loss 2.388  (floor-adjusted 0.283, real point 1.233)  enc frozen  48629s
+step 27800  loss 2.678  (floor-adjusted 0.388, real point 1.283)  enc frozen  48794s
+step 27900  loss 2.159  (floor-adjusted 0.428, real point 2.447)  enc frozen  48955s
+step 28000  loss 2.546  (floor-adjusted 0.337, real point 2.051)  enc frozen  49114s
+step 28100  loss 2.374  (floor-adjusted 0.464, real point 2.466)  enc frozen  49265s
+step 28200  loss 2.321  (floor-adjusted 0.529, real point 1.108)  enc frozen  49425s
+step 28300  loss 2.720  (floor-adjusted 0.399, real point 1.623)  enc frozen  49579s
+step 28400  loss 2.515  (floor-adjusted 0.290, real point 2.005)  enc frozen  49728s
+step 28500  loss 2.065  (floor-adjusted 0.370, real point 1.467)  enc frozen  49885s
+step 28600  loss 1.973  (floor-adjusted 0.396, real point 2.026)  enc frozen  50039s
+step 28700  loss 2.763  (floor-adjusted 0.710, real point 1.974)  enc frozen  50191s
+step 28800  loss 2.172  (floor-adjusted 0.593, real point 1.276)  enc frozen  50348s
+step 28900  loss 2.074  (floor-adjusted 0.249, real point 2.034)  enc frozen  50495s
+step 29000  loss 2.069  (floor-adjusted 0.464, real point 1.404)  enc frozen  50658s
+step 29100  loss 2.191  (floor-adjusted 0.557, real point 2.228)  enc frozen  50839s
+step 29200  loss 2.427  (floor-adjusted 0.550, real point 1.304)  enc frozen  51020s
+step 29300  loss 2.395  (floor-adjusted 0.411, real point 2.355)  enc frozen  51193s
+step 29400  loss 2.074  (floor-adjusted 0.480, real point 1.643)  enc frozen  51372s
+step 29500  loss 2.287  (floor-adjusted 0.352, real point 1.976)  enc frozen  51556s
+step 29600  loss 2.238  (floor-adjusted 0.278, real point 1.071)  enc frozen  51736s
+step 29700  loss 2.135  (floor-adjusted 0.385, real point 2.231)  enc frozen  51918s
+step 29800  loss 2.625  (floor-adjusted 0.561, real point 2.120)  enc frozen  52091s
+step 29900  loss 2.427  (floor-adjusted 0.517, real point 1.346)  enc frozen  52267s
+step 30000  loss 2.445  (floor-adjusted 0.627, real point 1.150)  enc frozen  52421s
+[ 53180s] evaluating on 20 held-out rows
+== step 30000: held-out completion 62.2% of moves correct, 0% of files with no wrong move, validation loss 1.816 (floor-adjusted 0.325) (13 files)
+  example: partial tree given (open lines end in …):
+    | from __future__ import …
+  the model's completion (temperature 0.2, doesn't parse):
+    | from __future__ import absolute_import
+    | from __future__ import print_function
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from __future__ import absolute_import
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops
+    | from tensorflow . python . ops import math_ops
+    | from __future__ import division
+    | from __future__ import absolute_import
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 53207s] checkpoint saved to pretrain.pt (step 30000)
+step 30100  loss 1.968  (floor-adjusted 0.469, real point 2.850)  enc frozen  52626s
+step 30200  loss 2.192  (floor-adjusted 0.394, real point 1.953)  enc frozen  52815s
+step 30300  loss 2.082  (floor-adjusted 0.435, real point 1.775)  enc frozen  52977s
+step 30400  loss 2.529  (floor-adjusted 0.576, real point 1.726)  enc frozen  53139s
+step 30500  loss 2.565  (floor-adjusted 0.588, real point 1.933)  enc frozen  53426s
+step 30600  loss 1.996  (floor-adjusted 0.145, real point 1.789)  enc frozen  53588s
+step 30700  loss 2.207  (floor-adjusted 0.316, real point 1.825)  enc frozen  53749s
+step 30800  loss 2.149  (floor-adjusted 0.555, real point 1.539)  enc frozen  53904s
+step 30900  loss 2.516  (floor-adjusted 0.607, real point 2.087)  enc frozen  54058s
+step 31000  loss 2.263  (floor-adjusted 0.380, real point 1.952)  enc frozen  54205s
+step 31100  loss 2.678  (floor-adjusted 0.445, real point 1.717)  enc frozen  54353s
+step 31200  loss 2.350  (floor-adjusted 0.201, real point 2.058)  enc frozen  54503s
+step 31300  loss 2.334  (floor-adjusted 0.350, real point 1.264)  enc frozen  54658s
+step 31400  loss 2.134  (floor-adjusted 0.464, real point 2.406)  enc frozen  54803s
+step 31500  loss 1.947  (floor-adjusted 0.342, real point 1.061)  enc frozen  54958s
+step 31600  loss 2.116  (floor-adjusted 0.212, real point 1.657)  enc frozen  55128s
+step 31700  loss 2.640  (floor-adjusted 0.502, real point 1.712)  enc frozen  55303s
+step 31800  loss 2.313  (floor-adjusted 0.382, real point 1.888)  enc frozen  55493s
+step 31900  loss 1.956  (floor-adjusted 0.339, real point 2.038)  enc frozen  55717s
+step 32000  loss 2.279  (floor-adjusted 0.429, real point 1.812)  enc frozen  55932s
+step 32100  loss 1.750  (floor-adjusted -0.058, real point 0.993)  enc frozen  56153s
+step 32200  loss 2.044  (floor-adjusted 0.145, real point 1.409)  enc frozen  56371s
+step 32300  loss 1.892  (floor-adjusted 0.325, real point 1.516)  enc frozen  56578s
+step 32400  loss 2.104  (floor-adjusted 0.409, real point 1.688)  enc frozen  56787s
+step 32500  loss 2.364  (floor-adjusted 0.228, real point 1.072)  enc frozen  57018s
+step 32600  loss 2.434  (floor-adjusted 0.525, real point 1.966)  enc frozen  57234s
+step 32700  loss 2.248  (floor-adjusted 0.370, real point 2.040)  enc frozen  57447s
+step 32800  loss 2.210  (floor-adjusted 0.391, real point 1.826)  enc frozen  57660s
+step 32900  loss 2.575  (floor-adjusted 0.459, real point 2.914)  enc frozen  57861s
+step 33000  loss 2.299  (floor-adjusted 0.335, real point 1.791)  enc frozen  58059s
+step 33100  loss 2.123  (floor-adjusted 0.372, real point 1.274)  enc frozen  58235s
+step 33200  loss 2.284  (floor-adjusted 0.322, real point 2.037)  enc frozen  58394s
+step 33300  loss 2.096  (floor-adjusted 0.044, real point 1.365)  enc frozen  58581s
+step 33400  loss 2.266  (floor-adjusted 0.366, real point 1.586)  enc frozen  58791s
+step 33500  loss 2.475  (floor-adjusted 0.380, real point 2.082)  enc frozen  58994s
+step 33600  loss 2.250  (floor-adjusted 0.227, real point 1.566)  enc frozen  59174s
+step 33700  loss 2.348  (floor-adjusted 0.489, real point 1.450)  enc frozen  59342s
+step 33800  loss 2.372  (floor-adjusted 0.369, real point 2.414)  enc frozen  59526s
+step 33900  loss 1.970  (floor-adjusted 0.313, real point 1.075)  enc frozen  59703s
+step 34000  loss 2.386  (floor-adjusted 0.368, real point 2.420)  enc frozen  59872s
+step 34100  loss 2.257  (floor-adjusted 0.301, real point 1.897)  enc frozen  60045s
+step 34200  loss 2.805  (floor-adjusted 0.596, real point 1.576)  enc frozen  60209s
+step 34300  loss 2.674  (floor-adjusted 0.518, real point 2.133)  enc frozen  60386s
+step 34400  loss 2.491  (floor-adjusted 0.354, real point 2.221)  enc frozen  60575s
+step 34500  loss 2.410  (floor-adjusted 0.488, real point 1.792)  enc frozen  60756s
+step 34600  loss 2.415  (floor-adjusted 0.480, real point 1.593)  enc frozen  60938s
+step 34700  loss 2.274  (floor-adjusted 0.505, real point 1.352)  enc frozen  61236s
+step 34800  loss 2.463  (floor-adjusted 0.417, real point 1.510)  enc frozen  61437s
+step 34900  loss 2.241  (floor-adjusted 0.499, real point 1.623)  enc frozen  61623s
+step 35000  loss 2.496  (floor-adjusted 0.291, real point 1.248)  enc frozen  61814s
+[ 62573s] evaluating on 20 held-out rows
+== step 35000: held-out completion 63.0% of moves correct, 0% of files with no wrong move, validation loss 1.792 (floor-adjusted 0.301) (13 files)
+  example: partial tree given (open lines end in …):
+    | from __future__ import …
+  the model's completion (temperature 0.2, doesn't parse):
+    | from __future__ import
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from tensorflow
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . python .
+    | from
+    | from
+    | from
+    | from tensorflow . python . ops import
+    | from
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import
+    | from
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . python . ops import
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import
+    | from tensorflow . python . ops
+    | from
+    | from tensorflow . python . ops import
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python .
+    | from
+    | from
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from
+    | from
+    | from
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import
+    | from
+    | from
+    | from tensorflow . python . ops import
+    | from
+    | from
+    | from tensorflow . python . ops import
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+    | from tensorflow . python . ops import math_ops
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 62617s] checkpoint saved to pretrain.pt (step 35000)
+step 35100  loss 2.246  (floor-adjusted 0.188, real point 1.622)  enc frozen  62088s
+step 35200  loss 2.066  (floor-adjusted 0.272, real point 1.763)  enc frozen  62298s
+step 35300  loss 2.309  (floor-adjusted 0.478, real point 2.136)  enc frozen  62512s
+step 35400  loss 2.906  (floor-adjusted 0.673, real point 1.818)  enc frozen  62729s
+step 35500  loss 2.178  (floor-adjusted 0.195, real point 2.072)  enc frozen  62938s
+step 35600  loss 2.754  (floor-adjusted 0.704, real point 1.118)  enc frozen  63147s
+step 35700  loss 2.175  (floor-adjusted 0.420, real point 1.991)  enc frozen  63351s
+step 35800  loss 2.084  (floor-adjusted 0.550, real point 1.917)  enc frozen  63571s
+step 35900  loss 2.210  (floor-adjusted 0.531, real point 1.712)  enc frozen  63796s
+step 36000  loss 2.483  (floor-adjusted 0.259, real point 1.687)  enc frozen  64017s
+step 36100  loss 2.266  (floor-adjusted 0.315, real point 1.721)  enc frozen  64218s
+step 36200  loss 2.419  (floor-adjusted 0.575, real point 1.163)  enc frozen  64414s
+step 36300  loss 2.256  (floor-adjusted 0.439, real point 2.131)  enc frozen  64628s
+step 36400  loss 2.488  (floor-adjusted 0.450, real point 1.651)  enc frozen  64857s
+step 36500  loss 2.393  (floor-adjusted 0.367, real point 1.571)  enc frozen  65102s
+step 36600  loss 2.056  (floor-adjusted 0.186, real point 1.470)  enc frozen  65346s
+step 36700  loss 2.475  (floor-adjusted 0.541, real point 1.937)  enc frozen  65582s
+step 36800  loss 2.625  (floor-adjusted 0.479, real point 0.986)  enc frozen  65824s
+step 36900  loss 2.407  (floor-adjusted 0.335, real point 3.854)  enc frozen  66059s
+step 37000  loss 2.601  (floor-adjusted 0.390, real point 1.724)  enc frozen  66299s
+step 37100  loss 2.191  (floor-adjusted 0.338, real point 1.437)  enc frozen  66543s
+step 37200  loss 2.571  (floor-adjusted 0.496, real point 1.751)  enc frozen  66779s
+step 37300  loss 2.218  (floor-adjusted 0.393, real point 1.969)  enc frozen  66993s
+step 37400  loss 2.278  (floor-adjusted 0.414, real point 2.253)  enc frozen  67184s
+step 37500  loss 2.701  (floor-adjusted 0.578, real point 1.609)  enc frozen  67344s
+step 37600  loss 2.161  (floor-adjusted 0.421, real point 1.759)  enc frozen  67515s
+step 37700  loss 2.139  (floor-adjusted 0.423, real point 1.843)  enc frozen  67681s
+step 37800  loss 2.475  (floor-adjusted 0.478, real point 0.837)  enc frozen  67851s
+step 37900  loss 2.218  (floor-adjusted 0.314, real point 1.874)  enc frozen  68028s
+step 38000  loss 2.366  (floor-adjusted 0.448, real point 1.977)  enc frozen  68198s
+step 38100  loss 2.180  (floor-adjusted 0.265, real point 1.949)  enc frozen  68364s
+step 38200  loss 2.246  (floor-adjusted 0.263, real point 1.635)  enc frozen  68538s
+step 38300  loss 2.760  (floor-adjusted 0.504, real point 2.593)  enc frozen  68726s
+step 38400  loss 1.948  (floor-adjusted 0.215, real point 1.178)  enc frozen  68911s
+step 38500  loss 2.266  (floor-adjusted 0.249, real point 1.116)  enc frozen  69096s
+step 38600  loss 1.928  (floor-adjusted 0.216, real point 1.907)  enc frozen  69288s
+step 38700  loss 2.256  (floor-adjusted 0.292, real point 1.582)  enc frozen  69477s
+step 38800  loss 2.343  (floor-adjusted 0.375, real point 1.877)  enc frozen  69645s
+step 38900  loss 2.341  (floor-adjusted 0.187, real point 1.164)  enc frozen  69832s
+step 39000  loss 2.293  (floor-adjusted 0.266, real point 2.284)  enc frozen  70160s
+step 39100  loss 2.079  (floor-adjusted 0.105, real point 1.688)  enc frozen  70336s
+step 39200  loss 2.339  (floor-adjusted 0.347, real point 1.586)  enc frozen  70513s
+step 39300  loss 2.409  (floor-adjusted 0.431, real point 2.098)  enc frozen  70676s
+step 39400  loss 1.572  (floor-adjusted 0.142, real point 1.781)  enc frozen  70847s
+step 39500  loss 1.976  (floor-adjusted 0.209, real point 1.352)  enc frozen  71036s
+step 39600  loss 2.270  (floor-adjusted 0.424, real point 1.631)  enc frozen  71233s
+step 39700  loss 2.174  (floor-adjusted 0.228, real point 1.180)  enc frozen  71411s
+step 39800  loss 2.121  (floor-adjusted 0.331, real point 2.209)  enc frozen  71586s
+step 39900  loss 2.300  (floor-adjusted 0.196, real point 2.005)  enc frozen  71751s
+step 40000  loss 1.887  (floor-adjusted -0.014, real point 1.281)  enc frozen  71921s
+[ 72680s] evaluating on 20 held-out rows
+== step 40000: held-out completion 63.8% of moves correct, 0% of files with no wrong move, validation loss 1.767 (floor-adjusted 0.277) (13 files)
+  example: partial tree given (open lines end in …):
+    | from __future__ import …
+  the model's completion (temperature 0.2, doesn't parse):
+    | from __future__ import
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib . learn . python .
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from tensorflow .
+    | from .
+    | from
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from tensorflow . contrib . learn .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib . learn .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib . learn .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow .
+    | from tensorflow . contrib .
+    | from tensorflow
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from tensorflow . contrib . learn .
+    | from
+    | from tensorflow .
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from tensorflow . contrib . learn .
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib . learn . python .
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from tensorflow . contrib . learn .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib . learn .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 72720s] checkpoint saved to pretrain.pt (step 40000)
+step 40100  loss 2.460  (floor-adjusted 0.298, real point 1.724)  enc frozen  72136s
+step 40200  loss 2.401  (floor-adjusted 0.483, real point 1.577)  enc frozen  72301s
+step 40300  loss 2.230  (floor-adjusted 0.438, real point 2.872)  enc frozen  72463s
+step 40400  loss 2.174  (floor-adjusted 0.211, real point 1.394)  enc frozen  72636s
+step 40500  loss 2.374  (floor-adjusted 0.252, real point 1.636)  enc frozen  72808s
+step 40600  loss 2.059  (floor-adjusted 0.244, real point 1.351)  enc frozen  72979s
+step 40700  loss 1.875  (floor-adjusted 0.289, real point 1.510)  enc frozen  73145s
+step 40800  loss 2.128  (floor-adjusted 0.267, real point 1.726)  enc frozen  73319s
+step 40900  loss 2.170  (floor-adjusted 0.314, real point 1.230)  enc frozen  73495s
+step 41000  loss 1.879  (floor-adjusted 0.146, real point 1.774)  enc frozen  73673s
+step 41100  loss 1.893  (floor-adjusted 0.444, real point 1.861)  enc frozen  73849s
+step 41200  loss 1.950  (floor-adjusted 0.277, real point 1.398)  enc frozen  74020s
+step 41300  loss 2.122  (floor-adjusted 0.422, real point 1.753)  enc frozen  74196s
+step 41400  loss 2.092  (floor-adjusted 0.437, real point 1.250)  enc frozen  74390s
+step 41500  loss 1.919  (floor-adjusted 0.413, real point 1.770)  enc frozen  74585s
+step 41600  loss 2.476  (floor-adjusted 0.432, real point 1.860)  enc frozen  74779s
+step 41700  loss 2.211  (floor-adjusted 0.390, real point 1.587)  enc frozen  74961s
+step 41800  loss 2.473  (floor-adjusted 0.285, real point 1.943)  enc frozen  75151s
+step 41900  loss 1.993  (floor-adjusted 0.180, real point 1.554)  enc frozen  75323s
+step 42000  loss 2.410  (floor-adjusted 0.433, real point 0.928)  enc frozen  75502s
+step 42100  loss 2.695  (floor-adjusted 0.420, real point 2.058)  enc frozen  75684s
+step 42200  loss 1.870  (floor-adjusted 0.427, real point 1.649)  enc frozen  75869s
+step 42300  loss 2.340  (floor-adjusted 0.258, real point 1.573)  enc frozen  76056s
+step 42400  loss 2.335  (floor-adjusted 0.326, real point 1.756)  enc frozen  76229s
+step 42500  loss 1.911  (floor-adjusted 0.184, real point 1.307)  enc frozen  76399s
+step 42600  loss 1.895  (floor-adjusted 0.053, real point 1.384)  enc frozen  76592s
+step 42700  loss 2.114  (floor-adjusted 0.415, real point 2.250)  enc frozen  76788s
+step 42800  loss 2.032  (floor-adjusted 0.324, real point 1.370)  enc frozen  76983s
+step 42900  loss 2.447  (floor-adjusted 0.454, real point 2.601)  enc frozen  77181s
+step 43000  loss 2.228  (floor-adjusted 0.437, real point 1.928)  enc frozen  77384s
+step 43100  loss 2.306  (floor-adjusted 0.292, real point 2.213)  enc frozen  77576s
+step 43200  loss 2.067  (floor-adjusted 0.343, real point 1.779)  enc frozen  77764s
+step 43300  loss 1.867  (floor-adjusted 0.130, real point 1.377)  enc frozen  78107s
+step 43400  loss 2.253  (floor-adjusted 0.312, real point 1.785)  enc frozen  78272s
+step 43500  loss 2.029  (floor-adjusted 0.190, real point 2.402)  enc frozen  78437s
+step 43600  loss 2.076  (floor-adjusted 0.209, real point 1.382)  enc frozen  78601s
+step 43700  loss 1.831  (floor-adjusted 0.221, real point 2.170)  enc frozen  78769s
+step 43800  loss 2.565  (floor-adjusted 0.401, real point 1.266)  enc frozen  78940s
+step 43900  loss 2.342  (floor-adjusted 0.444, real point 1.372)  enc frozen  79112s
+step 44000  loss 2.174  (floor-adjusted 0.448, real point 1.175)  enc frozen  79272s
+step 44100  loss 1.884  (floor-adjusted 0.313, real point 0.975)  enc frozen  79443s
+step 44200  loss 2.259  (floor-adjusted 0.302, real point 1.943)  enc frozen  79624s
+step 44300  loss 1.887  (floor-adjusted 0.293, real point 1.974)  enc frozen  79787s
+step 44400  loss 2.431  (floor-adjusted 0.461, real point 1.085)  enc frozen  79957s
+step 44500  loss 2.059  (floor-adjusted 0.030, real point 2.482)  enc frozen  80132s
+step 44600  loss 2.375  (floor-adjusted 0.503, real point 2.274)  enc frozen  80313s
+step 44700  loss 2.170  (floor-adjusted 0.407, real point 1.462)  enc frozen  80501s
+step 44800  loss 2.242  (floor-adjusted 0.176, real point 2.023)  enc frozen  80677s
+step 44900  loss 2.357  (floor-adjusted 0.332, real point 2.698)  enc frozen  80851s
+step 45000  loss 1.974  (floor-adjusted 0.250, real point 2.372)  enc frozen  81032s
+[ 81790s] evaluating on 20 held-out rows
+== step 45000: held-out completion 63.4% of moves correct, 0% of files with no wrong move, validation loss 1.762 (floor-adjusted 0.271) (13 files)
+  example: partial tree given (open lines end in …):
+    | from __future__ import …
+  the model's completion (temperature 0.2, doesn't parse):
+    | from __future__ import
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from .
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from .
+    | from .
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from .
+    | from .
+    | from .
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from .
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from
+    | from
+    | from .
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from .
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from .
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from .
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from .
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 81837s] checkpoint saved to pretrain.pt (step 45000)
+step 45100  loss 2.261  (floor-adjusted 0.332, real point 1.732)  enc frozen  81253s
+step 45200  loss 2.207  (floor-adjusted 0.120, real point 2.292)  enc frozen  81426s
+step 45300  loss 2.100  (floor-adjusted 0.193, real point 2.151)  enc frozen  81610s
+step 45400  loss 2.029  (floor-adjusted 0.125, real point 2.024)  enc frozen  81788s
+step 45500  loss 2.286  (floor-adjusted 0.404, real point 1.793)  enc frozen  81953s
+step 45600  loss 2.469  (floor-adjusted 0.258, real point 1.646)  enc frozen  82127s
+step 45700  loss 2.089  (floor-adjusted 0.419, real point 1.826)  enc frozen  82304s
+step 45800  loss 1.903  (floor-adjusted 0.103, real point 1.143)  enc frozen  82489s
+step 45900  loss 2.300  (floor-adjusted 0.108, real point 1.969)  enc frozen  82681s
+step 46000  loss 1.993  (floor-adjusted 0.285, real point 1.293)  enc frozen  82857s
+step 46100  loss 2.193  (floor-adjusted 0.523, real point 2.878)  enc frozen  83040s
+step 46200  loss 2.364  (floor-adjusted 0.374, real point 1.966)  enc frozen  83224s
+step 46300  loss 1.611  (floor-adjusted 0.109, real point 0.952)  enc frozen  83402s
+step 46400  loss 2.255  (floor-adjusted 0.267, real point 1.030)  enc frozen  83585s
+step 46500  loss 2.305  (floor-adjusted 0.294, real point 2.110)  enc frozen  83745s
+step 46600  loss 2.088  (floor-adjusted 0.391, real point 1.069)  enc frozen  83915s
+step 46700  loss 2.699  (floor-adjusted 0.403, real point 1.786)  enc frozen  84079s
+step 46800  loss 2.535  (floor-adjusted 0.170, real point 1.611)  enc frozen  84253s
+step 46900  loss 2.334  (floor-adjusted 0.379, real point 1.601)  enc frozen  84424s
+step 47000  loss 1.782  (floor-adjusted 0.254, real point 1.129)  enc frozen  84592s
+step 47100  loss 2.212  (floor-adjusted 0.309, real point 1.226)  enc frozen  84758s
+step 47200  loss 2.030  (floor-adjusted 0.346, real point 2.338)  enc frozen  84917s
+step 47300  loss 2.397  (floor-adjusted 0.433, real point 1.762)  enc frozen  85088s
+step 47400  loss 2.359  (floor-adjusted 0.273, real point 1.680)  enc frozen  85260s
+step 47500  loss 2.192  (floor-adjusted 0.246, real point 2.586)  enc frozen  85424s
+step 47600  loss 2.072  (floor-adjusted 0.316, real point 1.126)  enc frozen  85746s
+step 47700  loss 1.910  (floor-adjusted 0.359, real point 2.066)  enc frozen  85934s
+step 47800  loss 2.352  (floor-adjusted 0.304, real point 1.848)  enc frozen  86117s
+step 47900  loss 1.969  (floor-adjusted 0.106, real point 1.197)  enc frozen  86302s
+step 48000  loss 1.990  (floor-adjusted 0.454, real point 2.136)  enc frozen  86489s
+step 48100  loss 2.326  (floor-adjusted 0.490, real point 1.523)  enc frozen  86672s
+step 48200  loss 2.412  (floor-adjusted 0.332, real point 2.749)  enc frozen  86857s
+step 48300  loss 2.627  (floor-adjusted 0.354, real point 1.713)  enc frozen  87033s
+step 48400  loss 2.103  (floor-adjusted 0.215, real point 1.556)  enc frozen  87218s
+step 48500  loss 1.938  (floor-adjusted 0.363, real point 1.373)  enc frozen  87403s
+step 48600  loss 2.098  (floor-adjusted 0.339, real point 1.455)  enc frozen  87555s
+step 48700  loss 2.116  (floor-adjusted 0.208, real point 3.019)  enc frozen  87712s
+step 48800  loss 2.126  (floor-adjusted 0.252, real point 2.024)  enc frozen  87864s
+step 48900  loss 2.566  (floor-adjusted 0.430, real point 1.569)  enc frozen  88019s
+step 49000  loss 1.934  (floor-adjusted 0.162, real point 1.929)  enc frozen  88176s
+step 49100  loss 2.422  (floor-adjusted 0.487, real point 1.564)  enc frozen  88333s
+step 49200  loss 1.962  (floor-adjusted 0.152, real point 1.312)  enc frozen  88482s
+step 49300  loss 2.024  (floor-adjusted 0.293, real point 2.308)  enc frozen  88640s
+step 49400  loss 2.324  (floor-adjusted 0.277, real point 2.038)  enc frozen  88798s
+step 49500  loss 2.200  (floor-adjusted 0.346, real point 1.965)  enc frozen  88953s
+step 49600  loss 2.222  (floor-adjusted 0.339, real point 2.457)  enc frozen  89115s
+step 49700  loss 2.667  (floor-adjusted 0.445, real point 1.858)  enc frozen  89276s
+step 49800  loss 2.334  (floor-adjusted 0.352, real point 3.193)  enc frozen  89432s
+step 49900  loss 1.948  (floor-adjusted 0.434, real point 1.997)  enc frozen  89584s
+step 50000  loss 2.209  (floor-adjusted 0.280, real point 2.102)  enc frozen  89744s
+[ 90503s] evaluating on 20 held-out rows
+== step 50000: held-out completion 64.0% of moves correct, 0% of files with no wrong move, validation loss 1.751 (floor-adjusted 0.260) (13 files)
+  example: partial tree given (open lines end in …):
+    | from __future__ import …
+  the model's completion (temperature 0.2, doesn't parse):
+    | from __future__ import
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from .
+    | from .
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from .
+    | from .
+    | from .
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from .
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from .
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from .
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from .
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from .
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from .
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 90542s] checkpoint saved to pretrain.pt (step 50000)
+step 50100  loss 2.171  (floor-adjusted 0.349, real point 1.343)  enc frozen  89940s
+step 50200  loss 1.986  (floor-adjusted 0.052, real point 1.638)  enc frozen  90090s
+step 50300  loss 2.229  (floor-adjusted 0.222, real point 2.225)  enc frozen  90246s
+step 50400  loss 2.397  (floor-adjusted 0.431, real point 0.963)  enc frozen  90400s
+step 50500  loss 1.739  (floor-adjusted 0.207, real point 1.549)  enc frozen  90549s
+step 50600  loss 2.014  (floor-adjusted 0.458, real point 2.190)  enc frozen  90706s
+step 50700  loss 2.469  (floor-adjusted 0.417, real point 2.686)  enc frozen  90863s
+step 50800  loss 2.418  (floor-adjusted 0.496, real point 1.619)  enc frozen  91018s
+step 50900  loss 2.508  (floor-adjusted 0.330, real point 1.195)  enc frozen  91175s
+step 51000  loss 1.857  (floor-adjusted 0.035, real point 1.686)  enc frozen  91333s
+step 51100  loss 2.449  (floor-adjusted 0.326, real point 2.144)  enc frozen  91492s
+step 51200  loss 2.498  (floor-adjusted 0.461, real point 2.449)  enc frozen  91649s
+step 51300  loss 2.293  (floor-adjusted 0.234, real point 1.347)  enc frozen  91805s
+step 51400  loss 2.240  (floor-adjusted 0.259, real point 2.097)  enc frozen  91963s
+step 51500  loss 2.445  (floor-adjusted 0.379, real point 1.311)  enc frozen  92122s
+step 51600  loss 2.321  (floor-adjusted 0.305, real point 1.455)  enc frozen  92278s
+step 51700  loss 2.252  (floor-adjusted 0.271, real point 1.858)  enc frozen  92433s
+step 51800  loss 1.754  (floor-adjusted 0.244, real point 1.491)  enc frozen  92584s
+step 51900  loss 2.529  (floor-adjusted 0.232, real point 1.996)  enc frozen  92858s
+step 52000  loss 2.021  (floor-adjusted 0.404, real point 2.153)  enc frozen  93012s
+step 52100  loss 2.345  (floor-adjusted 0.416, real point 1.820)  enc frozen  93173s
+step 52200  loss 2.144  (floor-adjusted 0.352, real point 2.210)  enc frozen  93327s
+step 52300  loss 2.508  (floor-adjusted 0.513, real point 1.578)  enc frozen  93493s
+step 52400  loss 2.351  (floor-adjusted 0.531, real point 2.288)  enc frozen  93648s
+step 52500  loss 1.845  (floor-adjusted 0.096, real point 1.512)  enc frozen  93810s
+step 52600  loss 2.505  (floor-adjusted 0.303, real point 1.497)  enc frozen  93971s
+step 52700  loss 2.138  (floor-adjusted 0.303, real point 1.525)  enc frozen  94124s
+step 52800  loss 2.279  (floor-adjusted 0.233, real point 1.678)  enc frozen  94287s
+step 52900  loss 2.059  (floor-adjusted 0.277, real point 1.769)  enc frozen  94445s
+step 53000  loss 1.856  (floor-adjusted 0.245, real point 1.326)  enc frozen  94602s
+step 53100  loss 2.046  (floor-adjusted 0.359, real point 1.749)  enc frozen  94762s
+step 53200  loss 2.237  (floor-adjusted 0.356, real point 2.132)  enc frozen  94918s
+step 53300  loss 2.144  (floor-adjusted 0.382, real point 1.569)  enc frozen  95074s
+step 53400  loss 3.111  (floor-adjusted 0.699, real point 2.345)  enc frozen  95234s
+step 53500  loss 2.118  (floor-adjusted 0.185, real point 1.610)  enc frozen  95390s
+step 53600  loss 2.287  (floor-adjusted 0.406, real point 1.854)  enc frozen  95549s
+step 53700  loss 2.151  (floor-adjusted 0.160, real point 2.280)  enc frozen  95712s
+step 53800  loss 2.012  (floor-adjusted 0.363, real point 1.998)  enc frozen  95864s
+step 53900  loss 1.656  (floor-adjusted 0.182, real point 1.761)  enc frozen  96028s
+step 54000  loss 2.400  (floor-adjusted 0.460, real point 2.295)  enc frozen  96189s
+step 54100  loss 2.083  (floor-adjusted 0.352, real point 2.760)  enc frozen  96354s
+step 54200  loss 2.077  (floor-adjusted 0.125, real point 1.624)  enc frozen  96519s
+step 54300  loss 2.256  (floor-adjusted 0.213, real point 2.066)  enc frozen  96681s
+step 54400  loss 2.067  (floor-adjusted 0.318, real point 1.986)  enc frozen  96837s
+step 54500  loss 2.294  (floor-adjusted 0.476, real point 2.060)  enc frozen  96997s
+step 54600  loss 2.210  (floor-adjusted 0.277, real point 1.311)  enc frozen  97153s
+step 54700  loss 2.365  (floor-adjusted 0.233, real point 1.618)  enc frozen  97314s
+step 54800  loss 2.144  (floor-adjusted 0.175, real point 1.309)  enc frozen  97474s
+step 54900  loss 2.057  (floor-adjusted 0.023, real point 1.778)  enc frozen  97629s
+step 55000  loss 1.967  (floor-adjusted 0.158, real point 1.557)  enc frozen  97791s
+[ 98550s] evaluating on 20 held-out rows
+== step 55000: held-out completion 63.8% of moves correct, 0% of files with no wrong move, validation loss 1.748 (floor-adjusted 0.258) (13 files)
+  example: partial tree given (open lines end in …):
+    | from __future__ import …
+  the model's completion (temperature 0.2, doesn't parse):
+    | from __future__ import
+    | from
+    | from __future__ import print_function
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow .
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow .
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+    | from
+    | from tensorflow . contrib .
+    | from
+    | from
+    | from
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 98583s] saving pretrain.pt
+saved pretrain.pt

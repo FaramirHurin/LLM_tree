@@ -1,0 +1,14 @@
+code: /home/daniele/LLM_tree/runs/fix1_staging/treecodegen/__init__.py
+[15:35:53] pass1, subset masks
+  moves correct:            68.0%  (correct moves / moves required, STOP included)
+  files with no wrong move: 0.0%
+[15:40:45] pass1, holes masks
+  moves correct:            69.4%  (correct moves / moves required, STOP included)
+  files with no wrong move: 0.0%
+[15:43:40] pass2_step25000, subset masks
+  moves correct:            69.3%  (correct moves / moves required, STOP included)
+  files with no wrong move: 0.0%
+[15:56:47] pass2_step25000, holes masks
+  moves correct:            71.4%  (correct moves / moves required, STOP included)
+  files with no wrong move: 0.0%
+[16:10:46] done

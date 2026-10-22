@@ -15,7 +15,7 @@ warnings.filterwarnings("ignore", category=SyntaxWarning)   # "\d" in non-raw st
 OUT = "Datasets/pretrain.jsonl"
 MAX_ENTRIES = 2048        # size cap: all tokens plus one per node (so at most MAX_ENTRIES / 2 nodes)
 MIN_NODES = 3             # skip empty or near-empty files (e.g. a bare __init__.py)
-LIMIT = 10_000            # files to keep before stopping (1_000_000 for the full run)
+LIMIT = 1_000_000            # files to keep before stopping (1_000_000 for the full run)
 
 
 def is_docstring(stmt):

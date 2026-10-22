@@ -1,0 +1,141 @@
+Evaluation of /home/daniele/LLM_tree/runs/early_eval/pass2_step25000.pt (2026-10-17 15:56)
+  step 25000 of 55000
+  resumed from pretrain_pass1.pt; trained with mix masks (holes share 0.7), 30% line-first
+  1,280,000 training sequences seen (batch 16, 880,000 of them before resuming) out of 883,932 training files: 1.45 epochs
+  training loss over the last 1000 steps before it: 2.011
+
+Completing 50 held-out files (skipping those over 1000 entries)
+
+Result on 38 held-out files (holes masks):
+  moves correct:            71.4%  (correct moves / moves required, STOP included)
+  files with no wrong move: 0.0%
+  validation loss:          1.622  (the training loss on these held-out files)
+  floor-adjusted:           0.276  (minus the floor from scoring only some valid moves; a perfect model gets about 0)
+
+Example completion (a held-out file; open lines end in …):
+  partial tree given to the model:
+    | from __future__ import absolute_import
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class <unk> ( Clock ) :
+    |     def __init__ ( self , <unk> ) :
+    |         self . <unk> = <unk>
+    |     @ property
+    |     def now ( self ) :
+    |         return self . <unk>
+    |     @ now . setter
+    |     def now ( self , <unk> ) :
+    |         assert <unk> >= self . <unk>
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the model's completion (temperature 0.0, no corrections):
+    | from __future__ import absolute_import
+    | from . . import <unk>
+    | from . . import <unk>
+    | from . . import <unk>
+    | from . . import <unk>
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class <unk> ( Clock ) :
+    |     def __init__ ( self , <unk> ) :
+    |         self . <unk> = <unk>
+    |     @ property
+    |     def now ( self ) :
+    |         return self . <unk>
+    |     @ now . setter
+    |     def now ( self , <unk> ) :
+    |         assert <unk> >= self . <unk>
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+
+Free sample from an empty tree (temperature 0.2):
+    | from django .
+    | from django .
+    | from django .
+    | from django .
+    | from django .
+    | from django . utils . translation import ugettext_lazy as _
+    | from
+    | from django .
+    | from django .
+    | from django .
+    | from
+    | from django .
+    | from django .
+    | from django .
+    | from django .
+    | from django .
+    | from django .
+    | from django .
+    | from django .
+    | from django .
+    | from django .
+    | from django .
+    | from
+    | from django .
+    | from
+    | from
+    | from django .
+    | from django . utils . translation import
+    | from django .
+    | from django
+    | from django .
+    | from
+    | from django .
+    | from django .
+    | from django .
+    | from django .
+    | from django .
+    | from django .
+    | from django .
+    | from django .
+    | from
+    | from django .
+    | from django .
+    | from django .
+    | from django . utils . translation import ugettext_lazy as _
+    | from django .
+    | from django .
+    | from django .
+    | from django .
+    | from
+    | from django .
+    | from django .
+    | from django .
+    | from django .
+    | from django .
+    | from django .
+    | from django .
+    | from django .
+    | from django .
+    | from django . utils . translation import ugettext_lazy as
+    | from django
+    | from django .
+    | from django .
+    | from django .

@@ -13,14 +13,22 @@ class Vocab:
         self.stoi = {t: i for i, t in enumerate(self.itos)}
 
     @classmethod
-    def build(cls, trees, min_freq=1):
+    def build(cls, trees, min_freq=1, max_size=None):
+        """Tokens seen at least min_freq times; with max_size, only the most frequent ones, so that the
+        vocabulary (the 4 special tokens included) has at most max_size entries. The rest become <unk>."""
         cnt = Counter()
         stack = list(trees)
         while stack:
             n = stack.pop()
             cnt.update(n.content)
             stack.extend(n.children)
-        return cls([PAD, UNK, ROOT, END] + sorted(t for t, c in cnt.items() if c >= min_freq))
+        specials = [PAD, UNK, ROOT, END]
+        kept = [t for t, c in cnt.items() if c >= min_freq]
+        if max_size is not None:
+            kept = sorted(kept, key=lambda t: (-cnt[t], t))[: max(0, max_size - len(specials))]
+        vocab = cls(specials + sorted(kept))
+        vocab.coverage = sum(cnt[t] for t in kept) / max(1, sum(cnt.values()))   # share of tokens not <unk>
+        return vocab
 
     def __len__(self):
         return len(self.itos)

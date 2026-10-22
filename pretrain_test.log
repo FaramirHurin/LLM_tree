@@ -1,0 +1,303 @@
+nohup: ignoring input
+[     0s] loading Datasets/pretrain_head.jsonl
+[    42s] loaded 100000 rows (95000 train, 5000 val)
+[    42s] building the code vocabulary (min-freq 1, max-vocab 40000)
+[    55s] code vocabulary: 40000 tokens, covering 89.9% of training tokens (the rest are <unk>)
+[    55s] building the prompt tokenizer
+[    55s] building the models
+[    57s] moving the models to cuda
+[    57s] converting trees to arrays
+[    88s] kept 88303 of 95000 training trees (dropped: a line longer than max-pos or more nodes than n-ids)
+train 88303  val 5000  code vocab 40000  prompt vocab 4  params enc 0.5M dec 140.2M
+[    88s] starting training: 200 steps, batch 8
+[    88s] first batch: building sequences
+[    89s] first batch: forward done (849 entries, 16126 moves), running backward
+[    89s] step 1 done (0.9s)
+[    90s] step 2 done (0.5s)
+[    90s] step 3 done (0.6s)
+[    91s] step 4 done (0.6s)
+[    92s] step 5 done (0.7s)
+[    92s] step 6 done (0.6s)
+[    93s] step 7 done (0.5s)
+[    93s] step 8 done (0.5s)
+[    94s] step 9 done (0.5s)
+[    94s] step 10 done (0.6s)
+step   100  loss 6.467  (real point 4.356)  enc frozen  56s
+[   144s] evaluating on 5 held-out rows
+  prompt: 
+    | from
+    | from
+    | from
+    |     def =
+    |         self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |     from =
+    |         self . . . . . .
+    |             self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |             self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                 self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                 self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                 self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                     self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                         self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                             self .
+    |                                 self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                                 self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |             self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                 self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                     self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |     from = .
+    |         return . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |             self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |         from . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    | from
+    | from
+  prompt: 
+    | from
+    | from
+    | from
+    |     def .
+    |     from
+    |         return
+    |         from .
+    |             self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |             from . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |             from . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                 if . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                 self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                 self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                     self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                         self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                         self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                     self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                         self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                             self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                                 self .
+    |                                     self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                     self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                 self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                 self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |     from
+  prompt: 
+    | from
+    |     def .
+    |         self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |             self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |             self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                 self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                     self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                     self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                     self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                         self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                             self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |                     self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |             self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |             self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |         self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |     from
+    |         return . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |             self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |             self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |     from
+    | from
+== step 100: held-out tree exact match 0.0%, parses 0.0%
+[   196s] checkpoint saved to pretrain_test.pt (step 100)
+step   200  loss 6.041  (real point 5.566)  enc frozen  165s
+[   253s] evaluating on 5 held-out rows
+  prompt: 
+    | from =
+    |     def
+    |     def
+    |         self .
+    |             self .
+    |                 self .
+    |                     self .
+    |                         self .
+    |                             self .
+    |                                 self .
+    |             self .
+    |                 self .
+    |                     self .
+    |                         self .
+    |                             self .
+    |                                 self .
+    |                                     self . self .
+    |                                         self . self .
+    |                                             self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                 self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                     self . self .
+    |                                                         self .
+    |                                                             self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    | from =
+    |     def
+    |         self .
+    |             self .
+    |     def
+    |         self .
+    |             self .
+    |         self .
+    |             self .
+    |                 self .
+    |                     self .
+    |                         self .
+    |                             self .
+    |                                 self .
+    |                                     self .
+    |                                         self .
+    |                                             self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                 self .
+    |                                                     self . self .
+    |                                                         self . self .
+    |                                                             self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                 self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                     self .
+    |                                                                         self .
+    |                                                                             self .
+    |                                                                                 self . self .
+    |                                                                                     self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                         self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                             self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                 self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                     self . self . self . self . self . self . self . self .
+    |                                                                                                         self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                             self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                                 self . self .
+    |                                                                                                         self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                             self . self .
+    |                                                                                                                 self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                                     self . self .
+    |                                 self .
+    | from =
+    |     def
+  prompt: 
+    | from =
+    |     def
+    |     def
+    |         self .
+    |             self .
+    |                 self .
+    |                     if = self .
+    |                 self .
+    |                     self .
+    |                         self .
+    |                             self .
+    |                                 self .
+    |                                     self .
+    |                                         self .
+    |                                             self .
+    |                                                 self .
+    |                                                     self .
+    |                                                         self .
+    |                                                             self .
+    |                                                                 self .
+    |                                                                     self .
+    |                                                                         self .
+    |                                                                             self .
+    |                                                                                 self .
+    |                                                                                     self .
+    |                                                                                         self .
+    |                                                                                             self .
+    |                                                                                                 self . self .
+    |                                                                                                     self . self .
+    |                                                                                                         self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                             self . self .
+    |                                                                                                                 self . self .
+    |                                                                                                                     self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                                         self .
+    |                                                                                                                             self .
+    |                                                                                                                                 self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                                                     self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                                                         self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                                                             self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                                                                 self .
+    |                                                                                                                                                     self .
+    |                                                                                                                                                         self .
+    |                                                                                                                                                             self .
+    |                                                                                                                                                                 self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                                                                                     self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                                                                                         self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                                                                                             self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                                                                                                 self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                                                                                                     self .
+    |                                                                                                                                                                                         self .
+    |                                                                                                                                                                                             self .
+    |                                                                                                                                                                                                 self .
+    |                                                                                                                                                                                                     self .
+    |                                                                                                                                                                                                         self .
+    |                                                                                                                                                                                                             self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                                                                                                                                 self .
+    |                                                                                                                                                                                                                     self .
+    |                                                                                                                                                                                                                         self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                                                                                                                                             self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                                                                                                                                                 self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                                                                                                                                                     self . self .
+    |     def
+    |         self .
+    | from =
+  prompt: 
+    | from .
+    |     def
+    |         self .
+    |             self .
+    |                 self .
+    |                     self .
+    |                         self . self .
+    |                             self . self .
+    |         self .
+    |             self .
+    |                 self .
+    |                     self .
+    |                         self .
+    |                             self .
+    |                                 self .
+    |                                     self .
+    |                                         self . self .
+    |                                             self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                 self . self . self .
+    |                                                     self .
+    |                                                         self .
+    |                                                             self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                 self .
+    |                                                                     self . self .
+    |                                                                         self .
+    |                                                                             self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                 self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                     self .
+    |                                                                                         self . self .
+    |                                                                                             self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self
+    |                                                                                                 self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                     self . self .
+    |                                                                                                         self . self .
+    |                                                                                                             self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                                 self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                                     self .
+    |                                                                         self . self .
+    |                                                                             self . self .
+    |                                                                                 self . self .
+    |                                                                                     self . self .
+    |                                                                                         self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                             self . self .
+    |                                                                                                 self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                     self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                         self .
+    |                                                                                                             self .
+    |                                                                                                                 self .
+    |                                                                                                                     self . self .
+    |                                                                                                                         self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                                             self . self .
+    |                                                                                                                                 self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                                                     self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                                                                                         self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self . self .
+    |                                                                     self .
+    |                                                                         self .
+    |                                                                             self .
+    |                                                                                 self .
+    |                                                                                     self .
+    |                                                                                         self .
+    |                                                                                             self . self .
+    |     def
+    |         self .
+    |         self .
+    |             self .
+== step 200: held-out tree exact match 0.0%, parses 0.0%
+[   306s] saving pretrain_test.pt
+saved pretrain_test.pt

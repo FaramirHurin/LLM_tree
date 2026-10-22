@@ -51,8 +51,8 @@ def main():
     torch.manual_seed(0); rng = random.Random(0)
     torch.set_num_threads(2)                                 # keep the laptop responsive
 
-    cfg = dict(bert=None, enc_hidden=64, enc_layers=1, d_model=128, layers=2, heads=2, dropout=0.1,
-               n_ids=a.max_nodes, k_slot=16, max_anc=2, max_pos=128, order="random")
+    cfg = dict(bert=None, enc_hidden=64, enc_layers=1, d_model=192, layers=2, heads=2, dropout=0.1,
+               n_ids=a.max_nodes, k_slot=16, max_anc=2, max_pos=128, max_depth=16, k_depth=16, order="random")
 
     trees = []
     with open(a.data) as f:
@@ -60,7 +60,8 @@ def main():
             nodes = json.loads(line)["code_tree"]
             n_tok = sum(len(n["content"]) for n in nodes)
             longest = max(len(n["content"]) for n in nodes)
-            if len(nodes) <= a.max_nodes and n_tok + 1 <= a.max_tokens and longest <= cfg["max_pos"]:
+            # entries: the root, then every token plus one <end> per line; a line's length includes its <end>
+            if len(nodes) <= a.max_nodes and n_tok + len(nodes) <= a.max_tokens and longest + 1 <= cfg["max_pos"]:
                 trees.append(nodes_to_tree(nodes))
     print(f"kept {len(trees)} of {a.rows} rows")
     if len(trees) < a.batch:
@@ -87,7 +88,7 @@ def main():
         with torch.no_grad():
             memory = enc(b["p_ids"], b["p_mask"])
         H = dec(b, memory, b["p_mask"] == 0)
-        loss, real = compute_loss(dec, H, b)
+        loss, real, _ = compute_loss(dec, H, b)
         opt.zero_grad(); loss.backward()
         torch.nn.utils.clip_grad_norm_(dec.parameters(), 1.0)
         opt.step()

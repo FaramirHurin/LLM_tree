@@ -1,0 +1,2918 @@
+[     0s] loading Datasets/pretrain.jsonl
+[   573s] loaded 1000000 rows (950000 train, 50000 val)
+[   573s] loading checkpoint pretrain_pass2.pt
+[   573s] taking the vocabulary from pretrain_pass2.pt
+[   573s] code vocabulary: 40000 tokens
+[   573s] building the prompt tokenizer
+[   573s] building the models
+models resumed from pretrain_pass2.pt (its step 55000); new optimizer, new learning-rate schedule
+[   577s] moving the models to cuda
+[   577s] converting trees to arrays
+[   965s] kept 883932 of 950000 training trees (dropped: a line longer than max-pos or more nodes than n-ids)
+train 883932  val 50000  code vocab 40000  prompt vocab 4  params enc 0.5M dec 140.2M
+[   965s] starting training: 55000 steps, batch 8 x 2 accumulated = 16 sequences per step
+[   966s] first batch: building sequences
+[   967s] first batch: forward done (1161 entries, 13734 moves), running backward
+[   968s] step 1 done (2.2s)
+[   970s] step 2 done (1.6s)
+[   971s] step 3 done (1.9s)
+[   973s] step 4 done (1.7s)
+[   974s] step 5 done (1.2s)
+[   975s] step 6 done (0.9s)
+[   977s] step 7 done (1.6s)
+[   979s] step 8 done (1.9s)
+[   980s] step 9 done (1.7s)
+[   982s] step 10 done (1.7s)
+step   100  loss 1.890  (floor-adjusted 0.202, real point 2.244)  enc frozen  160s
+step   200  loss 2.036  (floor-adjusted 0.483, real point 4.195)  enc frozen  330s
+step   300  loss 2.163  (floor-adjusted 0.490, real point 2.745)  enc frozen  505s
+step   400  loss 1.856  (floor-adjusted 0.335, real point 3.504)  enc frozen  819s
+step   500  loss 1.664  (floor-adjusted 0.208, real point 2.131)  enc frozen  986s
+step   600  loss 1.830  (floor-adjusted 0.368, real point 3.260)  enc frozen  1141s
+step   700  loss 2.258  (floor-adjusted 0.345, real point 3.204)  enc frozen  1283s
+step   800  loss 2.254  (floor-adjusted 0.531, real point 3.502)  enc frozen  1423s
+step   900  loss 1.902  (floor-adjusted 0.605, real point 2.640)  enc frozen  1589s
+step  1000  loss 1.913  (floor-adjusted 0.596, real point 3.120)  enc frozen  1755s
+step  1100  loss 1.719  (floor-adjusted 0.578, real point 2.975)  enc frozen  1918s
+step  1200  loss 1.727  (floor-adjusted 0.875, real point 2.727)  enc frozen  2075s
+step  1300  loss 1.991  (floor-adjusted 0.296, real point 2.490)  enc frozen  2234s
+step  1400  loss 2.228  (floor-adjusted 0.575, real point 3.770)  enc frozen  2395s
+step  1500  loss 1.930  (floor-adjusted 0.435, real point 2.938)  enc frozen  2552s
+step  1600  loss 2.018  (floor-adjusted 0.513, real point 3.545)  enc frozen  2708s
+step  1700  loss 1.747  (floor-adjusted 0.520, real point 2.636)  enc frozen  2851s
+step  1800  loss 1.821  (floor-adjusted 0.811, real point 3.254)  enc frozen  2990s
+step  1900  loss 1.813  (floor-adjusted 0.702, real point 2.027)  enc frozen  3131s
+step  2000  loss 1.735  (floor-adjusted 0.525, real point 2.876)  enc frozen  3278s
+step  2100  loss 2.221  (floor-adjusted 0.540, real point 3.176)  enc frozen  3425s
+step  2200  loss 1.812  (floor-adjusted 0.569, real point 1.918)  enc frozen  3568s
+step  2300  loss 1.790  (floor-adjusted 0.695, real point 2.396)  enc frozen  3712s
+step  2400  loss 1.796  (floor-adjusted 0.490, real point 2.715)  enc frozen  3853s
+step  2500  loss 1.729  (floor-adjusted 0.460, real point 4.535)  enc frozen  3991s
+step  2600  loss 1.798  (floor-adjusted 0.595, real point 2.320)  enc frozen  4132s
+step  2700  loss 1.625  (floor-adjusted 0.419, real point 2.595)  enc frozen  4282s
+step  2800  loss 2.189  (floor-adjusted 0.428, real point 3.262)  enc frozen  4454s
+step  2900  loss 2.035  (floor-adjusted 0.731, real point 2.059)  enc frozen  4623s
+step  3000  loss 1.882  (floor-adjusted 0.799, real point 2.382)  enc frozen  4791s
+step  3100  loss 1.843  (floor-adjusted 0.608, real point 2.283)  enc frozen  4959s
+step  3200  loss 2.152  (floor-adjusted 0.398, real point 2.838)  enc frozen  5127s
+step  3300  loss 1.843  (floor-adjusted 0.526, real point 2.520)  enc frozen  5298s
+step  3400  loss 1.952  (floor-adjusted 0.420, real point 2.617)  enc frozen  5462s
+step  3500  loss 2.310  (floor-adjusted 0.514, real point 4.073)  enc frozen  5638s
+step  3600  loss 2.087  (floor-adjusted 0.420, real point 4.069)  enc frozen  5805s
+step  3700  loss 1.772  (floor-adjusted 0.454, real point 2.365)  enc frozen  5972s
+step  3800  loss 2.130  (floor-adjusted 0.627, real point 3.774)  enc frozen  6120s
+step  3900  loss 2.459  (floor-adjusted 0.470, real point 3.482)  enc frozen  6263s
+step  4000  loss 1.817  (floor-adjusted 0.326, real point 3.149)  enc frozen  6427s
+step  4100  loss 1.797  (floor-adjusted 0.523, real point 3.047)  enc frozen  6591s
+step  4200  loss 2.319  (floor-adjusted 0.488, real point 2.074)  enc frozen  6752s
+step  4300  loss 2.114  (floor-adjusted 0.420, real point 2.297)  enc frozen  6912s
+step  4400  loss 1.602  (floor-adjusted 0.664, real point 2.253)  enc frozen  7078s
+step  4500  loss 1.952  (floor-adjusted 0.299, real point 2.939)  enc frozen  7246s
+step  4600  loss 2.085  (floor-adjusted 0.648, real point 2.535)  enc frozen  7410s
+step  4700  loss 2.337  (floor-adjusted 0.643, real point 4.008)  enc frozen  7699s
+step  4800  loss 2.177  (floor-adjusted 0.443, real point 3.436)  enc frozen  7847s
+step  4900  loss 1.814  (floor-adjusted 0.435, real point 1.531)  enc frozen  8001s
+step  5000  loss 2.141  (floor-adjusted 0.219, real point 3.223)  enc frozen  8154s
+[  9120s] evaluating on 50 held-out rows
+== step 5000 (subset masks): held-out completion 70.2% of moves correct, 0% of files with no wrong move, validation loss 1.757 (floor-adjusted 0.202) (38 files)
+== step 5000 (holes masks): held-out completion 72.2% of moves correct, 0% of files with no wrong move, validation loss 1.611 (floor-adjusted 0.265) (38 files)
+== step 5000 (deep masks): held-out completion 72.3% of moves correct, 0% of files with no wrong move, validation loss 1.606 (floor-adjusted 0.263) (38 files)
+  example (holes mask): partial tree given (open lines end in …):
+    | class <unk> ( Clock ) :
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the model's completion (temperature 0.2, doesn't parse):
+    | from <unk> . <unk> import <unk>
+    | class <unk> ( Clock ) :
+    |     def <unk> ( self , <unk> ) :
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         self . <unk> += <unk>
+    |         self . <unk> += <unk>
+    |     def <unk> ( self , <unk> ) :
+    |         self . <unk> += <unk>
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[  9276s] checkpoint saved to pretrain_pass3.pt (step 5000)
+step  5100  loss 2.217  (floor-adjusted 0.590, real point 2.599)  enc frozen  8459s
+step  5200  loss 1.803  (floor-adjusted 0.599, real point 2.212)  enc frozen  8607s
+step  5300  loss 2.426  (floor-adjusted 0.308, real point 3.095)  enc frozen  8751s
+step  5400  loss 2.108  (floor-adjusted 0.550, real point 3.642)  enc frozen  8894s
+step  5500  loss 2.095  (floor-adjusted 0.536, real point 3.190)  enc frozen  9041s
+step  5600  loss 2.003  (floor-adjusted 0.345, real point 2.887)  enc frozen  9186s
+step  5700  loss 1.926  (floor-adjusted 0.469, real point 3.501)  enc frozen  9331s
+step  5800  loss 1.849  (floor-adjusted 0.363, real point 2.933)  enc frozen  9506s
+step  5900  loss 1.964  (floor-adjusted 0.635, real point 3.463)  enc frozen  9681s
+step  6000  loss 1.754  (floor-adjusted 0.592, real point 2.624)  enc frozen  9857s
+step  6100  loss 1.518  (floor-adjusted 0.217, real point 3.986)  enc frozen  10030s
+step  6200  loss 2.014  (floor-adjusted 0.818, real point 2.814)  enc frozen  10200s
+step  6300  loss 1.887  (floor-adjusted 0.370, real point 5.381)  enc frozen  10370s
+step  6400  loss 2.256  (floor-adjusted 0.523, real point 2.402)  enc frozen  10541s
+step  6500  loss 2.109  (floor-adjusted 0.634, real point 2.020)  enc frozen  10716s
+step  6600  loss 1.892  (floor-adjusted 0.489, real point 3.496)  enc frozen  10890s
+step  6700  loss 1.961  (floor-adjusted 0.479, real point 3.104)  enc frozen  11058s
+step  6800  loss 1.638  (floor-adjusted 0.325, real point 2.581)  enc frozen  11224s
+step  6900  loss 2.010  (floor-adjusted 0.428, real point 3.299)  enc frozen  11380s
+step  7000  loss 2.170  (floor-adjusted 0.407, real point 2.157)  enc frozen  11554s
+step  7100  loss 2.049  (floor-adjusted 0.284, real point 3.083)  enc frozen  11738s
+step  7200  loss 1.951  (floor-adjusted 0.422, real point 2.401)  enc frozen  11922s
+step  7300  loss 1.920  (floor-adjusted 0.558, real point 3.160)  enc frozen  12106s
+step  7400  loss 2.177  (floor-adjusted 0.431, real point 2.712)  enc frozen  12297s
+step  7500  loss 1.872  (floor-adjusted 0.197, real point 3.768)  enc frozen  12481s
+step  7600  loss 2.718  (floor-adjusted 0.727, real point 2.623)  enc frozen  12659s
+step  7700  loss 2.050  (floor-adjusted 0.285, real point 3.892)  enc frozen  12823s
+step  7800  loss 2.529  (floor-adjusted 0.568, real point 2.816)  enc frozen  12964s
+step  7900  loss 2.108  (floor-adjusted 0.693, real point 1.784)  enc frozen  13109s
+step  8000  loss 1.799  (floor-adjusted 0.335, real point 3.835)  enc frozen  13257s
+step  8100  loss 2.023  (floor-adjusted 0.561, real point 2.487)  enc frozen  13399s
+step  8200  loss 1.626  (floor-adjusted 0.192, real point 1.935)  enc frozen  13544s
+step  8300  loss 1.851  (floor-adjusted 0.784, real point 2.138)  enc frozen  13683s
+step  8400  loss 1.785  (floor-adjusted 0.670, real point 2.694)  enc frozen  13821s
+step  8500  loss 2.202  (floor-adjusted 0.431, real point 2.881)  enc frozen  13967s
+step  8600  loss 1.902  (floor-adjusted 0.484, real point 2.374)  enc frozen  14106s
+step  8700  loss 1.511  (floor-adjusted 0.676, real point 3.194)  enc frozen  14248s
+step  8800  loss 1.663  (floor-adjusted 0.355, real point 2.812)  enc frozen  14403s
+step  8900  loss 1.914  (floor-adjusted 0.368, real point 3.559)  enc frozen  14568s
+step  9000  loss 1.825  (floor-adjusted 0.336, real point 1.614)  enc frozen  14893s
+step  9100  loss 1.879  (floor-adjusted 0.537, real point 3.250)  enc frozen  15059s
+step  9200  loss 2.305  (floor-adjusted 0.596, real point 3.479)  enc frozen  15224s
+step  9300  loss 1.747  (floor-adjusted 0.330, real point 3.178)  enc frozen  15396s
+step  9400  loss 2.414  (floor-adjusted 0.519, real point 2.967)  enc frozen  15564s
+step  9500  loss 2.154  (floor-adjusted 0.691, real point 3.712)  enc frozen  15732s
+step  9600  loss 2.009  (floor-adjusted 0.358, real point 2.894)  enc frozen  15902s
+step  9700  loss 1.638  (floor-adjusted 0.497, real point 3.125)  enc frozen  16053s
+step  9800  loss 2.198  (floor-adjusted 0.480, real point 2.549)  enc frozen  16202s
+step  9900  loss 1.998  (floor-adjusted 0.408, real point 4.432)  enc frozen  16357s
+step 10000  loss 1.678  (floor-adjusted 0.402, real point 2.572)  enc frozen  16510s
+[ 17476s] evaluating on 50 held-out rows
+== step 10000 (subset masks): held-out completion 69.7% of moves correct, 0% of files with no wrong move, validation loss 1.739 (floor-adjusted 0.183) (38 files)
+== step 10000 (holes masks): held-out completion 72.1% of moves correct, 0% of files with no wrong move, validation loss 1.605 (floor-adjusted 0.259) (38 files)
+== step 10000 (deep masks): held-out completion 73.2% of moves correct, 3% of files with no wrong move, validation loss 1.588 (floor-adjusted 0.245) (38 files)
+  example (holes mask): partial tree given (open lines end in …):
+    | class <unk> ( Clock ) :
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the model's completion (temperature 0.2, doesn't parse):
+    | class <unk> ( Clock ) :
+    |     def __init__ ( self ,
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 17644s] checkpoint saved to pretrain_pass3.pt (step 10000)
+step 10100  loss 1.826  (floor-adjusted 0.415, real point 3.580)  enc frozen  16831s
+step 10200  loss 2.055  (floor-adjusted 0.509, real point 2.157)  enc frozen  16987s
+step 10300  loss 2.101  (floor-adjusted 0.287, real point 2.992)  enc frozen  17145s
+step 10400  loss 2.067  (floor-adjusted 0.394, real point 4.636)  enc frozen  17296s
+step 10500  loss 1.722  (floor-adjusted 0.548, real point 3.071)  enc frozen  17444s
+step 10600  loss 2.047  (floor-adjusted 0.692, real point 4.339)  enc frozen  17585s
+step 10700  loss 1.927  (floor-adjusted 0.726, real point 2.364)  enc frozen  17723s
+step 10800  loss 1.782  (floor-adjusted 0.464, real point 2.010)  enc frozen  17866s
+step 10900  loss 1.905  (floor-adjusted 0.626, real point 2.495)  enc frozen  18004s
+step 11000  loss 2.281  (floor-adjusted 0.528, real point 3.070)  enc frozen  18143s
+step 11100  loss 2.212  (floor-adjusted 0.520, real point 2.707)  enc frozen  18289s
+step 11200  loss 1.860  (floor-adjusted 0.840, real point 2.945)  enc frozen  18430s
+step 11300  loss 2.288  (floor-adjusted 0.486, real point 2.765)  enc frozen  18569s
+step 11400  loss 1.989  (floor-adjusted 0.717, real point 2.547)  enc frozen  18713s
+step 11500  loss 2.021  (floor-adjusted 0.469, real point 2.942)  enc frozen  18861s
+step 11600  loss 2.137  (floor-adjusted 0.612, real point 2.262)  enc frozen  19017s
+step 11700  loss 2.256  (floor-adjusted 0.649, real point 3.782)  enc frozen  19184s
+step 11800  loss 1.826  (floor-adjusted 0.519, real point 2.259)  enc frozen  19351s
+step 11900  loss 1.970  (floor-adjusted 0.804, real point 2.651)  enc frozen  19523s
+step 12000  loss 2.120  (floor-adjusted 0.521, real point 3.342)  enc frozen  19699s
+step 12100  loss 2.223  (floor-adjusted 0.753, real point 2.871)  enc frozen  19862s
+step 12200  loss 2.151  (floor-adjusted 0.484, real point 3.417)  enc frozen  20022s
+step 12300  loss 2.026  (floor-adjusted 0.444, real point 2.445)  enc frozen  20182s
+step 12400  loss 2.192  (floor-adjusted 0.845, real point 3.079)  enc frozen  20351s
+step 12500  loss 2.268  (floor-adjusted 0.495, real point 3.051)  enc frozen  20514s
+step 12600  loss 1.817  (floor-adjusted 0.488, real point 4.213)  enc frozen  20661s
+step 12700  loss 1.959  (floor-adjusted 0.540, real point 2.517)  enc frozen  20810s
+step 12800  loss 2.040  (floor-adjusted 0.440, real point 2.338)  enc frozen  20967s
+step 12900  loss 2.272  (floor-adjusted 0.510, real point 2.935)  enc frozen  21128s
+step 13000  loss 1.890  (floor-adjusted 0.309, real point 2.886)  enc frozen  21280s
+step 13100  loss 1.726  (floor-adjusted 0.486, real point 2.526)  enc frozen  21446s
+step 13200  loss 1.758  (floor-adjusted 0.343, real point 1.997)  enc frozen  21605s
+step 13300  loss 2.063  (floor-adjusted 0.543, real point 2.489)  enc frozen  21766s
+step 13400  loss 2.386  (floor-adjusted 0.627, real point 3.571)  enc frozen  22024s
+step 13500  loss 1.755  (floor-adjusted 0.259, real point 3.105)  enc frozen  22162s
+step 13600  loss 2.465  (floor-adjusted 0.494, real point 2.348)  enc frozen  22302s
+step 13700  loss 1.687  (floor-adjusted 0.778, real point 2.725)  enc frozen  22441s
+step 13800  loss 2.044  (floor-adjusted 0.409, real point 3.977)  enc frozen  22587s
+step 13900  loss 2.276  (floor-adjusted 0.584, real point 3.683)  enc frozen  22728s
+step 14000  loss 1.943  (floor-adjusted 0.492, real point 3.463)  enc frozen  22878s
+step 14100  loss 2.299  (floor-adjusted 0.386, real point 4.149)  enc frozen  23021s
+step 14200  loss 1.788  (floor-adjusted 0.455, real point 2.552)  enc frozen  23166s
+step 14300  loss 2.112  (floor-adjusted 0.548, real point 3.325)  enc frozen  23309s
+step 14400  loss 2.548  (floor-adjusted 0.690, real point 1.637)  enc frozen  23455s
+step 14500  loss 1.922  (floor-adjusted 0.795, real point 2.386)  enc frozen  23618s
+step 14600  loss 1.848  (floor-adjusted 0.393, real point 2.309)  enc frozen  23779s
+step 14700  loss 2.028  (floor-adjusted 0.206, real point 2.504)  enc frozen  23950s
+step 14800  loss 2.216  (floor-adjusted 0.515, real point 3.836)  enc frozen  24118s
+step 14900  loss 2.440  (floor-adjusted 0.530, real point 2.793)  enc frozen  24286s
+step 15000  loss 1.853  (floor-adjusted 0.457, real point 3.322)  enc frozen  24452s
+[ 25417s] evaluating on 50 held-out rows
+== step 15000 (subset masks): held-out completion 70.4% of moves correct, 0% of files with no wrong move, validation loss 1.733 (floor-adjusted 0.178) (38 files)
+== step 15000 (holes masks): held-out completion 72.6% of moves correct, 0% of files with no wrong move, validation loss 1.586 (floor-adjusted 0.240) (38 files)
+== step 15000 (deep masks): held-out completion 73.4% of moves correct, 0% of files with no wrong move, validation loss 1.582 (floor-adjusted 0.239) (38 files)
+  example (holes mask): partial tree given (open lines end in …):
+    | class <unk> ( Clock ) :
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the model's completion (temperature 0.2, doesn't parse):
+    | from <unk> . <unk> import <unk>
+    | class <unk> ( Clock ) :
+    |     def __init__ ( self ,
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> =
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 25621s] checkpoint saved to pretrain_pass3.pt (step 15000)
+step 15100  loss 2.464  (floor-adjusted 0.578, real point 3.993)  enc frozen  24817s
+step 15200  loss 1.959  (floor-adjusted 0.623, real point 2.659)  enc frozen  24975s
+step 15300  loss 2.063  (floor-adjusted 0.513, real point 2.052)  enc frozen  25130s
+step 15400  loss 1.975  (floor-adjusted 0.302, real point 3.472)  enc frozen  25277s
+step 15500  loss 1.754  (floor-adjusted 0.142, real point 3.348)  enc frozen  25433s
+step 15600  loss 1.709  (floor-adjusted 0.430, real point 2.085)  enc frozen  25589s
+step 15700  loss 2.193  (floor-adjusted 0.725, real point 1.539)  enc frozen  25741s
+step 15800  loss 1.949  (floor-adjusted 0.547, real point 2.448)  enc frozen  25895s
+step 15900  loss 1.939  (floor-adjusted 0.645, real point 2.816)  enc frozen  26057s
+step 16000  loss 1.694  (floor-adjusted 0.415, real point 3.720)  enc frozen  26207s
+step 16100  loss 1.634  (floor-adjusted 0.576, real point 2.904)  enc frozen  26360s
+step 16200  loss 1.856  (floor-adjusted 0.339, real point 4.491)  enc frozen  26498s
+step 16300  loss 1.858  (floor-adjusted 0.181, real point 3.662)  enc frozen  26640s
+step 16400  loss 2.112  (floor-adjusted 0.290, real point 3.707)  enc frozen  26783s
+step 16500  loss 2.002  (floor-adjusted 0.547, real point 2.237)  enc frozen  26925s
+step 16600  loss 1.925  (floor-adjusted 0.332, real point 3.795)  enc frozen  27067s
+step 16700  loss 1.801  (floor-adjusted 0.419, real point 2.441)  enc frozen  27212s
+step 16800  loss 2.259  (floor-adjusted 0.422, real point 2.283)  enc frozen  27356s
+step 16900  loss 1.906  (floor-adjusted 0.757, real point 3.123)  enc frozen  27500s
+step 17000  loss 1.944  (floor-adjusted 0.319, real point 3.008)  enc frozen  27646s
+step 17100  loss 1.895  (floor-adjusted 0.503, real point 2.077)  enc frozen  27785s
+step 17200  loss 2.127  (floor-adjusted 0.561, real point 2.207)  enc frozen  27926s
+step 17300  loss 1.818  (floor-adjusted 0.558, real point 2.722)  enc frozen  28095s
+step 17400  loss 2.085  (floor-adjusted 0.418, real point 2.861)  enc frozen  28265s
+step 17500  loss 1.921  (floor-adjusted 0.664, real point 2.672)  enc frozen  28429s
+step 17600  loss 1.477  (floor-adjusted 0.479, real point 2.887)  enc frozen  28598s
+step 17700  loss 1.625  (floor-adjusted 0.504, real point 3.523)  enc frozen  28919s
+step 17800  loss 2.492  (floor-adjusted 0.614, real point 2.447)  enc frozen  29078s
+step 17900  loss 1.636  (floor-adjusted 0.859, real point 2.376)  enc frozen  29249s
+step 18000  loss 1.665  (floor-adjusted 0.609, real point 2.381)  enc frozen  29415s
+step 18100  loss 2.201  (floor-adjusted 0.493, real point 3.902)  enc frozen  29563s
+step 18200  loss 1.814  (floor-adjusted 0.111, real point 3.399)  enc frozen  29708s
+step 18300  loss 2.000  (floor-adjusted 0.624, real point 3.072)  enc frozen  29859s
+step 18400  loss 2.075  (floor-adjusted 0.374, real point 3.130)  enc frozen  30016s
+step 18500  loss 1.641  (floor-adjusted 0.374, real point 3.160)  enc frozen  30173s
+step 18600  loss 2.003  (floor-adjusted 0.549, real point 2.561)  enc frozen  30338s
+step 18700  loss 2.586  (floor-adjusted 0.686, real point 3.403)  enc frozen  30489s
+step 18800  loss 2.088  (floor-adjusted 0.723, real point 2.510)  enc frozen  30645s
+step 18900  loss 1.780  (floor-adjusted 0.507, real point 3.297)  enc frozen  30801s
+step 19000  loss 1.588  (floor-adjusted 0.382, real point 3.059)  enc frozen  30952s
+step 19100  loss 1.723  (floor-adjusted 0.203, real point 2.304)  enc frozen  31094s
+step 19200  loss 2.485  (floor-adjusted 0.552, real point 2.934)  enc frozen  31235s
+step 19300  loss 1.395  (floor-adjusted 0.196, real point 2.138)  enc frozen  31377s
+step 19400  loss 2.157  (floor-adjusted 0.780, real point 3.442)  enc frozen  31521s
+step 19500  loss 1.717  (floor-adjusted 0.704, real point 4.697)  enc frozen  31661s
+step 19600  loss 2.029  (floor-adjusted 0.460, real point 3.126)  enc frozen  31802s
+step 19700  loss 2.236  (floor-adjusted 0.368, real point 3.444)  enc frozen  31946s
+step 19800  loss 1.725  (floor-adjusted 0.183, real point 2.405)  enc frozen  32086s
+step 19900  loss 2.001  (floor-adjusted 0.346, real point 2.550)  enc frozen  32232s
+step 20000  loss 1.780  (floor-adjusted 0.438, real point 2.462)  enc frozen  32374s
+[ 33340s] evaluating on 50 held-out rows
+== step 20000 (subset masks): held-out completion 70.8% of moves correct, 0% of files with no wrong move, validation loss 1.720 (floor-adjusted 0.165) (38 files)
+== step 20000 (holes masks): held-out completion 72.8% of moves correct, 0% of files with no wrong move, validation loss 1.567 (floor-adjusted 0.222) (38 files)
+== step 20000 (deep masks): held-out completion 73.1% of moves correct, 0% of files with no wrong move, validation loss 1.564 (floor-adjusted 0.221) (38 files)
+  example (holes mask): partial tree given (open lines end in …):
+    | class <unk> ( Clock ) :
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the model's completion (temperature 0.2, doesn't parse):
+    | from <unk> .
+    | class <unk> ( Clock ) :
+    |     def
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 33531s] checkpoint saved to pretrain_pass3.pt (step 20000)
+step 20100  loss 1.827  (floor-adjusted 0.388, real point 4.172)  enc frozen  32730s
+step 20200  loss 1.976  (floor-adjusted 0.288, real point 2.526)  enc frozen  32902s
+step 20300  loss 1.922  (floor-adjusted 0.504, real point 3.121)  enc frozen  33073s
+step 20400  loss 1.905  (floor-adjusted 0.673, real point 1.644)  enc frozen  33243s
+step 20500  loss 2.159  (floor-adjusted 0.240, real point 3.720)  enc frozen  33408s
+step 20600  loss 1.868  (floor-adjusted 0.286, real point 1.772)  enc frozen  33573s
+step 20700  loss 2.033  (floor-adjusted 0.256, real point 3.789)  enc frozen  33736s
+step 20800  loss 1.846  (floor-adjusted 0.320, real point 2.806)  enc frozen  33903s
+step 20900  loss 2.000  (floor-adjusted 0.274, real point 3.024)  enc frozen  34065s
+step 21000  loss 2.002  (floor-adjusted 0.473, real point 2.928)  enc frozen  34204s
+step 21100  loss 2.113  (floor-adjusted 0.592, real point 3.413)  enc frozen  34353s
+step 21200  loss 2.162  (floor-adjusted 0.380, real point 3.309)  enc frozen  34505s
+step 21300  loss 1.923  (floor-adjusted 0.415, real point 3.520)  enc frozen  34665s
+step 21400  loss 2.047  (floor-adjusted 0.487, real point 2.508)  enc frozen  34822s
+step 21500  loss 2.075  (floor-adjusted 0.394, real point 3.422)  enc frozen  34984s
+step 21600  loss 2.219  (floor-adjusted 0.488, real point 2.782)  enc frozen  35141s
+step 21700  loss 1.672  (floor-adjusted 0.535, real point 3.843)  enc frozen  35295s
+step 21800  loss 2.104  (floor-adjusted 0.582, real point 3.450)  enc frozen  35440s
+step 21900  loss 1.743  (floor-adjusted 0.446, real point 2.124)  enc frozen  35585s
+step 22000  loss 1.728  (floor-adjusted 0.280, real point 2.249)  enc frozen  35830s
+step 22100  loss 1.689  (floor-adjusted 0.608, real point 2.405)  enc frozen  35975s
+step 22200  loss 2.230  (floor-adjusted 0.408, real point 4.040)  enc frozen  36116s
+step 22300  loss 1.823  (floor-adjusted 0.606, real point 3.116)  enc frozen  36260s
+step 22400  loss 2.303  (floor-adjusted 0.307, real point 2.547)  enc frozen  36404s
+step 22500  loss 2.094  (floor-adjusted 0.718, real point 3.060)  enc frozen  36543s
+step 22600  loss 2.050  (floor-adjusted 0.330, real point 3.180)  enc frozen  36689s
+step 22700  loss 1.778  (floor-adjusted 0.697, real point 2.488)  enc frozen  36834s
+step 22800  loss 2.154  (floor-adjusted 0.550, real point 2.577)  enc frozen  36989s
+step 22900  loss 1.880  (floor-adjusted 0.429, real point 3.000)  enc frozen  37147s
+step 23000  loss 1.669  (floor-adjusted 0.411, real point 3.011)  enc frozen  37313s
+step 23100  loss 1.869  (floor-adjusted 0.496, real point 2.523)  enc frozen  37479s
+step 23200  loss 1.787  (floor-adjusted 0.464, real point 3.552)  enc frozen  37644s
+step 23300  loss 2.190  (floor-adjusted 0.484, real point 3.443)  enc frozen  37812s
+step 23400  loss 2.150  (floor-adjusted 0.645, real point 1.581)  enc frozen  37976s
+step 23500  loss 1.766  (floor-adjusted 0.634, real point 1.691)  enc frozen  38143s
+step 23600  loss 1.811  (floor-adjusted 0.418, real point 3.278)  enc frozen  38316s
+step 23700  loss 1.512  (floor-adjusted 0.360, real point 2.609)  enc frozen  38477s
+step 23800  loss 2.068  (floor-adjusted 0.510, real point 2.668)  enc frozen  38621s
+step 23900  loss 2.285  (floor-adjusted 0.727, real point 3.409)  enc frozen  38767s
+step 24000  loss 2.477  (floor-adjusted 0.626, real point 3.206)  enc frozen  38921s
+step 24100  loss 2.187  (floor-adjusted 0.479, real point 2.258)  enc frozen  39074s
+step 24200  loss 1.590  (floor-adjusted 0.463, real point 3.845)  enc frozen  39230s
+step 24300  loss 1.602  (floor-adjusted 0.610, real point 2.298)  enc frozen  39378s
+step 24400  loss 2.122  (floor-adjusted 0.424, real point 1.866)  enc frozen  39532s
+step 24500  loss 1.845  (floor-adjusted 0.295, real point 3.372)  enc frozen  39684s
+step 24600  loss 1.870  (floor-adjusted 0.409, real point 2.936)  enc frozen  39841s
+step 24700  loss 1.850  (floor-adjusted 0.204, real point 2.788)  enc frozen  39984s
+step 24800  loss 1.774  (floor-adjusted 0.374, real point 2.341)  enc frozen  40124s
+step 24900  loss 1.502  (floor-adjusted 0.319, real point 1.975)  enc frozen  40262s
+step 25000  loss 2.218  (floor-adjusted 0.413, real point 4.095)  enc frozen  40401s
+[ 41367s] evaluating on 50 held-out rows
+== step 25000 (subset masks): held-out completion 71.0% of moves correct, 0% of files with no wrong move, validation loss 1.706 (floor-adjusted 0.150) (38 files)
+== step 25000 (holes masks): held-out completion 73.2% of moves correct, 0% of files with no wrong move, validation loss 1.555 (floor-adjusted 0.209) (38 files)
+== step 25000 (deep masks): held-out completion 73.6% of moves correct, 3% of files with no wrong move, validation loss 1.556 (floor-adjusted 0.213) (38 files)
+  example (holes mask): partial tree given (open lines end in …):
+    | class <unk> ( Clock ) :
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the model's completion (temperature 0.2, doesn't parse):
+    | from
+    | class <unk> ( Clock ) :
+    |     def __init__ ( self ,
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self .
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |     def
+    |     def
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 41505s] checkpoint saved to pretrain_pass3.pt (step 25000)
+step 25100  loss 1.897  (floor-adjusted 0.386, real point 3.088)  enc frozen  40680s
+step 25200  loss 1.523  (floor-adjusted 0.290, real point 2.179)  enc frozen  40818s
+step 25300  loss 2.021  (floor-adjusted 0.182, real point 3.520)  enc frozen  40958s
+step 25400  loss 2.439  (floor-adjusted 0.699, real point 3.389)  enc frozen  41100s
+step 25500  loss 1.986  (floor-adjusted 0.181, real point 3.870)  enc frozen  41246s
+step 25600  loss 1.744  (floor-adjusted 0.300, real point 2.093)  enc frozen  41388s
+step 25700  loss 2.050  (floor-adjusted 0.429, real point 2.551)  enc frozen  41543s
+step 25800  loss 1.928  (floor-adjusted 0.525, real point 1.411)  enc frozen  41711s
+step 25900  loss 1.799  (floor-adjusted 0.720, real point 3.000)  enc frozen  41881s
+step 26000  loss 2.312  (floor-adjusted 0.580, real point 3.144)  enc frozen  42051s
+step 26100  loss 1.949  (floor-adjusted 0.409, real point 2.152)  enc frozen  42219s
+step 26200  loss 2.172  (floor-adjusted 0.516, real point 2.111)  enc frozen  42396s
+step 26300  loss 2.210  (floor-adjusted 0.413, real point 2.896)  enc frozen  42715s
+step 26400  loss 1.873  (floor-adjusted 0.638, real point 2.501)  enc frozen  42884s
+step 26500  loss 1.848  (floor-adjusted 0.280, real point 3.176)  enc frozen  43054s
+step 26600  loss 1.661  (floor-adjusted 0.575, real point 2.117)  enc frozen  43226s
+step 26700  loss 1.654  (floor-adjusted 0.499, real point 2.628)  enc frozen  43416s
+step 26800  loss 1.938  (floor-adjusted 0.409, real point 3.469)  enc frozen  43614s
+step 26900  loss 1.730  (floor-adjusted 0.697, real point 2.324)  enc frozen  43801s
+step 27000  loss 1.522  (floor-adjusted 0.095, real point 2.226)  enc frozen  43985s
+step 27100  loss 1.968  (floor-adjusted 0.302, real point 1.736)  enc frozen  44182s
+step 27200  loss 2.184  (floor-adjusted 0.595, real point 2.358)  enc frozen  44379s
+step 27300  loss 2.059  (floor-adjusted 0.569, real point 3.166)  enc frozen  44567s
+step 27400  loss 1.987  (floor-adjusted 0.369, real point 2.554)  enc frozen  44773s
+step 27500  loss 2.022  (floor-adjusted 0.563, real point 3.595)  enc frozen  44955s
+step 27600  loss 2.199  (floor-adjusted 0.509, real point 2.748)  enc frozen  45117s
+step 27700  loss 1.674  (floor-adjusted 0.557, real point 3.400)  enc frozen  45279s
+step 27800  loss 1.844  (floor-adjusted 0.248, real point 2.032)  enc frozen  45438s
+step 27900  loss 1.674  (floor-adjusted 0.301, real point 2.972)  enc frozen  45592s
+step 28000  loss 2.249  (floor-adjusted 0.147, real point 3.723)  enc frozen  45753s
+step 28100  loss 1.706  (floor-adjusted 0.244, real point 2.391)  enc frozen  45904s
+step 28200  loss 1.996  (floor-adjusted 0.437, real point 3.424)  enc frozen  46063s
+step 28300  loss 1.835  (floor-adjusted 0.417, real point 2.504)  enc frozen  46224s
+step 28400  loss 2.121  (floor-adjusted 0.170, real point 3.124)  enc frozen  46375s
+step 28500  loss 1.772  (floor-adjusted 0.279, real point 1.694)  enc frozen  46537s
+step 28600  loss 1.659  (floor-adjusted 0.500, real point 4.141)  enc frozen  46694s
+step 28700  loss 2.163  (floor-adjusted 0.399, real point 3.341)  enc frozen  46856s
+step 28800  loss 1.495  (floor-adjusted 0.314, real point 2.480)  enc frozen  47037s
+step 28900  loss 2.032  (floor-adjusted 0.507, real point 3.098)  enc frozen  47207s
+step 29000  loss 1.668  (floor-adjusted 0.287, real point 2.154)  enc frozen  47379s
+step 29100  loss 1.801  (floor-adjusted 0.464, real point 3.540)  enc frozen  47563s
+step 29200  loss 2.012  (floor-adjusted 0.336, real point 3.249)  enc frozen  47742s
+step 29300  loss 1.554  (floor-adjusted -0.089, real point 3.012)  enc frozen  47917s
+step 29400  loss 1.695  (floor-adjusted 0.520, real point 3.108)  enc frozen  48103s
+step 29500  loss 2.055  (floor-adjusted 0.446, real point 2.465)  enc frozen  48295s
+step 29600  loss 2.008  (floor-adjusted 0.268, real point 1.741)  enc frozen  48488s
+step 29700  loss 1.579  (floor-adjusted 0.448, real point 3.846)  enc frozen  48688s
+step 29800  loss 1.970  (floor-adjusted 0.351, real point 2.675)  enc frozen  48860s
+step 29900  loss 1.805  (floor-adjusted 0.452, real point 3.611)  enc frozen  49066s
+step 30000  loss 1.525  (floor-adjusted 0.432, real point 4.014)  enc frozen  49264s
+[ 50230s] evaluating on 50 held-out rows
+== step 30000 (subset masks): held-out completion 70.8% of moves correct, 0% of files with no wrong move, validation loss 1.692 (floor-adjusted 0.136) (38 files)
+== step 30000 (holes masks): held-out completion 73.3% of moves correct, 0% of files with no wrong move, validation loss 1.546 (floor-adjusted 0.200) (38 files)
+== step 30000 (deep masks): held-out completion 74.0% of moves correct, 0% of files with no wrong move, validation loss 1.537 (floor-adjusted 0.195) (38 files)
+  example (holes mask): partial tree given (open lines end in …):
+    | class <unk> ( Clock ) :
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the model's completion (temperature 0.2, doesn't parse):
+    | from
+    | class <unk> ( Clock ) :
+    |     def __init__ ( self ,
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> =
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 50511s] checkpoint saved to pretrain_pass3.pt (step 30000)
+step 30100  loss 1.732  (floor-adjusted 0.391, real point 2.273)  enc frozen  49735s
+step 30200  loss 1.868  (floor-adjusted 0.382, real point 2.517)  enc frozen  49915s
+step 30300  loss 1.702  (floor-adjusted 0.437, real point 3.750)  enc frozen  50072s
+step 30400  loss 1.773  (floor-adjusted 0.507, real point 3.234)  enc frozen  50229s
+step 30500  loss 1.972  (floor-adjusted 0.363, real point 2.119)  enc frozen  50393s
+step 30600  loss 1.981  (floor-adjusted 0.176, real point 3.068)  enc frozen  50684s
+step 30700  loss 2.084  (floor-adjusted 0.554, real point 2.862)  enc frozen  50827s
+step 30800  loss 1.748  (floor-adjusted 0.534, real point 1.168)  enc frozen  50973s
+step 30900  loss 1.770  (floor-adjusted 0.303, real point 3.294)  enc frozen  51119s
+step 31000  loss 1.967  (floor-adjusted 0.255, real point 3.171)  enc frozen  51257s
+step 31100  loss 2.247  (floor-adjusted 0.327, real point 1.938)  enc frozen  51397s
+step 31200  loss 1.998  (floor-adjusted 0.347, real point 3.461)  enc frozen  51536s
+step 31300  loss 1.759  (floor-adjusted 0.449, real point 3.368)  enc frozen  51681s
+step 31400  loss 2.018  (floor-adjusted 0.477, real point 2.928)  enc frozen  51822s
+step 31500  loss 1.579  (floor-adjusted 0.261, real point 2.599)  enc frozen  51965s
+step 31600  loss 1.678  (floor-adjusted 0.661, real point 4.088)  enc frozen  52127s
+step 31700  loss 1.917  (floor-adjusted 0.296, real point 2.542)  enc frozen  52300s
+step 31800  loss 2.240  (floor-adjusted 0.559, real point 4.156)  enc frozen  52468s
+step 31900  loss 2.006  (floor-adjusted 0.688, real point 2.532)  enc frozen  52639s
+step 32000  loss 2.153  (floor-adjusted 0.365, real point 2.844)  enc frozen  52810s
+step 32100  loss 1.827  (floor-adjusted 0.525, real point 2.975)  enc frozen  52982s
+step 32200  loss 2.011  (floor-adjusted 0.245, real point 2.160)  enc frozen  53155s
+step 32300  loss 2.005  (floor-adjusted 0.427, real point 2.725)  enc frozen  53323s
+step 32400  loss 1.735  (floor-adjusted 0.528, real point 1.842)  enc frozen  53495s
+step 32500  loss 1.981  (floor-adjusted 0.143, real point 3.777)  enc frozen  53672s
+step 32600  loss 1.639  (floor-adjusted 0.052, real point 2.240)  enc frozen  53832s
+step 32700  loss 1.522  (floor-adjusted 0.150, real point 3.406)  enc frozen  53981s
+step 32800  loss 1.839  (floor-adjusted 0.174, real point 2.993)  enc frozen  54133s
+step 32900  loss 1.938  (floor-adjusted 0.185, real point 2.707)  enc frozen  54299s
+step 33000  loss 1.857  (floor-adjusted 0.426, real point 3.791)  enc frozen  54478s
+step 33100  loss 2.085  (floor-adjusted 0.543, real point 3.839)  enc frozen  54663s
+step 33200  loss 2.021  (floor-adjusted 0.427, real point 3.986)  enc frozen  54839s
+step 33300  loss 1.796  (floor-adjusted 0.398, real point 2.747)  enc frozen  55013s
+step 33400  loss 2.167  (floor-adjusted 0.323, real point 2.447)  enc frozen  55175s
+step 33500  loss 2.267  (floor-adjusted 0.375, real point 2.709)  enc frozen  55336s
+step 33600  loss 1.751  (floor-adjusted 0.374, real point 2.505)  enc frozen  55489s
+step 33700  loss 1.658  (floor-adjusted 0.125, real point 4.255)  enc frozen  55629s
+step 33800  loss 1.621  (floor-adjusted -0.016, real point 2.429)  enc frozen  55798s
+step 33900  loss 1.935  (floor-adjusted 0.547, real point 1.919)  enc frozen  55948s
+step 34000  loss 2.263  (floor-adjusted 0.388, real point 3.337)  enc frozen  56088s
+step 34100  loss 1.941  (floor-adjusted 0.542, real point 3.280)  enc frozen  56231s
+step 34200  loss 2.335  (floor-adjusted 0.381, real point 3.910)  enc frozen  56371s
+step 34300  loss 2.044  (floor-adjusted 0.458, real point 3.694)  enc frozen  56511s
+step 34400  loss 1.640  (floor-adjusted 0.079, real point 3.334)  enc frozen  56660s
+step 34500  loss 1.692  (floor-adjusted 0.201, real point 3.453)  enc frozen  56803s
+step 34600  loss 1.740  (floor-adjusted 0.088, real point 2.888)  enc frozen  56947s
+step 34700  loss 1.652  (floor-adjusted 0.233, real point 3.033)  enc frozen  57092s
+step 34800  loss 1.881  (floor-adjusted 0.601, real point 2.688)  enc frozen  57263s
+step 34900  loss 1.942  (floor-adjusted 0.466, real point 2.178)  enc frozen  57600s
+step 35000  loss 1.692  (floor-adjusted 0.325, real point 2.694)  enc frozen  57760s
+[ 58725s] evaluating on 50 held-out rows
+== step 35000 (subset masks): held-out completion 71.0% of moves correct, 0% of files with no wrong move, validation loss 1.688 (floor-adjusted 0.132) (38 files)
+== step 35000 (holes masks): held-out completion 73.2% of moves correct, 0% of files with no wrong move, validation loss 1.533 (floor-adjusted 0.188) (38 files)
+== step 35000 (deep masks): held-out completion 74.4% of moves correct, 3% of files with no wrong move, validation loss 1.527 (floor-adjusted 0.184) (38 files)
+  example (holes mask): partial tree given (open lines end in …):
+    | class <unk> ( Clock ) :
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the model's completion (temperature 0.2, doesn't parse):
+    | from
+    | class <unk> ( Clock ) :
+    |     def __init__ ( self ,
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |     def
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 58930s] checkpoint saved to pretrain_pass3.pt (step 35000)
+step 35100  loss 2.356  (floor-adjusted 0.360, real point 2.139)  enc frozen  58142s
+step 35200  loss 1.839  (floor-adjusted 0.441, real point 3.519)  enc frozen  58303s
+step 35300  loss 1.804  (floor-adjusted 0.524, real point 2.538)  enc frozen  58473s
+step 35400  loss 2.138  (floor-adjusted 0.386, real point 3.189)  enc frozen  58645s
+step 35500  loss 2.333  (floor-adjusted 0.403, real point 3.432)  enc frozen  58796s
+step 35600  loss 2.222  (floor-adjusted 0.501, real point 3.722)  enc frozen  58938s
+step 35700  loss 1.695  (floor-adjusted 0.227, real point 3.332)  enc frozen  59085s
+step 35800  loss 1.768  (floor-adjusted 0.634, real point 2.619)  enc frozen  59246s
+step 35900  loss 1.784  (floor-adjusted 0.291, real point 1.728)  enc frozen  59406s
+step 36000  loss 1.871  (floor-adjusted 0.089, real point 4.414)  enc frozen  59567s
+step 36100  loss 1.692  (floor-adjusted 0.624, real point 3.285)  enc frozen  59721s
+step 36200  loss 2.059  (floor-adjusted 0.269, real point 2.999)  enc frozen  59877s
+step 36300  loss 1.819  (floor-adjusted 0.502, real point 2.370)  enc frozen  60032s
+step 36400  loss 1.730  (floor-adjusted 0.341, real point 2.732)  enc frozen  60190s
+step 36500  loss 2.309  (floor-adjusted 0.555, real point 2.165)  enc frozen  60342s
+step 36600  loss 2.258  (floor-adjusted 0.581, real point 1.998)  enc frozen  60490s
+step 36700  loss 1.936  (floor-adjusted 0.451, real point 3.103)  enc frozen  60637s
+step 36800  loss 2.303  (floor-adjusted 0.400, real point 2.432)  enc frozen  60786s
+step 36900  loss 2.037  (floor-adjusted 0.489, real point 2.182)  enc frozen  60928s
+step 37000  loss 1.946  (floor-adjusted 0.358, real point 3.086)  enc frozen  61075s
+step 37100  loss 2.023  (floor-adjusted 0.506, real point 2.757)  enc frozen  61220s
+step 37200  loss 1.870  (floor-adjusted 0.681, real point 2.039)  enc frozen  61361s
+step 37300  loss 1.788  (floor-adjusted 0.452, real point 2.833)  enc frozen  61494s
+step 37400  loss 1.600  (floor-adjusted 0.745, real point 2.288)  enc frozen  61637s
+step 37500  loss 1.779  (floor-adjusted 0.263, real point 2.564)  enc frozen  61775s
+step 37600  loss 1.762  (floor-adjusted 0.421, real point 2.650)  enc frozen  61934s
+step 37700  loss 1.687  (floor-adjusted 0.563, real point 2.640)  enc frozen  62101s
+step 37800  loss 1.768  (floor-adjusted 0.429, real point 2.186)  enc frozen  62271s
+step 37900  loss 1.716  (floor-adjusted 0.209, real point 2.202)  enc frozen  62442s
+step 38000  loss 1.733  (floor-adjusted 0.251, real point 3.813)  enc frozen  62611s
+step 38100  loss 1.731  (floor-adjusted 0.112, real point 3.029)  enc frozen  62793s
+step 38200  loss 1.729  (floor-adjusted 0.259, real point 2.752)  enc frozen  62968s
+step 38300  loss 2.338  (floor-adjusted 0.484, real point 2.592)  enc frozen  63141s
+step 38400  loss 1.793  (floor-adjusted 0.351, real point 2.250)  enc frozen  63305s
+step 38500  loss 1.860  (floor-adjusted 0.483, real point 2.527)  enc frozen  63472s
+step 38600  loss 1.834  (floor-adjusted 0.653, real point 2.410)  enc frozen  63632s
+step 38700  loss 1.863  (floor-adjusted 0.292, real point 2.061)  enc frozen  63777s
+step 38800  loss 1.972  (floor-adjusted 0.418, real point 2.780)  enc frozen  63911s
+step 38900  loss 1.796  (floor-adjusted -0.002, real point 2.684)  enc frozen  64068s
+step 39000  loss 2.273  (floor-adjusted 0.620, real point 3.426)  enc frozen  64222s
+step 39100  loss 2.180  (floor-adjusted 0.309, real point 4.451)  enc frozen  64372s
+step 39200  loss 1.668  (floor-adjusted 0.086, real point 3.155)  enc frozen  64662s
+step 39300  loss 1.956  (floor-adjusted 0.675, real point 2.464)  enc frozen  64810s
+step 39400  loss 1.755  (floor-adjusted 0.287, real point 2.418)  enc frozen  64966s
+step 39500  loss 1.740  (floor-adjusted 0.201, real point 2.832)  enc frozen  65122s
+step 39600  loss 1.996  (floor-adjusted 0.555, real point 2.940)  enc frozen  65272s
+step 39700  loss 1.852  (floor-adjusted 0.557, real point 2.628)  enc frozen  65414s
+step 39800  loss 1.710  (floor-adjusted 0.458, real point 4.171)  enc frozen  65555s
+step 39900  loss 1.858  (floor-adjusted 0.161, real point 4.245)  enc frozen  65691s
+step 40000  loss 1.900  (floor-adjusted 0.193, real point 1.889)  enc frozen  65832s
+[ 66797s] evaluating on 50 held-out rows
+== step 40000 (subset masks): held-out completion 71.3% of moves correct, 0% of files with no wrong move, validation loss 1.676 (floor-adjusted 0.120) (38 files)
+== step 40000 (holes masks): held-out completion 73.8% of moves correct, 0% of files with no wrong move, validation loss 1.525 (floor-adjusted 0.180) (38 files)
+== step 40000 (deep masks): held-out completion 74.3% of moves correct, 3% of files with no wrong move, validation loss 1.517 (floor-adjusted 0.175) (38 files)
+  example (holes mask): partial tree given (open lines end in …):
+    | class <unk> ( Clock ) :
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the model's completion (temperature 0.2, doesn't parse):
+    | from <unk> .
+    | class <unk> ( Clock ) :
+    |     def __init__ ( self ,
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self .
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 66940s] checkpoint saved to pretrain_pass3.pt (step 40000)
+step 40100  loss 2.183  (floor-adjusted 0.431, real point 2.277)  enc frozen  66116s
+step 40200  loss 1.950  (floor-adjusted 0.395, real point 3.149)  enc frozen  66255s
+step 40300  loss 1.700  (floor-adjusted 0.605, real point 3.227)  enc frozen  66394s
+step 40400  loss 1.541  (floor-adjusted 0.187, real point 2.284)  enc frozen  66542s
+step 40500  loss 2.350  (floor-adjusted 0.413, real point 2.540)  enc frozen  66687s
+step 40600  loss 2.053  (floor-adjusted 0.546, real point 3.010)  enc frozen  66848s
+step 40700  loss 1.697  (floor-adjusted 0.584, real point 2.386)  enc frozen  67012s
+step 40800  loss 2.233  (floor-adjusted 0.411, real point 3.646)  enc frozen  67182s
+step 40900  loss 1.677  (floor-adjusted 0.186, real point 2.496)  enc frozen  67358s
+step 41000  loss 2.125  (floor-adjusted 0.578, real point 2.427)  enc frozen  67529s
+step 41100  loss 1.621  (floor-adjusted 0.685, real point 1.608)  enc frozen  67699s
+step 41200  loss 1.805  (floor-adjusted 0.252, real point 2.544)  enc frozen  67863s
+step 41300  loss 1.908  (floor-adjusted 0.578, real point 2.062)  enc frozen  68030s
+step 41400  loss 1.424  (floor-adjusted 0.416, real point 1.885)  enc frozen  68199s
+step 41500  loss 1.514  (floor-adjusted 0.575, real point 1.825)  enc frozen  68373s
+step 41600  loss 1.869  (floor-adjusted 0.417, real point 2.694)  enc frozen  68529s
+step 41700  loss 1.886  (floor-adjusted 0.551, real point 1.959)  enc frozen  68670s
+step 41800  loss 1.735  (floor-adjusted 0.338, real point 3.205)  enc frozen  68826s
+step 41900  loss 1.722  (floor-adjusted 0.088, real point 2.484)  enc frozen  68991s
+step 42000  loss 2.074  (floor-adjusted 0.492, real point 2.545)  enc frozen  69156s
+step 42100  loss 2.462  (floor-adjusted 0.485, real point 2.535)  enc frozen  69326s
+step 42200  loss 1.524  (floor-adjusted 0.611, real point 4.271)  enc frozen  69498s
+step 42300  loss 2.021  (floor-adjusted 0.322, real point 3.581)  enc frozen  69675s
+step 42400  loss 1.705  (floor-adjusted 0.647, real point 2.656)  enc frozen  69847s
+step 42500  loss 1.839  (floor-adjusted 0.259, real point 2.148)  enc frozen  70020s
+step 42600  loss 2.041  (floor-adjusted 0.540, real point 2.961)  enc frozen  70199s
+step 42700  loss 1.697  (floor-adjusted 0.333, real point 4.022)  enc frozen  70368s
+step 42800  loss 1.592  (floor-adjusted 0.161, real point 3.194)  enc frozen  70527s
+step 42900  loss 1.993  (floor-adjusted 0.782, real point 2.523)  enc frozen  70686s
+step 43000  loss 1.827  (floor-adjusted 0.400, real point 3.374)  enc frozen  70847s
+step 43100  loss 2.161  (floor-adjusted 0.339, real point 4.815)  enc frozen  71000s
+step 43200  loss 1.846  (floor-adjusted 0.392, real point 2.360)  enc frozen  71153s
+step 43300  loss 1.686  (floor-adjusted 0.240, real point 3.725)  enc frozen  71306s
+step 43400  loss 1.938  (floor-adjusted 0.215, real point 4.141)  enc frozen  71462s
+step 43500  loss 1.619  (floor-adjusted 0.112, real point 1.599)  enc frozen  71813s
+step 43600  loss 2.143  (floor-adjusted 0.278, real point 2.041)  enc frozen  71966s
+step 43700  loss 1.690  (floor-adjusted 0.289, real point 2.693)  enc frozen  72123s
+step 43800  loss 2.094  (floor-adjusted 0.206, real point 2.698)  enc frozen  72284s
+step 43900  loss 1.653  (floor-adjusted 0.373, real point 3.209)  enc frozen  72467s
+step 44000  loss 1.945  (floor-adjusted 0.569, real point 2.863)  enc frozen  72634s
+step 44100  loss 1.611  (floor-adjusted 0.475, real point 2.721)  enc frozen  72813s
+step 44200  loss 1.628  (floor-adjusted 0.098, real point 3.517)  enc frozen  73000s
+step 44300  loss 1.529  (floor-adjusted 0.317, real point 3.143)  enc frozen  73173s
+step 44400  loss 1.786  (floor-adjusted 0.502, real point 2.138)  enc frozen  73346s
+step 44500  loss 2.043  (floor-adjusted 0.144, real point 2.543)  enc frozen  73523s
+step 44600  loss 1.978  (floor-adjusted 0.505, real point 1.839)  enc frozen  73694s
+step 44700  loss 1.663  (floor-adjusted 0.280, real point 2.850)  enc frozen  73873s
+step 44800  loss 1.843  (floor-adjusted 0.454, real point 3.330)  enc frozen  74040s
+step 44900  loss 1.973  (floor-adjusted 0.225, real point 2.613)  enc frozen  74206s
+step 45000  loss 1.575  (floor-adjusted 0.293, real point 2.206)  enc frozen  74375s
+[ 75341s] evaluating on 50 held-out rows
+== step 45000 (subset masks): held-out completion 71.4% of moves correct, 0% of files with no wrong move, validation loss 1.669 (floor-adjusted 0.113) (38 files)
+== step 45000 (holes masks): held-out completion 73.7% of moves correct, 0% of files with no wrong move, validation loss 1.519 (floor-adjusted 0.173) (38 files)
+== step 45000 (deep masks): held-out completion 74.3% of moves correct, 3% of files with no wrong move, validation loss 1.504 (floor-adjusted 0.161) (38 files)
+  example (holes mask): partial tree given (open lines end in …):
+    | class <unk> ( Clock ) :
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the model's completion (temperature 0.2, doesn't parse):
+    | from
+    | class <unk> ( Clock ) :
+    |     def __init__ ( self ,
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> =
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |         self . <unk> = <unk>
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 75511s] checkpoint saved to pretrain_pass3.pt (step 45000)
+step 45100  loss 2.130  (floor-adjusted 0.479, real point 2.405)  enc frozen  74700s
+step 45200  loss 1.609  (floor-adjusted 0.051, real point 2.657)  enc frozen  74865s
+step 45300  loss 1.836  (floor-adjusted 0.357, real point 4.389)  enc frozen  75039s
+step 45400  loss 1.612  (floor-adjusted 0.108, real point 4.051)  enc frozen  75206s
+step 45500  loss 1.742  (floor-adjusted 0.420, real point 3.785)  enc frozen  75374s
+step 45600  loss 2.161  (floor-adjusted 0.242, real point 2.724)  enc frozen  75552s
+step 45700  loss 1.890  (floor-adjusted 0.393, real point 3.864)  enc frozen  75721s
+step 45800  loss 1.813  (floor-adjusted 0.139, real point 3.259)  enc frozen  75896s
+step 45900  loss 2.186  (floor-adjusted 0.338, real point 3.385)  enc frozen  76080s
+step 46000  loss 1.876  (floor-adjusted 0.335, real point 3.218)  enc frozen  76247s
+step 46100  loss 1.727  (floor-adjusted 0.387, real point 2.236)  enc frozen  76406s
+step 46200  loss 2.006  (floor-adjusted 0.407, real point 3.248)  enc frozen  76570s
+step 46300  loss 1.631  (floor-adjusted 0.557, real point 1.523)  enc frozen  76728s
+step 46400  loss 2.440  (floor-adjusted 0.554, real point 2.371)  enc frozen  76891s
+step 46500  loss 1.864  (floor-adjusted 0.513, real point 2.833)  enc frozen  77042s
+step 46600  loss 1.831  (floor-adjusted 0.421, real point 1.921)  enc frozen  77205s
+step 46700  loss 2.542  (floor-adjusted 0.539, real point 2.117)  enc frozen  77358s
+step 46800  loss 2.025  (floor-adjusted 0.322, real point 3.121)  enc frozen  77527s
+step 46900  loss 2.020  (floor-adjusted 0.393, real point 2.244)  enc frozen  77689s
+step 47000  loss 2.060  (floor-adjusted 0.722, real point 2.370)  enc frozen  77852s
+step 47100  loss 1.622  (floor-adjusted 0.573, real point 2.819)  enc frozen  78011s
+step 47200  loss 1.689  (floor-adjusted 0.315, real point 2.751)  enc frozen  78170s
+step 47300  loss 1.516  (floor-adjusted 0.700, real point 4.162)  enc frozen  78334s
+step 47400  loss 1.861  (floor-adjusted 0.022, real point 2.605)  enc frozen  78518s
+step 47500  loss 1.861  (floor-adjusted 0.307, real point 2.907)  enc frozen  78694s
+step 47600  loss 1.962  (floor-adjusted 0.259, real point 2.990)  enc frozen  78867s
+step 47700  loss 1.699  (floor-adjusted 0.401, real point 2.300)  enc frozen  79056s
+step 47800  loss 1.859  (floor-adjusted 0.157, real point 2.285)  enc frozen  79437s
+step 47900  loss 1.905  (floor-adjusted 0.270, real point 2.240)  enc frozen  79624s
+step 48000  loss 1.573  (floor-adjusted 0.318, real point 1.083)  enc frozen  79806s
+step 48100  loss 1.755  (floor-adjusted 0.724, real point 2.301)  enc frozen  79991s
+step 48200  loss 2.168  (floor-adjusted 0.629, real point 2.539)  enc frozen  80172s
+step 48300  loss 2.489  (floor-adjusted 0.350, real point 3.675)  enc frozen  80343s
+step 48400  loss 1.932  (floor-adjusted 0.157, real point 3.077)  enc frozen  80518s
+step 48500  loss 1.836  (floor-adjusted 0.416, real point 3.595)  enc frozen  80681s
+step 48600  loss 1.705  (floor-adjusted 0.049, real point 2.304)  enc frozen  80823s
+step 48700  loss 1.742  (floor-adjusted 0.131, real point 2.801)  enc frozen  80973s
+step 48800  loss 1.896  (floor-adjusted 0.171, real point 2.800)  enc frozen  81120s
+step 48900  loss 2.180  (floor-adjusted 0.405, real point 2.752)  enc frozen  81292s
+step 49000  loss 1.931  (floor-adjusted 0.614, real point 2.681)  enc frozen  81465s
+step 49100  loss 1.815  (floor-adjusted 0.494, real point 2.214)  enc frozen  81654s
+step 49200  loss 1.799  (floor-adjusted 0.163, real point 2.658)  enc frozen  81830s
+step 49300  loss 1.936  (floor-adjusted 0.555, real point 3.766)  enc frozen  82022s
+step 49400  loss 2.037  (floor-adjusted 0.535, real point 3.719)  enc frozen  82198s
+step 49500  loss 1.487  (floor-adjusted 0.215, real point 2.800)  enc frozen  82367s
+step 49600  loss 1.694  (floor-adjusted 0.247, real point 3.607)  enc frozen  82538s
+step 49700  loss 2.046  (floor-adjusted 0.352, real point 1.747)  enc frozen  82698s
+step 49800  loss 1.938  (floor-adjusted 0.428, real point 2.518)  enc frozen  82841s
+step 49900  loss 2.064  (floor-adjusted 0.688, real point 2.930)  enc frozen  82981s
+step 50000  loss 2.044  (floor-adjusted 0.404, real point 2.128)  enc frozen  83131s
+[ 84096s] evaluating on 50 held-out rows
+== step 50000 (subset masks): held-out completion 71.7% of moves correct, 0% of files with no wrong move, validation loss 1.669 (floor-adjusted 0.113) (38 files)
+== step 50000 (holes masks): held-out completion 73.7% of moves correct, 0% of files with no wrong move, validation loss 1.514 (floor-adjusted 0.169) (38 files)
+== step 50000 (deep masks): held-out completion 74.6% of moves correct, 5% of files with no wrong move, validation loss 1.504 (floor-adjusted 0.161) (38 files)
+  example (holes mask): partial tree given (open lines end in …):
+    | class <unk> ( Clock ) :
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the model's completion (temperature 0.2, doesn't parse):
+    | from
+    | class <unk> ( Clock ) :
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 84258s] checkpoint saved to pretrain_pass3.pt (step 50000)
+step 50100  loss 1.866  (floor-adjusted 0.031, real point 2.050)  enc frozen  83444s
+step 50200  loss 2.259  (floor-adjusted 0.478, real point 2.917)  enc frozen  83591s
+step 50300  loss 2.000  (floor-adjusted 0.500, real point 3.060)  enc frozen  83748s
+step 50400  loss 1.620  (floor-adjusted 0.428, real point 3.096)  enc frozen  83901s
+step 50500  loss 1.891  (floor-adjusted 0.682, real point 2.150)  enc frozen  84047s
+step 50600  loss 1.687  (floor-adjusted 0.367, real point 2.574)  enc frozen  84198s
+step 50700  loss 2.018  (floor-adjusted 0.611, real point 2.043)  enc frozen  84349s
+step 50800  loss 1.655  (floor-adjusted 0.292, real point 3.055)  enc frozen  84498s
+step 50900  loss 2.140  (floor-adjusted 0.495, real point 2.550)  enc frozen  84673s
+step 51000  loss 1.678  (floor-adjusted 0.175, real point 3.046)  enc frozen  84854s
+step 51100  loss 2.131  (floor-adjusted 0.317, real point 3.308)  enc frozen  85042s
+step 51200  loss 2.360  (floor-adjusted 0.537, real point 2.089)  enc frozen  85222s
+step 51300  loss 2.020  (floor-adjusted 0.226, real point 3.373)  enc frozen  85404s
+step 51400  loss 1.840  (floor-adjusted 0.094, real point 1.886)  enc frozen  85588s
+step 51500  loss 1.895  (floor-adjusted 0.208, real point 2.204)  enc frozen  85770s
+step 51600  loss 2.060  (floor-adjusted 0.353, real point 2.888)  enc frozen  85949s
+step 51700  loss 2.131  (floor-adjusted 0.228, real point 2.725)  enc frozen  86129s
+step 51800  loss 1.687  (floor-adjusted 0.531, real point 2.194)  enc frozen  86300s
+step 51900  loss 1.919  (floor-adjusted 0.021, real point 2.486)  enc frozen  86476s
+step 52000  loss 1.618  (floor-adjusted 0.429, real point 1.413)  enc frozen  86629s
+step 52100  loss 1.978  (floor-adjusted 0.370, real point 2.939)  enc frozen  86918s
+step 52200  loss 1.858  (floor-adjusted 0.694, real point 2.542)  enc frozen  87064s
+step 52300  loss 1.970  (floor-adjusted 0.410, real point 2.598)  enc frozen  87230s
+step 52400  loss 1.882  (floor-adjusted 0.579, real point 2.914)  enc frozen  87399s
+step 52500  loss 1.585  (floor-adjusted 0.178, real point 2.830)  enc frozen  87577s
+step 52600  loss 2.111  (floor-adjusted 0.229, real point 2.827)  enc frozen  87754s
+step 52700  loss 1.767  (floor-adjusted 0.433, real point 2.326)  enc frozen  87922s
+step 52800  loss 1.741  (floor-adjusted 0.243, real point 3.274)  enc frozen  88092s
+step 52900  loss 1.698  (floor-adjusted 0.186, real point 3.492)  enc frozen  88263s
+step 53000  loss 1.782  (floor-adjusted 0.365, real point 2.056)  enc frozen  88426s
+step 53100  loss 1.765  (floor-adjusted 0.242, real point 3.467)  enc frozen  88588s
+step 53200  loss 1.798  (floor-adjusted 0.611, real point 2.638)  enc frozen  88750s
+step 53300  loss 1.573  (floor-adjusted 0.315, real point 2.415)  enc frozen  88898s
+step 53400  loss 2.651  (floor-adjusted 0.550, real point 2.216)  enc frozen  89058s
+step 53500  loss 1.630  (floor-adjusted 0.013, real point 1.626)  enc frozen  89206s
+step 53600  loss 1.875  (floor-adjusted 0.354, real point 2.669)  enc frozen  89362s
+step 53700  loss 1.798  (floor-adjusted 0.295, real point 3.110)  enc frozen  89513s
+step 53800  loss 1.703  (floor-adjusted 0.603, real point 2.648)  enc frozen  89651s
+step 53900  loss 1.757  (floor-adjusted 0.197, real point 2.166)  enc frozen  89801s
+step 54000  loss 2.152  (floor-adjusted 0.632, real point 3.447)  enc frozen  89950s
+step 54100  loss 1.436  (floor-adjusted 0.033, real point 2.185)  enc frozen  90108s
+step 54200  loss 2.150  (floor-adjusted 0.278, real point 2.726)  enc frozen  90265s
+step 54300  loss 1.717  (floor-adjusted 0.385, real point 3.293)  enc frozen  90420s
+step 54400  loss 1.800  (floor-adjusted 0.550, real point 3.438)  enc frozen  90575s
+step 54500  loss 2.003  (floor-adjusted 0.366, real point 4.163)  enc frozen  90750s
+step 54600  loss 1.805  (floor-adjusted 0.327, real point 2.104)  enc frozen  90919s
+step 54700  loss 2.157  (floor-adjusted 0.352, real point 2.918)  enc frozen  91094s
+step 54800  loss 1.824  (floor-adjusted 0.483, real point 1.716)  enc frozen  91267s
+step 54900  loss 1.806  (floor-adjusted 0.460, real point 2.044)  enc frozen  91435s
+step 55000  loss 1.701  (floor-adjusted 0.296, real point 2.803)  enc frozen  91611s
+[ 92576s] evaluating on 50 held-out rows
+== step 55000 (subset masks): held-out completion 71.6% of moves correct, 0% of files with no wrong move, validation loss 1.668 (floor-adjusted 0.112) (38 files)
+== step 55000 (holes masks): held-out completion 73.5% of moves correct, 0% of files with no wrong move, validation loss 1.514 (floor-adjusted 0.168) (38 files)
+== step 55000 (deep masks): held-out completion 74.5% of moves correct, 5% of files with no wrong move, validation loss 1.503 (floor-adjusted 0.160) (38 files)
+  example (holes mask): partial tree given (open lines end in …):
+    | class <unk> ( Clock ) :
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the model's completion (temperature 0.2, doesn't parse):
+    | from
+    | class <unk> ( Clock ) :
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def <unk> ( self , <unk> ) :
+    |         pass
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 92808s] saving pretrain_pass3.pt
+saved pretrain_pass3.pt

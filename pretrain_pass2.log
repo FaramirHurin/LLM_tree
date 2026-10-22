@@ -1,0 +1,6304 @@
+[     0s] loading Datasets/pretrain.jsonl
+[   523s] loaded 1000000 rows (950000 train, 50000 val)
+[   523s] loading checkpoint pretrain_pass1.pt
+[   523s] taking the vocabulary from pretrain_pass1.pt
+[   523s] code vocabulary: 40000 tokens
+[   523s] building the prompt tokenizer
+[   523s] building the models
+models resumed from pretrain_pass1.pt (its step 55000); new optimizer, new learning-rate schedule
+[   525s] moving the models to cuda
+[   526s] converting trees to arrays
+[   824s] kept 883932 of 950000 training trees (dropped: a line longer than max-pos or more nodes than n-ids)
+train 883932  val 50000  code vocab 40000  prompt vocab 4  params enc 0.5M dec 140.2M
+[   824s] starting training: 55000 steps, batch 8 x 2 accumulated = 16 sequences per step
+[   825s] first batch: building sequences
+[   825s] first batch: forward done (1161 entries, 13526 moves), running backward
+[   826s] step 1 done (1.8s)
+[   828s] step 2 done (1.3s)
+[   829s] step 3 done (1.4s)
+[   831s] step 4 done (1.4s)
+[   832s] step 5 done (1.1s)
+[   832s] step 6 done (0.7s)
+[   834s] step 7 done (1.4s)
+[   835s] step 8 done (1.6s)
+[   837s] step 9 done (1.4s)
+[   838s] step 10 done (1.4s)
+step   100  loss 1.991  (floor-adjusted 0.474, real point 2.882)  enc frozen  136s
+step   200  loss 2.372  (floor-adjusted 0.524, real point 2.541)  enc frozen  278s
+step   300  loss 2.466  (floor-adjusted 0.624, real point 3.384)  enc frozen  425s
+step   400  loss 1.964  (floor-adjusted 0.507, real point 2.701)  enc frozen  685s
+step   500  loss 2.259  (floor-adjusted 0.563, real point 1.574)  enc frozen  827s
+step   600  loss 2.008  (floor-adjusted 0.607, real point 3.346)  enc frozen  974s
+step   700  loss 2.438  (floor-adjusted 0.687, real point 3.668)  enc frozen  1116s
+step   800  loss 2.083  (floor-adjusted 0.599, real point 2.556)  enc frozen  1253s
+step   900  loss 1.911  (floor-adjusted 0.601, real point 2.432)  enc frozen  1400s
+step  1000  loss 2.246  (floor-adjusted 0.601, real point 3.083)  enc frozen  1545s
+step  1100  loss 2.051  (floor-adjusted 0.886, real point 2.710)  enc frozen  1689s
+step  1200  loss 2.331  (floor-adjusted 0.953, real point 2.806)  enc frozen  1829s
+step  1300  loss 1.936  (floor-adjusted 0.758, real point 2.511)  enc frozen  1969s
+step  1400  loss 2.046  (floor-adjusted 0.716, real point 4.146)  enc frozen  2111s
+step  1500  loss 2.309  (floor-adjusted 0.462, real point 2.643)  enc frozen  2249s
+step  1600  loss 1.937  (floor-adjusted 0.786, real point 4.319)  enc frozen  2389s
+step  1700  loss 2.385  (floor-adjusted 0.695, real point 2.888)  enc frozen  2529s
+step  1800  loss 1.813  (floor-adjusted 0.844, real point 4.694)  enc frozen  2667s
+step  1900  loss 2.064  (floor-adjusted 0.695, real point 5.419)  enc frozen  2807s
+step  2000  loss 1.887  (floor-adjusted 0.678, real point 4.199)  enc frozen  2955s
+step  2100  loss 2.318  (floor-adjusted 0.967, real point 3.643)  enc frozen  3101s
+step  2200  loss 2.196  (floor-adjusted 0.225, real point 2.940)  enc frozen  3242s
+step  2300  loss 2.017  (floor-adjusted 0.395, real point 3.625)  enc frozen  3384s
+step  2400  loss 1.872  (floor-adjusted 0.602, real point 1.800)  enc frozen  3522s
+step  2500  loss 2.146  (floor-adjusted 0.391, real point 4.496)  enc frozen  3660s
+step  2600  loss 1.814  (floor-adjusted 0.551, real point 2.106)  enc frozen  3800s
+step  2700  loss 2.261  (floor-adjusted 0.427, real point 4.413)  enc frozen  3948s
+step  2800  loss 2.174  (floor-adjusted 0.698, real point 3.522)  enc frozen  4096s
+step  2900  loss 1.866  (floor-adjusted 0.547, real point 3.201)  enc frozen  4236s
+step  3000  loss 1.868  (floor-adjusted 0.662, real point 3.471)  enc frozen  4376s
+step  3100  loss 2.042  (floor-adjusted 0.500, real point 3.457)  enc frozen  4519s
+step  3200  loss 2.103  (floor-adjusted 0.675, real point 3.619)  enc frozen  4660s
+step  3300  loss 2.156  (floor-adjusted 0.598, real point 2.730)  enc frozen  4804s
+step  3400  loss 1.991  (floor-adjusted 0.482, real point 2.331)  enc frozen  4943s
+step  3500  loss 2.377  (floor-adjusted 0.525, real point 3.476)  enc frozen  5088s
+step  3600  loss 2.240  (floor-adjusted 0.790, real point 2.539)  enc frozen  5229s
+step  3700  loss 2.101  (floor-adjusted 0.339, real point 2.655)  enc frozen  5368s
+step  3800  loss 2.107  (floor-adjusted 0.574, real point 2.875)  enc frozen  5507s
+step  3900  loss 2.398  (floor-adjusted 0.642, real point 3.728)  enc frozen  5648s
+step  4000  loss 2.122  (floor-adjusted 0.608, real point 2.874)  enc frozen  5793s
+step  4100  loss 2.014  (floor-adjusted 0.681, real point 3.863)  enc frozen  5936s
+step  4200  loss 2.221  (floor-adjusted 0.564, real point 4.120)  enc frozen  6077s
+step  4300  loss 1.986  (floor-adjusted 0.421, real point 3.626)  enc frozen  6217s
+step  4400  loss 1.860  (floor-adjusted 0.412, real point 2.304)  enc frozen  6357s
+step  4500  loss 2.176  (floor-adjusted 0.749, real point 2.433)  enc frozen  6498s
+step  4600  loss 2.268  (floor-adjusted 0.442, real point 2.909)  enc frozen  6635s
+step  4700  loss 2.397  (floor-adjusted 0.576, real point 2.900)  enc frozen  6894s
+step  4800  loss 2.062  (floor-adjusted 0.377, real point 2.899)  enc frozen  7028s
+step  4900  loss 2.083  (floor-adjusted 0.750, real point 3.907)  enc frozen  7170s
+step  5000  loss 2.001  (floor-adjusted 0.402, real point 3.189)  enc frozen  7313s
+[  8138s] evaluating on 50 held-out rows
+== step 5000 (subset masks): held-out completion 63.6% of moves correct, 0% of files with no wrong move, validation loss 1.834 (floor-adjusted 0.278) (38 files)
+== step 5000 (holes masks): held-out completion 64.5% of moves correct, 0% of files with no wrong move, validation loss 1.697 (floor-adjusted 0.352) (38 files)
+  example (holes mask): partial tree given (open lines end in …):
+    | class <unk> ( Clock ) :
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the model's completion (temperature 0.2, doesn't parse):
+    | class <unk> ( Clock ) :
+    |     def __init__ ( self ,
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[  8260s] checkpoint saved to pretrain_pass2.pt (step 5000)
+step  5100  loss 2.422  (floor-adjusted 0.855, real point 5.945)  enc frozen  7576s
+step  5200  loss 2.592  (floor-adjusted 0.823, real point 2.729)  enc frozen  7716s
+step  5300  loss 2.686  (floor-adjusted 0.630, real point 2.174)  enc frozen  7857s
+step  5400  loss 2.219  (floor-adjusted 0.925, real point 4.047)  enc frozen  7996s
+step  5500  loss 2.288  (floor-adjusted 0.929, real point 3.023)  enc frozen  8137s
+step  5600  loss 2.621  (floor-adjusted 0.555, real point 2.950)  enc frozen  8278s
+step  5700  loss 1.962  (floor-adjusted 0.488, real point 2.196)  enc frozen  8419s
+step  5800  loss 2.023  (floor-adjusted 0.859, real point 2.512)  enc frozen  8566s
+step  5900  loss 1.848  (floor-adjusted 0.477, real point 2.533)  enc frozen  8708s
+step  6000  loss 1.774  (floor-adjusted 0.544, real point 2.443)  enc frozen  8852s
+step  6100  loss 1.699  (floor-adjusted 0.640, real point 2.715)  enc frozen  8992s
+step  6200  loss 2.242  (floor-adjusted 0.551, real point 2.200)  enc frozen  9133s
+step  6300  loss 2.038  (floor-adjusted 0.502, real point 2.291)  enc frozen  9276s
+step  6400  loss 2.295  (floor-adjusted 0.503, real point 3.910)  enc frozen  9419s
+step  6500  loss 1.764  (floor-adjusted 0.810, real point 2.563)  enc frozen  9565s
+step  6600  loss 2.410  (floor-adjusted 0.512, real point 3.646)  enc frozen  9707s
+step  6700  loss 1.945  (floor-adjusted 0.844, real point 3.582)  enc frozen  9842s
+step  6800  loss 1.839  (floor-adjusted 0.506, real point 2.945)  enc frozen  9987s
+step  6900  loss 2.091  (floor-adjusted 0.738, real point 2.667)  enc frozen  10133s
+step  7000  loss 1.875  (floor-adjusted 0.957, real point 2.276)  enc frozen  10277s
+step  7100  loss 1.987  (floor-adjusted 0.664, real point 2.636)  enc frozen  10420s
+step  7200  loss 1.732  (floor-adjusted 0.574, real point 2.115)  enc frozen  10560s
+step  7300  loss 1.712  (floor-adjusted 0.715, real point 2.055)  enc frozen  10698s
+step  7400  loss 2.163  (floor-adjusted 0.370, real point 2.848)  enc frozen  10845s
+step  7500  loss 1.892  (floor-adjusted 0.676, real point 3.436)  enc frozen  10989s
+step  7600  loss 2.407  (floor-adjusted 0.738, real point 3.769)  enc frozen  11129s
+step  7700  loss 2.144  (floor-adjusted 0.733, real point 3.413)  enc frozen  11269s
+step  7800  loss 2.188  (floor-adjusted 0.503, real point 2.189)  enc frozen  11407s
+step  7900  loss 1.997  (floor-adjusted 0.736, real point 1.971)  enc frozen  11553s
+step  8000  loss 2.024  (floor-adjusted 0.807, real point 3.467)  enc frozen  11699s
+step  8100  loss 1.915  (floor-adjusted 0.736, real point 2.367)  enc frozen  11840s
+step  8200  loss 1.569  (floor-adjusted 0.568, real point 2.366)  enc frozen  11986s
+step  8300  loss 2.031  (floor-adjusted 0.903, real point 2.616)  enc frozen  12126s
+step  8400  loss 2.122  (floor-adjusted 0.709, real point 2.494)  enc frozen  12263s
+step  8500  loss 2.355  (floor-adjusted 0.609, real point 2.938)  enc frozen  12408s
+step  8600  loss 2.043  (floor-adjusted 0.707, real point 3.567)  enc frozen  12547s
+step  8700  loss 2.019  (floor-adjusted 0.874, real point 1.974)  enc frozen  12688s
+step  8800  loss 1.907  (floor-adjusted 0.504, real point 3.705)  enc frozen  12835s
+step  8900  loss 2.238  (floor-adjusted 0.578, real point 3.557)  enc frozen  12976s
+step  9000  loss 1.766  (floor-adjusted 0.622, real point 2.225)  enc frozen  13234s
+step  9100  loss 1.927  (floor-adjusted 0.667, real point 2.668)  enc frozen  13374s
+step  9200  loss 2.212  (floor-adjusted 0.782, real point 2.099)  enc frozen  13515s
+step  9300  loss 2.049  (floor-adjusted 0.535, real point 4.309)  enc frozen  13661s
+step  9400  loss 2.356  (floor-adjusted 0.520, real point 3.916)  enc frozen  13802s
+step  9500  loss 2.248  (floor-adjusted 0.624, real point 3.181)  enc frozen  13945s
+step  9600  loss 2.516  (floor-adjusted 0.770, real point 3.401)  enc frozen  14089s
+step  9700  loss 1.685  (floor-adjusted 0.827, real point 2.025)  enc frozen  14231s
+step  9800  loss 1.644  (floor-adjusted 0.589, real point 3.262)  enc frozen  14379s
+step  9900  loss 2.047  (floor-adjusted 0.574, real point 3.203)  enc frozen  14522s
+step 10000  loss 2.060  (floor-adjusted 0.720, real point 2.899)  enc frozen  14660s
+[ 15485s] evaluating on 50 held-out rows
+== step 10000 (subset masks): held-out completion 64.4% of moves correct, 0% of files with no wrong move, validation loss 1.811 (floor-adjusted 0.255) (38 files)
+== step 10000 (holes masks): held-out completion 65.1% of moves correct, 0% of files with no wrong move, validation loss 1.688 (floor-adjusted 0.342) (38 files)
+  example (holes mask): partial tree given (open lines end in …):
+    | class <unk> ( Clock ) :
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the model's completion (temperature 0.2, doesn't parse):
+    | class <unk> ( Clock ) :
+    |     def __init__ ( self ,
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self . . . setObjectName ( self . )
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self . . . setObjectName ( self . )
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self . . . setObjectName ( self . )
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |             self .
+    |             self . . . append ( self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |             self . . . append ( self .
+    |             self .
+    |             self .
+    |             self . . . append ( self . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 15607s] checkpoint saved to pretrain_pass2.pt (step 10000)
+step 10100  loss 1.977  (floor-adjusted 0.688, real point 2.999)  enc frozen  14919s
+step 10200  loss 2.101  (floor-adjusted 0.465, real point 3.310)  enc frozen  15062s
+step 10300  loss 2.297  (floor-adjusted 0.436, real point 2.928)  enc frozen  15205s
+step 10400  loss 1.943  (floor-adjusted 0.428, real point 2.443)  enc frozen  15341s
+step 10500  loss 1.952  (floor-adjusted 0.555, real point 3.462)  enc frozen  15484s
+step 10600  loss 1.828  (floor-adjusted 0.663, real point 4.154)  enc frozen  15625s
+step 10700  loss 2.058  (floor-adjusted 0.661, real point 3.269)  enc frozen  15765s
+step 10800  loss 1.582  (floor-adjusted 0.633, real point 2.701)  enc frozen  15907s
+step 10900  loss 1.860  (floor-adjusted 0.521, real point 3.300)  enc frozen  16043s
+step 11000  loss 2.329  (floor-adjusted 0.457, real point 3.367)  enc frozen  16181s
+step 11100  loss 2.132  (floor-adjusted 0.728, real point 2.836)  enc frozen  16326s
+step 11200  loss 2.014  (floor-adjusted 0.771, real point 1.837)  enc frozen  16465s
+step 11300  loss 2.209  (floor-adjusted 0.628, real point 4.741)  enc frozen  16603s
+step 11400  loss 2.038  (floor-adjusted 0.623, real point 3.467)  enc frozen  16746s
+step 11500  loss 2.512  (floor-adjusted 0.477, real point 3.354)  enc frozen  16892s
+step 11600  loss 2.250  (floor-adjusted 0.670, real point 3.397)  enc frozen  17029s
+step 11700  loss 2.342  (floor-adjusted 0.554, real point 3.265)  enc frozen  17174s
+step 11800  loss 1.792  (floor-adjusted 0.419, real point 3.500)  enc frozen  17314s
+step 11900  loss 2.133  (floor-adjusted 0.470, real point 2.315)  enc frozen  17458s
+step 12000  loss 2.290  (floor-adjusted 0.341, real point 2.820)  enc frozen  17607s
+step 12100  loss 1.951  (floor-adjusted 0.779, real point 2.237)  enc frozen  17747s
+step 12200  loss 2.080  (floor-adjusted 0.767, real point 3.965)  enc frozen  17884s
+step 12300  loss 2.165  (floor-adjusted 0.698, real point 2.643)  enc frozen  18020s
+step 12400  loss 2.163  (floor-adjusted 0.525, real point 2.836)  enc frozen  18164s
+step 12500  loss 2.275  (floor-adjusted 0.507, real point 3.678)  enc frozen  18306s
+step 12600  loss 1.840  (floor-adjusted 0.342, real point 2.214)  enc frozen  18449s
+step 12700  loss 2.243  (floor-adjusted 0.562, real point 4.463)  enc frozen  18593s
+step 12800  loss 1.906  (floor-adjusted 0.637, real point 1.966)  enc frozen  18736s
+step 12900  loss 2.360  (floor-adjusted 0.665, real point 4.433)  enc frozen  18882s
+step 13000  loss 1.977  (floor-adjusted 0.540, real point 2.996)  enc frozen  19020s
+step 13100  loss 2.010  (floor-adjusted 0.847, real point 2.972)  enc frozen  19166s
+step 13200  loss 1.883  (floor-adjusted 0.496, real point 2.148)  enc frozen  19311s
+step 13300  loss 2.178  (floor-adjusted 0.484, real point 2.836)  enc frozen  19457s
+step 13400  loss 2.358  (floor-adjusted 0.608, real point 3.662)  enc frozen  19700s
+step 13500  loss 2.382  (floor-adjusted 1.031, real point 2.325)  enc frozen  19838s
+step 13600  loss 2.455  (floor-adjusted 0.462, real point 5.137)  enc frozen  19976s
+step 13700  loss 2.402  (floor-adjusted 0.601, real point 3.313)  enc frozen  20115s
+step 13800  loss 2.438  (floor-adjusted 0.561, real point 2.735)  enc frozen  20271s
+step 13900  loss 2.015  (floor-adjusted 0.535, real point 3.559)  enc frozen  20433s
+step 14000  loss 1.898  (floor-adjusted 0.338, real point 3.211)  enc frozen  20603s
+step 14100  loss 2.296  (floor-adjusted 0.798, real point 2.991)  enc frozen  20769s
+step 14200  loss 1.928  (floor-adjusted 0.607, real point 3.241)  enc frozen  20941s
+step 14300  loss 2.292  (floor-adjusted 0.737, real point 3.431)  enc frozen  21104s
+step 14400  loss 1.915  (floor-adjusted 0.396, real point 5.484)  enc frozen  21261s
+step 14500  loss 1.814  (floor-adjusted 0.440, real point 4.190)  enc frozen  21424s
+step 14600  loss 2.235  (floor-adjusted 0.497, real point 2.547)  enc frozen  21576s
+step 14700  loss 2.482  (floor-adjusted 0.746, real point 2.979)  enc frozen  21735s
+step 14800  loss 2.272  (floor-adjusted 0.427, real point 2.821)  enc frozen  21891s
+step 14900  loss 2.408  (floor-adjusted 0.621, real point 3.057)  enc frozen  22048s
+step 15000  loss 2.050  (floor-adjusted 0.508, real point 3.715)  enc frozen  22201s
+[ 23026s] evaluating on 50 held-out rows
+== step 15000 (subset masks): held-out completion 64.5% of moves correct, 0% of files with no wrong move, validation loss 1.789 (floor-adjusted 0.233) (38 files)
+== step 15000 (holes masks): held-out completion 65.2% of moves correct, 0% of files with no wrong move, validation loss 1.660 (floor-adjusted 0.314) (38 files)
+  example (holes mask): partial tree given (open lines end in …):
+    | class <unk> ( Clock ) :
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the model's completion (temperature 0.2, doesn't parse):
+    | class <unk> ( Clock ) :
+    |     def __init__ ( self ,
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 23167s] checkpoint saved to pretrain_pass2.pt (step 15000)
+step 15100  loss 1.949  (floor-adjusted 0.893, real point 3.162)  enc frozen  22496s
+step 15200  loss 2.011  (floor-adjusted 0.610, real point 2.935)  enc frozen  22647s
+step 15300  loss 1.891  (floor-adjusted 0.539, real point 3.260)  enc frozen  22803s
+step 15400  loss 2.185  (floor-adjusted 0.748, real point 4.515)  enc frozen  22962s
+step 15500  loss 2.278  (floor-adjusted 0.485, real point 3.033)  enc frozen  23119s
+step 15600  loss 2.060  (floor-adjusted 0.639, real point 4.289)  enc frozen  23276s
+step 15700  loss 1.676  (floor-adjusted 0.790, real point 1.591)  enc frozen  23427s
+step 15800  loss 2.284  (floor-adjusted 0.659, real point 2.371)  enc frozen  23584s
+step 15900  loss 1.851  (floor-adjusted 0.417, real point 3.550)  enc frozen  23752s
+step 16000  loss 1.742  (floor-adjusted 0.507, real point 2.748)  enc frozen  23900s
+step 16100  loss 1.703  (floor-adjusted 0.462, real point 2.544)  enc frozen  24049s
+step 16200  loss 1.804  (floor-adjusted 0.281, real point 2.447)  enc frozen  24188s
+step 16300  loss 2.096  (floor-adjusted 0.813, real point 4.707)  enc frozen  24329s
+step 16400  loss 2.569  (floor-adjusted 0.679, real point 2.365)  enc frozen  24474s
+step 16500  loss 2.130  (floor-adjusted 0.789, real point 2.268)  enc frozen  24616s
+step 16600  loss 1.762  (floor-adjusted 0.526, real point 3.163)  enc frozen  24756s
+step 16700  loss 1.682  (floor-adjusted 0.621, real point 3.043)  enc frozen  24899s
+step 16800  loss 2.346  (floor-adjusted 0.532, real point 2.509)  enc frozen  25043s
+step 16900  loss 2.054  (floor-adjusted 0.650, real point 2.878)  enc frozen  25199s
+step 17000  loss 1.755  (floor-adjusted 0.486, real point 2.464)  enc frozen  25359s
+step 17100  loss 1.967  (floor-adjusted 0.380, real point 2.644)  enc frozen  25512s
+step 17200  loss 2.075  (floor-adjusted 0.968, real point 1.942)  enc frozen  25667s
+step 17300  loss 1.795  (floor-adjusted 0.423, real point 2.956)  enc frozen  25825s
+step 17400  loss 2.214  (floor-adjusted 0.372, real point 2.778)  enc frozen  25983s
+step 17500  loss 2.074  (floor-adjusted 0.643, real point 3.675)  enc frozen  26136s
+step 17600  loss 2.082  (floor-adjusted 0.531, real point 2.197)  enc frozen  26290s
+step 17700  loss 1.686  (floor-adjusted 0.886, real point 2.913)  enc frozen  26535s
+step 17800  loss 2.223  (floor-adjusted 0.506, real point 2.617)  enc frozen  26671s
+step 17900  loss 2.496  (floor-adjusted 0.713, real point 2.479)  enc frozen  26816s
+step 18000  loss 1.726  (floor-adjusted 0.616, real point 3.195)  enc frozen  26958s
+step 18100  loss 1.948  (floor-adjusted 0.278, real point 3.512)  enc frozen  27095s
+step 18200  loss 1.768  (floor-adjusted 0.826, real point 1.971)  enc frozen  27242s
+step 18300  loss 1.937  (floor-adjusted 0.460, real point 2.988)  enc frozen  27383s
+step 18400  loss 1.958  (floor-adjusted 0.376, real point 2.402)  enc frozen  27527s
+step 18500  loss 2.140  (floor-adjusted 0.503, real point 2.672)  enc frozen  27670s
+step 18600  loss 1.681  (floor-adjusted 0.825, real point 2.494)  enc frozen  27826s
+step 18700  loss 2.010  (floor-adjusted 0.852, real point 3.206)  enc frozen  27987s
+step 18800  loss 1.913  (floor-adjusted 0.695, real point 2.820)  enc frozen  28154s
+step 18900  loss 1.796  (floor-adjusted 0.701, real point 2.690)  enc frozen  28324s
+step 19000  loss 1.629  (floor-adjusted 0.220, real point 2.739)  enc frozen  28497s
+step 19100  loss 2.009  (floor-adjusted 0.491, real point 2.191)  enc frozen  28663s
+step 19200  loss 2.075  (floor-adjusted 0.783, real point 1.556)  enc frozen  28827s
+step 19300  loss 1.771  (floor-adjusted 0.457, real point 1.992)  enc frozen  28994s
+step 19400  loss 2.077  (floor-adjusted 0.473, real point 2.506)  enc frozen  29164s
+step 19500  loss 1.822  (floor-adjusted 0.733, real point 2.049)  enc frozen  29328s
+step 19600  loss 1.837  (floor-adjusted 0.638, real point 3.621)  enc frozen  29483s
+step 19700  loss 2.177  (floor-adjusted 0.389, real point 3.135)  enc frozen  29640s
+step 19800  loss 2.049  (floor-adjusted 0.522, real point 3.177)  enc frozen  29795s
+step 19900  loss 1.884  (floor-adjusted 0.394, real point 5.000)  enc frozen  29958s
+step 20000  loss 1.864  (floor-adjusted 0.508, real point 2.817)  enc frozen  30115s
+[ 30939s] evaluating on 50 held-out rows
+== step 20000 (subset masks): held-out completion 65.1% of moves correct, 0% of files with no wrong move, validation loss 1.772 (floor-adjusted 0.216) (38 files)
+== step 20000 (holes masks): held-out completion 66.1% of moves correct, 0% of files with no wrong move, validation loss 1.637 (floor-adjusted 0.292) (38 files)
+  example (holes mask): partial tree given (open lines end in …):
+    | class <unk> ( Clock ) :
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the model's completion (temperature 0.2, doesn't parse):
+    | class <unk> ( Clock ) :
+    |     def __init__ ( self ,
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 31087s] checkpoint saved to pretrain_pass2.pt (step 20000)
+step 20100  loss 2.022  (floor-adjusted 0.583, real point 3.839)  enc frozen  30417s
+step 20200  loss 2.047  (floor-adjusted 0.395, real point 3.922)  enc frozen  30580s
+step 20300  loss 2.217  (floor-adjusted 0.563, real point 4.052)  enc frozen  30731s
+step 20400  loss 1.682  (floor-adjusted 0.735, real point 2.149)  enc frozen  30877s
+step 20500  loss 2.306  (floor-adjusted 0.319, real point 3.438)  enc frozen  31018s
+step 20600  loss 1.852  (floor-adjusted 0.763, real point 2.386)  enc frozen  31159s
+step 20700  loss 1.939  (floor-adjusted 0.456, real point 3.192)  enc frozen  31298s
+step 20800  loss 1.910  (floor-adjusted 0.331, real point 3.052)  enc frozen  31441s
+step 20900  loss 1.930  (floor-adjusted 0.754, real point 4.318)  enc frozen  31590s
+step 21000  loss 1.651  (floor-adjusted 0.184, real point 1.594)  enc frozen  31727s
+step 21100  loss 2.402  (floor-adjusted 0.623, real point 3.955)  enc frozen  31867s
+step 21200  loss 2.074  (floor-adjusted 0.290, real point 1.990)  enc frozen  32006s
+step 21300  loss 2.274  (floor-adjusted 0.650, real point 2.286)  enc frozen  32152s
+step 21400  loss 1.792  (floor-adjusted 0.482, real point 2.148)  enc frozen  32313s
+step 21500  loss 2.337  (floor-adjusted 0.771, real point 2.402)  enc frozen  32489s
+step 21600  loss 2.327  (floor-adjusted 0.408, real point 2.560)  enc frozen  32659s
+step 21700  loss 1.937  (floor-adjusted 0.573, real point 3.311)  enc frozen  32827s
+step 21800  loss 2.037  (floor-adjusted 0.360, real point 2.350)  enc frozen  32993s
+step 21900  loss 1.927  (floor-adjusted 0.486, real point 2.081)  enc frozen  33167s
+step 22000  loss 1.873  (floor-adjusted 0.406, real point 2.542)  enc frozen  33475s
+step 22100  loss 1.639  (floor-adjusted 0.320, real point 2.010)  enc frozen  33648s
+step 22200  loss 2.266  (floor-adjusted 0.469, real point 2.979)  enc frozen  33813s
+step 22300  loss 2.117  (floor-adjusted 0.630, real point 3.149)  enc frozen  33963s
+step 22400  loss 2.415  (floor-adjusted 0.460, real point 3.212)  enc frozen  34120s
+step 22500  loss 2.676  (floor-adjusted 0.539, real point 2.362)  enc frozen  34272s
+step 22600  loss 2.222  (floor-adjusted 0.497, real point 3.072)  enc frozen  34431s
+step 22700  loss 2.075  (floor-adjusted 0.452, real point 4.405)  enc frozen  34589s
+step 22800  loss 2.023  (floor-adjusted 0.377, real point 3.380)  enc frozen  34747s
+step 22900  loss 1.960  (floor-adjusted 0.734, real point 3.873)  enc frozen  34898s
+step 23000  loss 2.223  (floor-adjusted 0.539, real point 2.668)  enc frozen  35055s
+step 23100  loss 1.997  (floor-adjusted 0.400, real point 3.365)  enc frozen  35202s
+step 23200  loss 2.124  (floor-adjusted 0.741, real point 2.129)  enc frozen  35343s
+step 23300  loss 2.027  (floor-adjusted 0.709, real point 2.722)  enc frozen  35487s
+step 23400  loss 2.022  (floor-adjusted 0.657, real point 2.514)  enc frozen  35626s
+step 23500  loss 2.205  (floor-adjusted 0.498, real point 2.584)  enc frozen  35768s
+step 23600  loss 1.690  (floor-adjusted 0.329, real point 1.510)  enc frozen  35913s
+step 23700  loss 1.885  (floor-adjusted 0.630, real point 2.427)  enc frozen  36050s
+step 23800  loss 1.769  (floor-adjusted 0.642, real point 1.802)  enc frozen  36187s
+step 23900  loss 2.205  (floor-adjusted 0.416, real point 4.761)  enc frozen  36330s
+step 24000  loss 2.297  (floor-adjusted 0.648, real point 2.996)  enc frozen  36470s
+step 24100  loss 2.118  (floor-adjusted 0.870, real point 2.668)  enc frozen  36607s
+step 24200  loss 1.979  (floor-adjusted 0.459, real point 2.061)  enc frozen  36748s
+step 24300  loss 1.878  (floor-adjusted 0.742, real point 3.292)  enc frozen  36891s
+step 24400  loss 1.856  (floor-adjusted 0.650, real point 2.515)  enc frozen  37056s
+step 24500  loss 1.850  (floor-adjusted 0.495, real point 3.228)  enc frozen  37219s
+step 24600  loss 2.119  (floor-adjusted 0.415, real point 3.287)  enc frozen  37390s
+step 24700  loss 2.166  (floor-adjusted 0.385, real point 2.079)  enc frozen  37553s
+step 24800  loss 1.709  (floor-adjusted 0.524, real point 2.519)  enc frozen  37722s
+step 24900  loss 2.044  (floor-adjusted 0.519, real point 3.515)  enc frozen  37882s
+step 25000  loss 2.387  (floor-adjusted 0.760, real point 4.329)  enc frozen  38048s
+[ 38872s] evaluating on 50 held-out rows
+== step 25000 (subset masks): held-out completion 65.0% of moves correct, 0% of files with no wrong move, validation loss 1.757 (floor-adjusted 0.201) (38 files)
+== step 25000 (holes masks): held-out completion 66.0% of moves correct, 0% of files with no wrong move, validation loss 1.622 (floor-adjusted 0.276) (38 files)
+  example (holes mask): partial tree given (open lines end in …):
+    | class <unk> ( Clock ) :
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the model's completion (temperature 0.2, doesn't parse):
+    | class <unk> ( Clock ) :
+    |     def __init__ ( self ,
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 39050s] checkpoint saved to pretrain_pass2.pt (step 25000)
+step 25100  loss 1.986  (floor-adjusted 0.420, real point 2.460)  enc frozen  38391s
+step 25200  loss 1.940  (floor-adjusted 0.557, real point 2.487)  enc frozen  38543s
+step 25300  loss 1.711  (floor-adjusted 0.674, real point 2.284)  enc frozen  38682s
+step 25400  loss 2.058  (floor-adjusted 0.289, real point 3.205)  enc frozen  38826s
+step 25500  loss 2.196  (floor-adjusted 0.469, real point 3.426)  enc frozen  38986s
+step 25600  loss 1.984  (floor-adjusted 0.478, real point 2.850)  enc frozen  39142s
+step 25700  loss 1.886  (floor-adjusted 0.599, real point 2.725)  enc frozen  39292s
+step 25800  loss 2.117  (floor-adjusted 0.451, real point 2.857)  enc frozen  39448s
+step 25900  loss 2.340  (floor-adjusted 0.644, real point 3.373)  enc frozen  39604s
+step 26000  loss 1.683  (floor-adjusted 0.332, real point 2.990)  enc frozen  39758s
+step 26100  loss 1.656  (floor-adjusted 0.142, real point 2.426)  enc frozen  39915s
+step 26200  loss 2.091  (floor-adjusted 0.518, real point 2.544)  enc frozen  40073s
+step 26300  loss 2.206  (floor-adjusted 0.352, real point 2.529)  enc frozen  40328s
+step 26400  loss 2.182  (floor-adjusted 0.395, real point 3.650)  enc frozen  40464s
+step 26500  loss 1.486  (floor-adjusted 0.351, real point 2.411)  enc frozen  40604s
+step 26600  loss 1.641  (floor-adjusted 0.693, real point 1.722)  enc frozen  40745s
+step 26700  loss 1.945  (floor-adjusted 0.377, real point 2.700)  enc frozen  40890s
+step 26800  loss 1.978  (floor-adjusted 0.490, real point 4.212)  enc frozen  41039s
+step 26900  loss 1.786  (floor-adjusted 0.771, real point 2.811)  enc frozen  41188s
+step 27000  loss 1.604  (floor-adjusted 0.062, real point 3.441)  enc frozen  41332s
+step 27100  loss 2.076  (floor-adjusted 0.375, real point 2.872)  enc frozen  41496s
+step 27200  loss 2.328  (floor-adjusted 0.572, real point 2.555)  enc frozen  41667s
+step 27300  loss 2.005  (floor-adjusted 0.719, real point 3.470)  enc frozen  41821s
+step 27400  loss 1.878  (floor-adjusted 0.814, real point 3.151)  enc frozen  42001s
+step 27500  loss 2.367  (floor-adjusted 0.322, real point 2.584)  enc frozen  42186s
+step 27600  loss 2.350  (floor-adjusted 0.597, real point 2.989)  enc frozen  42370s
+step 27700  loss 2.119  (floor-adjusted 0.747, real point 2.700)  enc frozen  42552s
+step 27800  loss 2.361  (floor-adjusted 0.397, real point 3.049)  enc frozen  42729s
+step 27900  loss 1.899  (floor-adjusted 0.734, real point 2.454)  enc frozen  42909s
+step 28000  loss 2.607  (floor-adjusted 0.497, real point 1.789)  enc frozen  43103s
+step 28100  loss 2.087  (floor-adjusted 0.640, real point 2.744)  enc frozen  43284s
+step 28200  loss 1.873  (floor-adjusted 0.812, real point 2.541)  enc frozen  43471s
+step 28300  loss 2.374  (floor-adjusted 0.691, real point 3.198)  enc frozen  43650s
+step 28400  loss 2.012  (floor-adjusted 0.348, real point 3.903)  enc frozen  43818s
+step 28500  loss 1.920  (floor-adjusted 0.419, real point 1.383)  enc frozen  44000s
+step 28600  loss 2.001  (floor-adjusted 0.680, real point 2.622)  enc frozen  44184s
+step 28700  loss 2.166  (floor-adjusted 0.623, real point 2.835)  enc frozen  44334s
+step 28800  loss 1.542  (floor-adjusted 0.408, real point 2.430)  enc frozen  44487s
+step 28900  loss 1.733  (floor-adjusted 0.565, real point 3.452)  enc frozen  44653s
+step 29000  loss 1.994  (floor-adjusted 0.625, real point 1.979)  enc frozen  44830s
+step 29100  loss 1.986  (floor-adjusted 0.470, real point 2.280)  enc frozen  45010s
+step 29200  loss 2.063  (floor-adjusted 0.618, real point 2.935)  enc frozen  45201s
+step 29300  loss 2.154  (floor-adjusted 0.514, real point 2.334)  enc frozen  45380s
+step 29400  loss 1.579  (floor-adjusted 0.379, real point 2.335)  enc frozen  45563s
+step 29500  loss 2.225  (floor-adjusted 0.449, real point 2.166)  enc frozen  45757s
+step 29600  loss 2.213  (floor-adjusted 0.383, real point 2.145)  enc frozen  45948s
+step 29700  loss 1.834  (floor-adjusted 0.530, real point 3.091)  enc frozen  46141s
+step 29800  loss 1.820  (floor-adjusted 0.397, real point 2.748)  enc frozen  46301s
+step 29900  loss 2.005  (floor-adjusted 0.594, real point 3.314)  enc frozen  46454s
+step 30000  loss 1.702  (floor-adjusted 0.803, real point 2.573)  enc frozen  46602s
+[ 47426s] evaluating on 50 held-out rows
+== step 30000 (subset masks): held-out completion 65.5% of moves correct, 0% of files with no wrong move, validation loss 1.742 (floor-adjusted 0.186) (38 files)
+== step 30000 (holes masks): held-out completion 66.4% of moves correct, 0% of files with no wrong move, validation loss 1.599 (floor-adjusted 0.254) (38 files)
+  example (holes mask): partial tree given (open lines end in …):
+    | class <unk> ( Clock ) :
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the model's completion (temperature 0.2, doesn't parse):
+    | class <unk> ( Clock ) :
+    |     def __init__ ( self ,
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 47548s] checkpoint saved to pretrain_pass2.pt (step 30000)
+step 30100  loss 1.633  (floor-adjusted 0.642, real point 2.472)  enc frozen  46870s
+step 30200  loss 1.997  (floor-adjusted 0.668, real point 4.759)  enc frozen  47016s
+step 30300  loss 1.734  (floor-adjusted 0.655, real point 3.068)  enc frozen  47160s
+step 30400  loss 1.937  (floor-adjusted 0.651, real point 3.093)  enc frozen  47302s
+step 30500  loss 2.195  (floor-adjusted 0.509, real point 2.258)  enc frozen  47451s
+step 30600  loss 1.956  (floor-adjusted 0.537, real point 3.616)  enc frozen  47712s
+step 30700  loss 1.869  (floor-adjusted 0.420, real point 2.022)  enc frozen  47855s
+step 30800  loss 1.895  (floor-adjusted 0.593, real point 3.265)  enc frozen  48018s
+step 30900  loss 2.248  (floor-adjusted 0.866, real point 4.056)  enc frozen  48197s
+step 31000  loss 1.969  (floor-adjusted 0.879, real point 2.456)  enc frozen  48365s
+step 31100  loss 2.002  (floor-adjusted 0.420, real point 2.742)  enc frozen  48535s
+step 31200  loss 1.901  (floor-adjusted 0.473, real point 3.429)  enc frozen  48710s
+step 31300  loss 1.611  (floor-adjusted 0.301, real point 1.606)  enc frozen  48891s
+step 31400  loss 1.638  (floor-adjusted 0.620, real point 2.840)  enc frozen  49058s
+step 31500  loss 2.068  (floor-adjusted 0.491, real point 2.150)  enc frozen  49231s
+step 31600  loss 1.994  (floor-adjusted 0.245, real point 2.008)  enc frozen  49408s
+step 31700  loss 2.248  (floor-adjusted 0.772, real point 3.203)  enc frozen  49580s
+step 31800  loss 1.873  (floor-adjusted 0.338, real point 2.159)  enc frozen  49749s
+step 31900  loss 1.912  (floor-adjusted 0.566, real point 2.093)  enc frozen  49912s
+step 32000  loss 1.689  (floor-adjusted 0.385, real point 1.870)  enc frozen  50063s
+step 32100  loss 2.020  (floor-adjusted 0.140, real point 4.079)  enc frozen  50231s
+step 32200  loss 2.007  (floor-adjusted 0.308, real point 2.654)  enc frozen  50422s
+step 32300  loss 1.825  (floor-adjusted 0.340, real point 3.654)  enc frozen  50605s
+step 32400  loss 1.918  (floor-adjusted 0.786, real point 2.888)  enc frozen  50790s
+step 32500  loss 2.087  (floor-adjusted 0.236, real point 2.736)  enc frozen  50977s
+step 32600  loss 1.752  (floor-adjusted 0.561, real point 1.551)  enc frozen  51159s
+step 32700  loss 1.821  (floor-adjusted 0.334, real point 1.936)  enc frozen  51347s
+step 32800  loss 2.099  (floor-adjusted 0.481, real point 2.669)  enc frozen  51535s
+step 32900  loss 2.273  (floor-adjusted 0.708, real point 3.297)  enc frozen  51711s
+step 33000  loss 1.983  (floor-adjusted 0.577, real point 2.640)  enc frozen  51882s
+step 33100  loss 1.785  (floor-adjusted 0.615, real point 2.067)  enc frozen  52028s
+step 33200  loss 2.146  (floor-adjusted 0.426, real point 2.439)  enc frozen  52170s
+step 33300  loss 1.990  (floor-adjusted 0.355, real point 2.297)  enc frozen  52310s
+step 33400  loss 2.022  (floor-adjusted 0.354, real point 2.863)  enc frozen  52454s
+step 33500  loss 2.036  (floor-adjusted 0.361, real point 3.653)  enc frozen  52598s
+step 33600  loss 2.280  (floor-adjusted 0.597, real point 2.606)  enc frozen  52745s
+step 33700  loss 1.879  (floor-adjusted 0.622, real point 2.889)  enc frozen  52881s
+step 33800  loss 2.062  (floor-adjusted 0.306, real point 3.353)  enc frozen  53033s
+step 33900  loss 1.947  (floor-adjusted 0.409, real point 3.068)  enc frozen  53180s
+step 34000  loss 2.155  (floor-adjusted 0.621, real point 3.046)  enc frozen  53320s
+step 34100  loss 2.115  (floor-adjusted 0.360, real point 2.915)  enc frozen  53470s
+step 34200  loss 2.309  (floor-adjusted 0.423, real point 2.029)  enc frozen  53611s
+step 34300  loss 1.986  (floor-adjusted 0.545, real point 2.847)  enc frozen  53780s
+step 34400  loss 1.717  (floor-adjusted 0.280, real point 3.014)  enc frozen  53957s
+step 34500  loss 2.143  (floor-adjusted 0.332, real point 2.591)  enc frozen  54132s
+step 34600  loss 2.330  (floor-adjusted 0.577, real point 2.213)  enc frozen  54307s
+step 34700  loss 2.176  (floor-adjusted 0.554, real point 2.352)  enc frozen  54479s
+step 34800  loss 1.873  (floor-adjusted 0.243, real point 3.263)  enc frozen  54657s
+step 34900  loss 2.082  (floor-adjusted 0.676, real point 4.094)  enc frozen  54995s
+step 35000  loss 1.993  (floor-adjusted 0.387, real point 2.715)  enc frozen  55163s
+[ 55987s] evaluating on 50 held-out rows
+== step 35000 (subset masks): held-out completion 65.9% of moves correct, 0% of files with no wrong move, validation loss 1.735 (floor-adjusted 0.179) (38 files)
+== step 35000 (holes masks): held-out completion 66.7% of moves correct, 0% of files with no wrong move, validation loss 1.585 (floor-adjusted 0.239) (38 files)
+  example (holes mask): partial tree given (open lines end in …):
+    | class <unk> ( Clock ) :
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the model's completion (temperature 0.2, doesn't parse):
+    | from
+    | class <unk> ( Clock ) :
+    |     def __init__ ( self ,
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 56173s] checkpoint saved to pretrain_pass2.pt (step 35000)
+step 35100  loss 1.991  (floor-adjusted 0.279, real point 1.900)  enc frozen  55508s
+step 35200  loss 1.927  (floor-adjusted 0.419, real point 2.723)  enc frozen  55649s
+step 35300  loss 1.906  (floor-adjusted 0.706, real point 3.393)  enc frozen  55829s
+step 35400  loss 2.194  (floor-adjusted 0.396, real point 3.821)  enc frozen  56011s
+step 35500  loss 2.409  (floor-adjusted 0.760, real point 1.776)  enc frozen  56196s
+step 35600  loss 2.062  (floor-adjusted 0.604, real point 3.440)  enc frozen  56375s
+step 35700  loss 1.716  (floor-adjusted 0.520, real point 1.742)  enc frozen  56552s
+step 35800  loss 1.602  (floor-adjusted 0.433, real point 2.118)  enc frozen  56739s
+step 35900  loss 1.805  (floor-adjusted 0.466, real point 2.003)  enc frozen  56916s
+step 36000  loss 1.772  (floor-adjusted 0.238, real point 2.959)  enc frozen  57080s
+step 36100  loss 1.861  (floor-adjusted 0.310, real point 2.456)  enc frozen  57222s
+step 36200  loss 2.331  (floor-adjusted 0.563, real point 2.882)  enc frozen  57362s
+step 36300  loss 1.864  (floor-adjusted 0.353, real point 1.737)  enc frozen  57511s
+step 36400  loss 2.103  (floor-adjusted 0.588, real point 2.710)  enc frozen  57663s
+step 36500  loss 2.301  (floor-adjusted 0.434, real point 3.498)  enc frozen  57824s
+step 36600  loss 1.750  (floor-adjusted 0.889, real point 2.091)  enc frozen  57979s
+step 36700  loss 1.903  (floor-adjusted 0.677, real point 2.775)  enc frozen  58129s
+step 36800  loss 2.161  (floor-adjusted 0.604, real point 2.525)  enc frozen  58284s
+step 36900  loss 2.184  (floor-adjusted 0.501, real point 2.900)  enc frozen  58435s
+step 37000  loss 2.008  (floor-adjusted 0.434, real point 2.015)  enc frozen  58585s
+step 37100  loss 2.331  (floor-adjusted 0.702, real point 2.053)  enc frozen  58735s
+step 37200  loss 2.032  (floor-adjusted 0.349, real point 2.187)  enc frozen  58879s
+step 37300  loss 1.819  (floor-adjusted 0.474, real point 2.546)  enc frozen  59028s
+step 37400  loss 1.731  (floor-adjusted 0.375, real point 2.430)  enc frozen  59203s
+step 37500  loss 2.477  (floor-adjusted 0.668, real point 3.296)  enc frozen  59367s
+step 37600  loss 1.803  (floor-adjusted 0.374, real point 3.066)  enc frozen  59545s
+step 37700  loss 1.875  (floor-adjusted 0.514, real point 3.172)  enc frozen  59719s
+step 37800  loss 1.852  (floor-adjusted 0.184, real point 1.860)  enc frozen  59895s
+step 37900  loss 2.129  (floor-adjusted 0.649, real point 4.073)  enc frozen  60072s
+step 38000  loss 1.730  (floor-adjusted 0.743, real point 2.882)  enc frozen  60245s
+step 38100  loss 1.895  (floor-adjusted 0.436, real point 2.336)  enc frozen  60417s
+step 38200  loss 1.973  (floor-adjusted 0.334, real point 2.533)  enc frozen  60593s
+step 38300  loss 1.985  (floor-adjusted 0.400, real point 3.183)  enc frozen  60757s
+step 38400  loss 2.015  (floor-adjusted 0.339, real point 2.275)  enc frozen  60900s
+step 38500  loss 2.188  (floor-adjusted 0.481, real point 3.351)  enc frozen  61062s
+step 38600  loss 2.081  (floor-adjusted 0.435, real point 2.704)  enc frozen  61245s
+step 38700  loss 1.718  (floor-adjusted 0.270, real point 2.163)  enc frozen  61427s
+step 38800  loss 1.750  (floor-adjusted 0.413, real point 1.823)  enc frozen  61589s
+step 38900  loss 2.263  (floor-adjusted 0.338, real point 3.404)  enc frozen  61774s
+step 39000  loss 1.975  (floor-adjusted 0.234, real point 2.711)  enc frozen  61961s
+step 39100  loss 2.291  (floor-adjusted 0.674, real point 2.277)  enc frozen  62141s
+step 39200  loss 1.909  (floor-adjusted 0.524, real point 2.453)  enc frozen  62427s
+step 39300  loss 1.715  (floor-adjusted 0.239, real point 5.132)  enc frozen  62567s
+step 39400  loss 1.623  (floor-adjusted 0.501, real point 2.369)  enc frozen  62711s
+step 39500  loss 2.060  (floor-adjusted 0.404, real point 2.618)  enc frozen  62857s
+step 39600  loss 2.117  (floor-adjusted 0.403, real point 2.060)  enc frozen  63012s
+step 39700  loss 2.402  (floor-adjusted 0.546, real point 3.218)  enc frozen  63153s
+step 39800  loss 2.151  (floor-adjusted 0.659, real point 2.892)  enc frozen  63299s
+step 39900  loss 2.317  (floor-adjusted 0.559, real point 2.696)  enc frozen  63438s
+step 40000  loss 1.699  (floor-adjusted 0.268, real point 2.162)  enc frozen  63579s
+[ 64404s] evaluating on 50 held-out rows
+== step 40000 (subset masks): held-out completion 66.0% of moves correct, 0% of files with no wrong move, validation loss 1.719 (floor-adjusted 0.163) (38 files)
+== step 40000 (holes masks): held-out completion 66.7% of moves correct, 0% of files with no wrong move, validation loss 1.575 (floor-adjusted 0.230) (38 files)
+  example (holes mask): partial tree given (open lines end in …):
+    | class <unk> ( Clock ) :
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the model's completion (temperature 0.2, doesn't parse):
+    | class <unk> ( Clock ) :
+    |     def __init__ ( self ,
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 64528s] checkpoint saved to pretrain_pass2.pt (step 40000)
+step 40100  loss 1.921  (floor-adjusted 0.662, real point 3.828)  enc frozen  63849s
+step 40200  loss 2.099  (floor-adjusted 0.477, real point 3.652)  enc frozen  64006s
+step 40300  loss 1.946  (floor-adjusted 0.518, real point 2.887)  enc frozen  64173s
+step 40400  loss 2.094  (floor-adjusted 0.487, real point 3.340)  enc frozen  64350s
+step 40500  loss 2.173  (floor-adjusted 0.615, real point 2.350)  enc frozen  64524s
+step 40600  loss 2.024  (floor-adjusted 0.446, real point 2.303)  enc frozen  64699s
+step 40700  loss 1.771  (floor-adjusted 0.387, real point 1.906)  enc frozen  64869s
+step 40800  loss 1.935  (floor-adjusted 0.702, real point 3.094)  enc frozen  65051s
+step 40900  loss 2.029  (floor-adjusted 0.515, real point 2.536)  enc frozen  65248s
+step 41000  loss 1.719  (floor-adjusted 0.376, real point 2.712)  enc frozen  65430s
+step 41100  loss 1.681  (floor-adjusted 0.458, real point 1.868)  enc frozen  65605s
+step 41200  loss 2.127  (floor-adjusted 0.531, real point 3.328)  enc frozen  65772s
+step 41300  loss 1.900  (floor-adjusted 1.028, real point 3.620)  enc frozen  65924s
+step 41400  loss 1.513  (floor-adjusted 0.156, real point 2.695)  enc frozen  66083s
+step 41500  loss 1.593  (floor-adjusted 0.469, real point 2.371)  enc frozen  66261s
+step 41600  loss 1.838  (floor-adjusted 0.661, real point 3.400)  enc frozen  66444s
+step 41700  loss 2.058  (floor-adjusted 0.662, real point 2.056)  enc frozen  66630s
+step 41800  loss 1.988  (floor-adjusted 0.521, real point 2.789)  enc frozen  66812s
+step 41900  loss 1.791  (floor-adjusted 0.486, real point 2.978)  enc frozen  66981s
+step 42000  loss 2.091  (floor-adjusted 0.419, real point 3.287)  enc frozen  67149s
+step 42100  loss 2.027  (floor-adjusted 0.815, real point 2.625)  enc frozen  67314s
+step 42200  loss 1.604  (floor-adjusted 0.467, real point 1.288)  enc frozen  67477s
+step 42300  loss 2.010  (floor-adjusted 0.577, real point 1.978)  enc frozen  67624s
+step 42400  loss 1.622  (floor-adjusted -0.004, real point 3.732)  enc frozen  67768s
+step 42500  loss 1.516  (floor-adjusted 0.634, real point 2.657)  enc frozen  67914s
+step 42600  loss 2.124  (floor-adjusted 0.667, real point 3.066)  enc frozen  68066s
+step 42700  loss 2.001  (floor-adjusted 0.539, real point 3.610)  enc frozen  68219s
+step 42800  loss 1.742  (floor-adjusted 0.526, real point 3.614)  enc frozen  68364s
+step 42900  loss 2.219  (floor-adjusted 0.717, real point 3.564)  enc frozen  68509s
+step 43000  loss 2.073  (floor-adjusted 0.542, real point 2.369)  enc frozen  68659s
+step 43100  loss 2.067  (floor-adjusted 0.424, real point 2.841)  enc frozen  68804s
+step 43200  loss 1.710  (floor-adjusted 0.352, real point 1.969)  enc frozen  68954s
+step 43300  loss 1.578  (floor-adjusted 0.344, real point 1.849)  enc frozen  69093s
+step 43400  loss 2.112  (floor-adjusted 0.536, real point 2.835)  enc frozen  69265s
+step 43500  loss 1.799  (floor-adjusted 0.523, real point 3.069)  enc frozen  69579s
+step 43600  loss 2.201  (floor-adjusted 0.465, real point 2.161)  enc frozen  69746s
+step 43700  loss 1.501  (floor-adjusted 0.348, real point 1.907)  enc frozen  69918s
+step 43800  loss 2.110  (floor-adjusted 0.222, real point 2.640)  enc frozen  70092s
+step 43900  loss 1.681  (floor-adjusted 0.293, real point 3.582)  enc frozen  70270s
+step 44000  loss 1.921  (floor-adjusted 0.821, real point 3.008)  enc frozen  70432s
+step 44100  loss 1.637  (floor-adjusted 0.613, real point 2.048)  enc frozen  70607s
+step 44200  loss 1.719  (floor-adjusted 0.370, real point 2.555)  enc frozen  70794s
+step 44300  loss 1.588  (floor-adjusted 0.281, real point 2.653)  enc frozen  70960s
+step 44400  loss 1.785  (floor-adjusted 0.638, real point 4.109)  enc frozen  71110s
+step 44500  loss 1.803  (floor-adjusted 0.452, real point 2.978)  enc frozen  71277s
+step 44600  loss 1.980  (floor-adjusted 0.482, real point 2.947)  enc frozen  71456s
+step 44700  loss 1.945  (floor-adjusted 0.507, real point 3.622)  enc frozen  71644s
+step 44800  loss 2.479  (floor-adjusted 0.442, real point 2.891)  enc frozen  71820s
+step 44900  loss 2.052  (floor-adjusted 0.243, real point 2.627)  enc frozen  71997s
+step 45000  loss 1.853  (floor-adjusted 0.583, real point 2.863)  enc frozen  72177s
+[ 73001s] evaluating on 50 held-out rows
+== step 45000 (subset masks): held-out completion 66.1% of moves correct, 0% of files with no wrong move, validation loss 1.714 (floor-adjusted 0.158) (38 files)
+== step 45000 (holes masks): held-out completion 67.0% of moves correct, 0% of files with no wrong move, validation loss 1.565 (floor-adjusted 0.220) (38 files)
+  example (holes mask): partial tree given (open lines end in …):
+    | class <unk> ( Clock ) :
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the model's completion (temperature 0.2, doesn't parse):
+    | class <unk> ( Clock ) :
+    |     def __init__ ( self ,
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 73168s] checkpoint saved to pretrain_pass2.pt (step 45000)
+step 45100  loss 2.199  (floor-adjusted 0.615, real point 2.517)  enc frozen  72512s
+step 45200  loss 1.900  (floor-adjusted 0.531, real point 2.421)  enc frozen  72656s
+step 45300  loss 1.559  (floor-adjusted 0.419, real point 2.663)  enc frozen  72802s
+step 45400  loss 1.585  (floor-adjusted 0.501, real point 2.753)  enc frozen  72946s
+step 45500  loss 1.667  (floor-adjusted 0.409, real point 4.035)  enc frozen  73086s
+step 45600  loss 2.196  (floor-adjusted 0.702, real point 4.137)  enc frozen  73236s
+step 45700  loss 1.789  (floor-adjusted 0.523, real point 3.236)  enc frozen  73383s
+step 45800  loss 1.831  (floor-adjusted 0.198, real point 2.298)  enc frozen  73528s
+step 45900  loss 2.257  (floor-adjusted 0.629, real point 2.415)  enc frozen  73684s
+step 46000  loss 1.849  (floor-adjusted 0.368, real point 3.390)  enc frozen  73825s
+step 46100  loss 1.693  (floor-adjusted 0.386, real point 2.568)  enc frozen  73970s
+step 46200  loss 2.001  (floor-adjusted 0.555, real point 2.172)  enc frozen  74119s
+step 46300  loss 1.733  (floor-adjusted 0.412, real point 2.655)  enc frozen  74278s
+step 46400  loss 1.999  (floor-adjusted 0.271, real point 2.493)  enc frozen  74454s
+step 46500  loss 1.856  (floor-adjusted 0.517, real point 2.877)  enc frozen  74617s
+step 46600  loss 1.668  (floor-adjusted 0.735, real point 2.625)  enc frozen  74785s
+step 46700  loss 2.332  (floor-adjusted 0.558, real point 3.093)  enc frozen  74952s
+step 46800  loss 2.028  (floor-adjusted 0.491, real point 2.745)  enc frozen  75125s
+step 46900  loss 2.246  (floor-adjusted 0.504, real point 3.992)  enc frozen  75296s
+step 47000  loss 2.128  (floor-adjusted 0.869, real point 2.411)  enc frozen  75466s
+step 47100  loss 2.062  (floor-adjusted 0.491, real point 2.223)  enc frozen  75634s
+step 47200  loss 2.062  (floor-adjusted 0.585, real point 2.796)  enc frozen  75796s
+step 47300  loss 2.178  (floor-adjusted 0.413, real point 3.010)  enc frozen  75950s
+step 47400  loss 2.087  (floor-adjusted 0.555, real point 2.732)  enc frozen  76097s
+step 47500  loss 2.024  (floor-adjusted 0.617, real point 2.839)  enc frozen  76248s
+step 47600  loss 2.064  (floor-adjusted 0.588, real point 2.113)  enc frozen  76397s
+step 47700  loss 1.757  (floor-adjusted 0.588, real point 1.808)  enc frozen  76554s
+step 47800  loss 2.341  (floor-adjusted 0.548, real point 2.131)  enc frozen  76827s
+step 47900  loss 1.716  (floor-adjusted 0.124, real point 1.792)  enc frozen  76980s
+step 48000  loss 1.514  (floor-adjusted 0.257, real point 1.559)  enc frozen  77140s
+step 48100  loss 1.940  (floor-adjusted 0.676, real point 2.571)  enc frozen  77297s
+step 48200  loss 2.369  (floor-adjusted 0.636, real point 2.215)  enc frozen  77440s
+step 48300  loss 2.264  (floor-adjusted 0.594, real point 2.941)  enc frozen  77577s
+step 48400  loss 1.604  (floor-adjusted 0.312, real point 2.141)  enc frozen  77722s
+step 48500  loss 2.004  (floor-adjusted 0.416, real point 2.877)  enc frozen  77865s
+step 48600  loss 1.628  (floor-adjusted 0.616, real point 2.001)  enc frozen  78000s
+step 48700  loss 2.149  (floor-adjusted 0.320, real point 2.532)  enc frozen  78145s
+step 48800  loss 2.266  (floor-adjusted 0.523, real point 3.085)  enc frozen  78283s
+step 48900  loss 1.958  (floor-adjusted 0.364, real point 2.495)  enc frozen  78423s
+step 49000  loss 2.085  (floor-adjusted 0.500, real point 1.898)  enc frozen  78564s
+step 49100  loss 1.792  (floor-adjusted 0.408, real point 2.150)  enc frozen  78708s
+step 49200  loss 1.737  (floor-adjusted 0.441, real point 2.169)  enc frozen  78841s
+step 49300  loss 2.038  (floor-adjusted 0.537, real point 2.952)  enc frozen  79003s
+step 49400  loss 2.076  (floor-adjusted 0.395, real point 2.337)  enc frozen  79171s
+step 49500  loss 1.821  (floor-adjusted 0.432, real point 2.353)  enc frozen  79335s
+step 49600  loss 2.041  (floor-adjusted 0.470, real point 3.120)  enc frozen  79504s
+step 49700  loss 1.862  (floor-adjusted -0.005, real point 4.651)  enc frozen  79672s
+step 49800  loss 1.913  (floor-adjusted 0.319, real point 2.110)  enc frozen  79835s
+step 49900  loss 2.061  (floor-adjusted 0.575, real point 3.795)  enc frozen  79995s
+step 50000  loss 2.290  (floor-adjusted 0.524, real point 2.693)  enc frozen  80166s
+[ 80990s] evaluating on 50 held-out rows
+== step 50000 (subset masks): held-out completion 66.2% of moves correct, 0% of files with no wrong move, validation loss 1.711 (floor-adjusted 0.155) (38 files)
+== step 50000 (holes masks): held-out completion 66.9% of moves correct, 0% of files with no wrong move, validation loss 1.562 (floor-adjusted 0.217) (38 files)
+  example (holes mask): partial tree given (open lines end in …):
+    | class <unk> ( Clock ) :
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the model's completion (temperature 0.2, doesn't parse):
+    | class <unk> ( Clock ) :
+    |     def __init__ ( self ,
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 81163s] checkpoint saved to pretrain_pass2.pt (step 50000)
+step 50100  loss 2.122  (floor-adjusted 0.310, real point 2.098)  enc frozen  80506s
+step 50200  loss 1.885  (floor-adjusted 0.628, real point 2.551)  enc frozen  80647s
+step 50300  loss 2.121  (floor-adjusted 0.469, real point 3.874)  enc frozen  80786s
+step 50400  loss 2.023  (floor-adjusted 0.257, real point 1.840)  enc frozen  80935s
+step 50500  loss 2.054  (floor-adjusted 0.674, real point 2.306)  enc frozen  81083s
+step 50600  loss 1.777  (floor-adjusted 0.385, real point 2.410)  enc frozen  81238s
+step 50700  loss 2.228  (floor-adjusted 0.322, real point 2.450)  enc frozen  81391s
+step 50800  loss 1.548  (floor-adjusted 0.473, real point 3.280)  enc frozen  81541s
+step 50900  loss 2.090  (floor-adjusted 0.318, real point 2.678)  enc frozen  81696s
+step 51000  loss 1.722  (floor-adjusted 0.288, real point 1.551)  enc frozen  81854s
+step 51100  loss 1.764  (floor-adjusted 0.176, real point 3.197)  enc frozen  82009s
+step 51200  loss 2.063  (floor-adjusted 0.709, real point 3.740)  enc frozen  82151s
+step 51300  loss 1.631  (floor-adjusted 0.036, real point 2.585)  enc frozen  82291s
+step 51400  loss 1.801  (floor-adjusted 0.454, real point 1.743)  enc frozen  82434s
+step 51500  loss 1.573  (floor-adjusted 0.513, real point 1.969)  enc frozen  82581s
+step 51600  loss 2.248  (floor-adjusted 0.541, real point 2.180)  enc frozen  82725s
+step 51700  loss 1.941  (floor-adjusted 0.279, real point 4.380)  enc frozen  82866s
+step 51800  loss 1.821  (floor-adjusted 0.301, real point 2.626)  enc frozen  83002s
+step 51900  loss 2.322  (floor-adjusted 0.163, real point 3.539)  enc frozen  83143s
+step 52000  loss 1.845  (floor-adjusted 0.410, real point 2.060)  enc frozen  83284s
+step 52100  loss 2.188  (floor-adjusted 0.550, real point 2.838)  enc frozen  83427s
+step 52200  loss 1.577  (floor-adjusted 0.627, real point 2.534)  enc frozen  83701s
+step 52300  loss 2.098  (floor-adjusted 0.570, real point 2.433)  enc frozen  83872s
+step 52400  loss 1.932  (floor-adjusted 0.628, real point 3.331)  enc frozen  84034s
+step 52500  loss 1.810  (floor-adjusted 0.397, real point 2.634)  enc frozen  84203s
+step 52600  loss 2.079  (floor-adjusted 0.353, real point 3.122)  enc frozen  84371s
+step 52700  loss 1.635  (floor-adjusted 0.350, real point 1.621)  enc frozen  84532s
+step 52800  loss 2.274  (floor-adjusted 0.237, real point 3.483)  enc frozen  84704s
+step 52900  loss 1.783  (floor-adjusted 0.340, real point 2.692)  enc frozen  84873s
+step 53000  loss 1.788  (floor-adjusted 0.385, real point 2.117)  enc frozen  85040s
+step 53100  loss 1.723  (floor-adjusted 0.584, real point 3.998)  enc frozen  85200s
+step 53200  loss 1.867  (floor-adjusted 0.585, real point 2.594)  enc frozen  85341s
+step 53300  loss 1.804  (floor-adjusted 0.662, real point 2.552)  enc frozen  85484s
+step 53400  loss 1.960  (floor-adjusted 0.394, real point 4.092)  enc frozen  85640s
+step 53500  loss 1.594  (floor-adjusted -0.078, real point 2.066)  enc frozen  85792s
+step 53600  loss 1.907  (floor-adjusted 0.398, real point 2.718)  enc frozen  85955s
+step 53700  loss 1.624  (floor-adjusted 0.079, real point 2.649)  enc frozen  86115s
+step 53800  loss 1.802  (floor-adjusted 0.836, real point 3.937)  enc frozen  86266s
+step 53900  loss 1.797  (floor-adjusted 0.599, real point 2.769)  enc frozen  86427s
+step 54000  loss 1.942  (floor-adjusted 0.509, real point 2.160)  enc frozen  86586s
+step 54100  loss 1.889  (floor-adjusted 0.396, real point 2.370)  enc frozen  86737s
+step 54200  loss 2.293  (floor-adjusted 0.354, real point 1.809)  enc frozen  86882s
+step 54300  loss 1.573  (floor-adjusted 0.354, real point 2.933)  enc frozen  87028s
+step 54400  loss 1.781  (floor-adjusted 0.632, real point 2.945)  enc frozen  87169s
+step 54500  loss 1.664  (floor-adjusted 0.326, real point 1.952)  enc frozen  87313s
+step 54600  loss 1.950  (floor-adjusted 0.298, real point 1.914)  enc frozen  87455s
+step 54700  loss 2.141  (floor-adjusted 0.156, real point 2.887)  enc frozen  87602s
+step 54800  loss 1.864  (floor-adjusted 0.417, real point 3.818)  enc frozen  87745s
+step 54900  loss 1.723  (floor-adjusted -0.087, real point 2.180)  enc frozen  87887s
+step 55000  loss 1.636  (floor-adjusted 0.453, real point 2.466)  enc frozen  88032s
+[ 88857s] evaluating on 50 held-out rows
+== step 55000 (subset masks): held-out completion 66.2% of moves correct, 0% of files with no wrong move, validation loss 1.709 (floor-adjusted 0.154) (38 files)
+== step 55000 (holes masks): held-out completion 67.0% of moves correct, 0% of files with no wrong move, validation loss 1.561 (floor-adjusted 0.216) (38 files)
+  example (holes mask): partial tree given (open lines end in …):
+    | class <unk> ( Clock ) :
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the model's completion (temperature 0.2, doesn't parse):
+    | class <unk> ( Clock ) :
+    |     def __init__ ( self ,
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |         self .
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+[ 88977s] saving pretrain_pass2.pt
+saved pretrain_pass2.pt

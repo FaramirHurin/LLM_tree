@@ -1,0 +1,6 @@
+Evaluation of eval_ckpt_step10000.pt (2026-10-15 23:34)
+  step 10000
+  80,000 training sequences seen (batch 8) out of 883,932 training files: 0.09 epochs
+  training loss over the last 1000 steps before it: 2.976
+
+Completing 100 held-out files (skipping those over 1000 entries)

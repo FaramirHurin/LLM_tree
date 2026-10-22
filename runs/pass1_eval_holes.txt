@@ -1,0 +1,136 @@
+Evaluation of pretrain_pass1.pt (2026-10-17 03:50)
+  step 55000 of 55000
+  880,000 training sequences seen (batch 16) out of 883,932 training files: 1.00 epochs
+  training loss over the last 1000 steps before it: 2.152
+
+Completing 50 held-out files (skipping those over 1000 entries)
+
+Result on 38 held-out files (holes masks):
+  moves correct:            64.6%  (correct moves / moves required, STOP included)
+  files with no wrong move: 0.0%
+  validation loss:          1.754  (the training loss on these held-out files)
+  floor-adjusted:           0.408  (minus the floor from scoring only some valid moves; a perfect model gets about 0)
+
+Example completion (a held-out file; open lines end in …):
+  partial tree given to the model:
+    | from __future__ import absolute_import
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class <unk> ( Clock ) :
+    |     def __init__ ( self , <unk> ) :
+    |         self . <unk> = <unk>
+    |     @ property
+    |     def now ( self ) :
+    |         return self . <unk>
+    |     @ now . setter
+    |     def now ( self , <unk> ) :
+    |         assert <unk> >= self . <unk>
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the model's completion (temperature 0.0, no corrections):
+    | from __future__ import absolute_import
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class <unk> ( Clock ) :
+    |     def __init__ ( self , <unk> ) :
+    |         self . <unk> = <unk>
+    |     @ property
+    |     def now ( self ) :
+    |         return self . <unk>
+    |     @ now . setter
+    |     def now ( self , <unk> ) :
+    |         assert <unk> >= self . <unk>
+    |     def advance ( self , <unk> ) :
+    |         assert <unk> >= 0
+    |         self . <unk> += <unk>
+  the real file:
+    | from __future__ import absolute_import
+    | import time
+    | class Clock ( object ) :
+    |     @ property
+    |     def now ( self ) :
+    |         return int ( time . time ( ) * 1000 )
+    | class MockClock ( Clock ) :
+    |     def __init__ ( self , now_in_ms ) :
+    |         self . _now_in_ms = now_in_ms
+    |     @ property
+    |     def now ( self ) :
+    |         return self . _now_in_ms
+    |     @ now . setter
+    |     def now ( self , value_in_ms ) :
+    |         assert value_in_ms >= self . _now_in_ms
+    |         self . _now_in_ms = value_in_ms
+    |     def advance ( self , duration_in_ms ) :
+    |         assert duration_in_ms >= 0
+    |         self . _now_in_ms += duration_in_ms
+
+Free sample from an empty tree (temperature 0.2):
+    | from .
+    | from django .
+    | from
+    | from
+    | from django .
+    | from django .
+    | from django .
+    | from django . contrib . auth . models import User
+    | from
+    | from .
+    | from django .
+    | from .
+    | from
+    | from
+    | from .
+    | from django . contrib . auth . models import User
+    | from django . contrib . auth . models import User
+    | from
+    | from
+    | from .
+    | from django .
+    | from .
+    | from django .
+    | from
+    | from django . contrib . auth . models import User
+    | from
+    | from django . contrib . auth . models import User
+    | from
+    | from
+    | from
+    | from django .
+    | from
+    | from django .
+    | from
+    | from
+    | from .
+    | from
+    | from
+    | from
+    | from
+    | from django . contrib . auth . models import User
+    | from
+    | from django .
+    | from
+    | from django .
+    | from django . contrib . auth . models import User
+    | from
+    | from
+    | from .
+    | from .
+    | from .
+    | from django . contrib . auth . models import User
+    | from .
+    | from django .
+    | from
+    | from django .
+    | from django .
+    | from django . contrib . auth . models import User
+    | from . .
+    | from .
+    | from django .
+    | from
+    | from .
+    | from . .

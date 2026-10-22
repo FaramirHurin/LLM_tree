@@ -1,0 +1,629 @@
+[     0s] loading Datasets/pretrain.jsonl
+[   501s] loaded 1000000 rows (950000 train, 50000 val)
+[   501s] building the code vocabulary (min-freq 1, max-vocab 40000)
+[   654s] code vocabulary: 40000 tokens, covering 89.0% of training tokens (the rest are <unk>)
+[   654s] building the prompt tokenizer
+[   655s] building the models
+[   657s] moving the models to cuda
+[   657s] converting trees to arrays
+[   923s] kept 883932 of 950000 training trees (dropped: a line longer than max-pos or more nodes than n-ids)
+train 883932  val 50000  code vocab 40000  prompt vocab 4  params enc 0.5M dec 140.2M
+[   923s] starting training: 110000 steps, batch 8
+[   923s] first batch: building sequences
+[   924s] first batch: forward done (1161 entries, 14548 moves), running backward
+[   924s] step 1 done (1.1s)
+[   924s] step 2 done (0.3s)
+[   925s] step 3 done (0.4s)
+[   925s] step 4 done (0.5s)
+[   926s] step 5 done (0.7s)
+[   927s] step 6 done (0.6s)
+[   927s] step 7 done (0.6s)
+[   928s] step 8 done (0.6s)
+[   928s] step 9 done (0.4s)
+[   929s] step 10 done (0.3s)
+step   100  loss 8.513  (real point 8.734)  enc frozen  56s
+step   200  loss 5.245  (real point 4.346)  enc frozen  114s
+step   300  loss 5.752  (real point 3.492)  enc frozen  176s
+step   400  loss 5.785  (real point 3.490)  enc frozen  385s
+step   500  loss 5.542  (real point 3.576)  enc frozen  445s
+step   600  loss 5.728  (real point 4.018)  enc frozen  508s
+step   700  loss 5.324  (real point 3.601)  enc frozen  569s
+step   800  loss 4.772  (real point 4.338)  enc frozen  627s
+step   900  loss 4.516  (real point 3.169)  enc frozen  688s
+step  1000  loss 4.207  (real point 3.231)  enc frozen  750s
+step  1100  loss 3.914  (real point 2.690)  enc frozen  813s
+step  1200  loss 4.038  (real point 2.327)  enc frozen  875s
+step  1300  loss 3.563  (real point 2.499)  enc frozen  935s
+step  1400  loss 3.776  (real point 4.545)  enc frozen  996s
+step  1500  loss 3.218  (real point 3.081)  enc frozen  1054s
+step  1600  loss 3.115  (real point 1.160)  enc frozen  1114s
+step  1700  loss 3.423  (real point 2.124)  enc frozen  1176s
+step  1800  loss 3.809  (real point 3.524)  enc frozen  1239s
+step  1900  loss 3.972  (real point 3.194)  enc frozen  1299s
+step  2000  loss 4.216  (real point 3.041)  enc frozen  1361s
+step  2100  loss 3.721  (real point 3.131)  enc frozen  1423s
+step  2200  loss 3.657  (real point 2.599)  enc frozen  1482s
+step  2300  loss 3.739  (real point 3.541)  enc frozen  1543s
+step  2400  loss 3.547  (real point 3.731)  enc frozen  1600s
+step  2500  loss 3.821  (real point 2.178)  enc frozen  1660s
+step  2600  loss 3.435  (real point 2.362)  enc frozen  1719s
+step  2700  loss 4.138  (real point 2.224)  enc frozen  1777s
+step  2800  loss 3.731  (real point 1.868)  enc frozen  1837s
+step  2900  loss 3.208  (real point 2.061)  enc frozen  1894s
+step  3000  loss 3.027  (real point 2.741)  enc frozen  1951s
+step  3100  loss 3.111  (real point 3.120)  enc frozen  2011s
+step  3200  loss 3.317  (real point 1.998)  enc frozen  2072s
+step  3300  loss 3.067  (real point 2.605)  enc frozen  2131s
+step  3400  loss 2.588  (real point 2.152)  enc frozen  2194s
+step  3500  loss 3.697  (real point 3.886)  enc frozen  2251s
+step  3600  loss 3.089  (real point 2.303)  enc frozen  2312s
+step  3700  loss 3.521  (real point 1.578)  enc frozen  2371s
+step  3800  loss 3.268  (real point 1.878)  enc frozen  2429s
+step  3900  loss 3.222  (real point 3.261)  enc frozen  2488s
+step  4000  loss 2.954  (real point 1.510)  enc frozen  2549s
+step  4100  loss 3.202  (real point 1.112)  enc frozen  2607s
+step  4200  loss 3.857  (real point 2.816)  enc frozen  2669s
+step  4300  loss 3.415  (real point 2.581)  enc frozen  2727s
+step  4400  loss 3.171  (real point 2.000)  enc frozen  2783s
+step  4500  loss 2.607  (real point 2.616)  enc frozen  2842s
+step  4600  loss 3.291  (real point 2.392)  enc frozen  2901s
+step  4700  loss 2.857  (real point 1.766)  enc frozen  2959s
+step  4800  loss 2.764  (real point 2.515)  enc frozen  3016s
+step  4900  loss 3.390  (real point 1.982)  enc frozen  3074s
+step  5000  loss 2.971  (real point 3.206)  enc frozen  3130s
+step  5100  loss 3.087  (real point 2.111)  enc frozen  3188s
+step  5200  loss 2.665  (real point 2.717)  enc frozen  3245s
+step  5300  loss 3.041  (real point 0.802)  enc frozen  3304s
+step  5400  loss 3.426  (real point 2.410)  enc frozen  3366s
+step  5500  loss 2.481  (real point 1.573)  enc frozen  3426s
+step  5600  loss 3.228  (real point 2.373)  enc frozen  3487s
+step  5700  loss 3.553  (real point 1.652)  enc frozen  3545s
+step  5800  loss 2.552  (real point 1.438)  enc frozen  3603s
+step  5900  loss 3.006  (real point 1.618)  enc frozen  3660s
+step  6000  loss 2.398  (real point 2.228)  enc frozen  3719s
+step  6100  loss 3.444  (real point 2.475)  enc frozen  3776s
+step  6200  loss 3.194  (real point 2.156)  enc frozen  3835s
+step  6300  loss 2.860  (real point 2.298)  enc frozen  3892s
+step  6400  loss 3.031  (real point 2.833)  enc frozen  3951s
+step  6500  loss 3.062  (real point 2.067)  enc frozen  4009s
+step  6600  loss 2.795  (real point 2.667)  enc frozen  4069s
+step  6700  loss 3.134  (real point 1.894)  enc frozen  4129s
+step  6800  loss 2.483  (real point 1.564)  enc frozen  4184s
+step  6900  loss 3.505  (real point 1.920)  enc frozen  4246s
+step  7000  loss 2.607  (real point 1.954)  enc frozen  4304s
+step  7100  loss 3.297  (real point 1.394)  enc frozen  4362s
+step  7200  loss 2.894  (real point 2.482)  enc frozen  4420s
+step  7300  loss 2.806  (real point 1.418)  enc frozen  4475s
+step  7400  loss 2.407  (real point 1.847)  enc frozen  4535s
+step  7500  loss 2.402  (real point 2.303)  enc frozen  4593s
+step  7600  loss 3.106  (real point 2.355)  enc frozen  4651s
+step  7700  loss 3.696  (real point 2.566)  enc frozen  4709s
+step  7800  loss 2.534  (real point 1.722)  enc frozen  4767s
+step  7900  loss 2.482  (real point 0.817)  enc frozen  4828s
+step  8000  loss 3.524  (real point 1.435)  enc frozen  4890s
+step  8100  loss 3.117  (real point 1.713)  enc frozen  4951s
+step  8200  loss 2.509  (real point 1.743)  enc frozen  5012s
+step  8300  loss 2.964  (real point 3.041)  enc frozen  5073s
+step  8400  loss 2.750  (real point 1.381)  enc frozen  5130s
+step  8500  loss 2.433  (real point 1.778)  enc frozen  5190s
+step  8600  loss 2.585  (real point 0.977)  enc frozen  5248s
+step  8700  loss 3.165  (real point 1.372)  enc frozen  5308s
+step  8800  loss 2.412  (real point 1.649)  enc frozen  5366s
+step  8900  loss 3.013  (real point 1.375)  enc frozen  5423s
+step  9000  loss 2.842  (real point 2.844)  enc frozen  5623s
+step  9100  loss 2.798  (real point 3.159)  enc frozen  5680s
+step  9200  loss 3.183  (real point 1.736)  enc frozen  5738s
+step  9300  loss 2.971  (real point 1.781)  enc frozen  5798s
+step  9400  loss 3.658  (real point 3.075)  enc frozen  5857s
+step  9500  loss 3.126  (real point 1.221)  enc frozen  5917s
+step  9600  loss 3.538  (real point 1.117)  enc frozen  5974s
+step  9700  loss 2.519  (real point 2.501)  enc frozen  6034s
+step  9800  loss 2.987  (real point 2.635)  enc frozen  6094s
+step  9900  loss 2.055  (real point 1.251)  enc frozen  6151s
+step 10000  loss 2.929  (real point 3.223)  enc frozen  6213s
+[  7135s] evaluating on 10 held-out rows
+  prompt: 
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib . auth import models
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib . auth import models
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib . auth import models
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib . auth import django
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import auth
+    | from django . contrib import auth
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib . auth import models
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import auth
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib . auth . contrib import models
+    | from django . contrib . auth import models
+    | from django . contrib import forms
+    | from django . contrib . auth import models
+    | from django . contrib import forms
+    | from django . contrib . auth import models
+    | from django . contrib . auth import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import auth
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib . auth import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+    | from django . contrib import forms
+  prompt: 
+    | from django . contrib . auth . models import User
+    | from . . import .
+    | from . . import . import . base
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import . import . base
+    | from . . import .
+    | from . . import .
+    | from . . import . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import . import . time
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import . import . base
+    | from . . import .
+    | from . . import .
+    | from . . import . import . base
+    | from . . import .
+    | from django . utils . translation import ugettext_lazy as _
+    | from . . import .
+  prompt: 
+    | from django . contrib import timedelta
+    | from django . contrib import datetime
+    | from . . import .
+    | from django . contrib import timedelta
+    | from django . contrib import forms
+    | from . . import .
+    | from django . contrib import forms
+    | from . . import .
+    | from . . import .
+    | from . . import . auth
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from django . contrib import auth
+    | from . . import .
+    | from . . import .
+    | from . . import . contrib import datetime
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import . auth import *
+    | from . . import .
+    | from django . contrib import forms
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import . auth import *
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+    | from . . import .
+== step 10000: held-out tree exact match 0.0%, parses 40.0%
+[  7185s] checkpoint saved to pretrain.pt (step 10000)
+step 10100  loss 2.442  (real point 1.603)  enc frozen  6321s
+step 10200  loss 3.156  (real point 1.627)  enc frozen  6380s
+step 10300  loss 2.765  (real point 1.910)  enc frozen  6441s
+step 10400  loss 3.364  (real point 1.264)  enc frozen  6500s
+step 10500  loss 2.321  (real point 1.817)  enc frozen  6559s
+step 10600  loss 3.002  (real point 1.582)  enc frozen  6617s
+step 10700  loss 2.874  (real point 2.616)  enc frozen  6677s
+step 10800  loss 3.170  (real point 5.479)  enc frozen  6734s
+step 10900  loss 2.793  (real point 2.156)  enc frozen  6795s
+step 11000  loss 3.268  (real point 1.690)  enc frozen  6856s
+step 11100  loss 3.198  (real point 2.296)  enc frozen  6916s
+step 11200  loss 2.914  (real point 3.153)  enc frozen  6977s
+step 11300  loss 2.447  (real point 2.557)  enc frozen  7036s
+step 11400  loss 2.628  (real point 2.101)  enc frozen  7096s
+step 11500  loss 2.541  (real point 1.412)  enc frozen  7158s
+step 11600  loss 2.864  (real point 1.283)  enc frozen  7217s
+step 11700  loss 3.334  (real point 2.393)  enc frozen  7275s
+step 11800  loss 2.683  (real point 0.710)  enc frozen  7336s
+step 11900  loss 3.162  (real point 4.188)  enc frozen  7399s
+step 12000  loss 2.543  (real point 2.553)  enc frozen  7456s
+step 12100  loss 2.806  (real point 1.358)  enc frozen  7514s
+step 12200  loss 2.470  (real point 1.822)  enc frozen  7573s
+step 12300  loss 2.165  (real point 2.013)  enc frozen  7631s
+step 12400  loss 3.502  (real point 1.754)  enc frozen  7690s
+step 12500  loss 2.908  (real point 1.804)  enc frozen  7751s
+step 12600  loss 2.480  (real point 1.372)  enc frozen  7809s
+step 12700  loss 2.647  (real point 2.553)  enc frozen  7866s
+step 12800  loss 2.713  (real point 3.539)  enc frozen  7926s
+step 12900  loss 3.122  (real point 3.229)  enc frozen  7987s
+step 13000  loss 2.872  (real point 2.635)  enc frozen  8047s
+step 13100  loss 2.292  (real point 1.554)  enc frozen  8106s
+step 13200  loss 2.504  (real point 1.747)  enc frozen  8163s
+step 13300  loss 2.172  (real point 1.661)  enc frozen  8219s
+step 13400  loss 2.933  (real point 0.771)  enc frozen  8275s
+step 13500  loss 2.995  (real point 1.645)  enc frozen  8333s
+step 13600  loss 2.383  (real point 2.719)  enc frozen  8393s
+step 13700  loss 1.938  (real point 0.999)  enc frozen  8455s
+step 13800  loss 2.239  (real point 1.118)  enc frozen  8512s
+step 13900  loss 2.653  (real point 1.409)  enc frozen  8569s
+step 14000  loss 2.851  (real point 1.228)  enc frozen  8629s
+step 14100  loss 2.916  (real point 3.766)  enc frozen  8689s
+step 14200  loss 2.293  (real point 1.307)  enc frozen  8746s
+step 14300  loss 2.158  (real point 1.996)  enc frozen  8802s
+step 14400  loss 2.815  (real point 1.540)  enc frozen  8861s
+step 14500  loss 2.324  (real point 1.363)  enc frozen  8918s
+step 14600  loss 2.622  (real point 2.472)  enc frozen  8975s
+step 14700  loss 2.836  (real point 2.344)  enc frozen  9036s
+step 14800  loss 2.938  (real point 2.383)  enc frozen  9095s
+step 14900  loss 2.894  (real point 1.683)  enc frozen  9154s
+step 15000  loss 2.750  (real point 2.006)  enc frozen  9214s
+step 15100  loss 2.890  (real point 1.714)  enc frozen  9270s
+step 15200  loss 2.951  (real point 2.324)  enc frozen  9330s
+step 15300  loss 3.412  (real point 1.560)  enc frozen  9388s
+step 15400  loss 2.759  (real point 2.289)  enc frozen  9446s
+step 15500  loss 3.492  (real point 1.197)  enc frozen  9504s
+step 15600  loss 2.752  (real point 2.947)  enc frozen  9562s
+step 15700  loss 2.847  (real point 1.809)  enc frozen  9626s
+step 15800  loss 2.181  (real point 2.007)  enc frozen  9685s
+step 15900  loss 2.614  (real point 1.775)  enc frozen  9748s
+step 16000  loss 3.037  (real point 2.408)  enc frozen  9807s
+step 16100  loss 2.389  (real point 3.315)  enc frozen  9866s
+step 16200  loss 2.014  (real point 1.125)  enc frozen  9928s
+step 16300  loss 2.714  (real point 2.041)  enc frozen  9990s
+step 16400  loss 2.049  (real point 0.933)  enc frozen  10051s
+step 16500  loss 2.481  (real point 1.731)  enc frozen  10110s
+step 16600  loss 2.183  (real point 1.419)  enc frozen  10168s
+step 16700  loss 2.304  (real point 2.302)  enc frozen  10226s
+step 16800  loss 3.005  (real point 2.319)  enc frozen  10284s
+step 16900  loss 2.841  (real point 1.996)  enc frozen  10346s
+step 17000  loss 2.708  (real point 1.395)  enc frozen  10407s
+step 17100  loss 3.094  (real point 1.895)  enc frozen  10468s
+step 17200  loss 2.095  (real point 0.923)  enc frozen  10527s
+step 17300  loss 2.798  (real point 2.860)  enc frozen  10589s
+step 17400  loss 2.626  (real point 3.238)  enc frozen  10650s
+step 17500  loss 2.893  (real point 2.497)  enc frozen  10864s
+step 17600  loss 2.597  (real point 1.222)  enc frozen  10925s
+step 17700  loss 2.248  (real point 1.444)  enc frozen  10986s
+step 17800  loss 3.178  (real point 2.217)  enc frozen  11045s
+step 17900  loss 2.851  (real point 2.576)  enc frozen  11107s
+step 18000  loss 2.100  (real point 1.498)  enc frozen  11168s
+step 18100  loss 2.859  (real point 1.883)  enc frozen  11228s
+step 18200  loss 2.407  (real point 1.024)  enc frozen  11290s
+step 18300  loss 2.792  (real point 1.938)  enc frozen  11350s
+step 18400  loss 3.052  (real point 1.751)  enc frozen  11408s
+step 18500  loss 2.788  (real point 2.539)  enc frozen  11470s
+step 18600  loss 2.209  (real point 1.589)  enc frozen  11530s
+step 18700  loss 2.380  (real point 1.747)  enc frozen  11590s
+step 18800  loss 2.753  (real point 2.631)  enc frozen  11647s
+step 18900  loss 2.594  (real point 2.465)  enc frozen  11706s
+step 19000  loss 2.639  (real point 1.980)  enc frozen  11766s
+step 19100  loss 3.071  (real point 1.995)  enc frozen  11825s
+step 19200  loss 2.948  (real point 1.913)  enc frozen  11887s
+step 19300  loss 2.642  (real point 1.468)  enc frozen  11947s
+step 19400  loss 2.122  (real point 1.725)  enc frozen  12008s
+step 19500  loss 2.596  (real point 1.987)  enc frozen  12072s
+step 19600  loss 2.307  (real point 1.934)  enc frozen  12135s
+step 19700  loss 2.358  (real point 1.770)  enc frozen  12196s
+step 19800  loss 3.073  (real point 0.964)  enc frozen  12254s
+step 19900  loss 2.711  (real point 2.819)  enc frozen  12314s
+step 20000  loss 2.692  (real point 2.493)  enc frozen  12370s
+[ 13293s] evaluating on 10 held-out rows
+  prompt: 
+    | from __future__ import absolute_import
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    | from
+    | from . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from . . . . . . . . . .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    | from
+    | from
+    | from
+    | from . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    | from . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    | from . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    | from . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    | from . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    | from
+    | from
+    | from . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    | from . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    | from
+    | from
+    | from
+    | from
+    | from
+    | from . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    | from . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    | from . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+  prompt: 
+    | from . . models import timezone
+    | from django . conf . urls import settings
+    | from . . models import *
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import *
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import *
+    | from django . conf . urls import *
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import *
+    | from django . conf . urls import settings
+    | from django . conf . urls import *
+    | from django . conf . urls import settings
+    | from django . conf . urls import *
+    | from django . conf . urls import include
+    | from django . conf . urls import *
+    | from django . conf . urls import *
+    | from django . conf . urls import settings
+    | from django . conf . urls import *
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import *
+    | from django . conf . urls import settings
+    | from . . utils . translation import ugettext_lazy as _
+    | from django . conf . urls import settings
+    | from django . conf . urls import *
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import *
+    | from django . conf . urls import *
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import *
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import *
+    | from django . conf . urls import *
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from django . conf . urls import settings
+    | from . . utils . translation import ugettext_lazy as _
+    | from . . models import *
+  prompt: 
+    | from __future__ import unicode_literals
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from . . import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ .
+    | from django . conf import settings
+    | from . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from . . utils . translation import ugettext_lazy as _
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from . . . . urls . base . . . . . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from django . conf import settings
+    | from . . . . . . . . . . . . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__ . __name__
+== step 20000: held-out tree exact match 0.0%, parses 10.0%
+[ 13375s] checkpoint saved to pretrain.pt (step 20000)
+step 20100  loss 2.668  (real point 1.507)  enc frozen  12514s
+step 20200  loss 1.847  (real point 2.217)  enc frozen  12571s
+step 20300  loss 2.336  (real point 2.097)  enc frozen  12632s
+step 20400  loss 2.819  (real point 2.143)  enc frozen  12691s
+step 20500  loss 2.482  (real point 1.625)  enc frozen  12753s
+step 20600  loss 2.858  (real point 1.580)  enc frozen  12813s
+step 20700  loss 2.586  (real point 1.767)  enc frozen  12868s
+step 20800  loss 2.842  (real point 2.433)  enc frozen  12928s
+step 20900  loss 3.077  (real point 2.331)  enc frozen  12989s
+step 21000  loss 2.496  (real point 1.555)  enc frozen  13048s
